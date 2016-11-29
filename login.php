@@ -18,9 +18,9 @@ $password = stripslashes($password);
 $username = mysql_real_escape_string($username);
 $password = mysql_real_escape_string($password);
 // Selecting Database
-$db = mysql_select_db("company", $connection);
+$db = mysql_select_db("Keuzedelen", $connection);
 // SQL query to fetch information of registerd users and finds user match.
-$query = mysql_query("select * from user where password='$password' AND username='$username'", $connection);
+$query = mysql_query("SELECT * FROM User WHERE password='$password' AND username='$username'", $connection);
 $rows = mysql_num_rows($query);
 if ($rows == 1) {
 $_SESSION['login_user']=$username; // Initializing Session
