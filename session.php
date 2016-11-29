@@ -11,12 +11,13 @@
 
     $result = $conn->prepare("SELECT * FROM User WHERE username = :user_check");
     
-    $result->execute(array(":usercheck"=>$user_check));
+    $result->execute(array(":user_check"=>$user_check));
     $row = $result->fetch(PDO::FETCH_ASSOC);
 
     $login_session =$row['username'];
     $user_id =$row['ID'];
     $user_passwords = $row['password'];
+    $user_permissions = $row['permission'];
 
     
     if(!isset($login_session))

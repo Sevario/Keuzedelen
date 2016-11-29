@@ -17,12 +17,13 @@
 
                     $sql = "SELECT * FROM User WHERE `username` = :email AND `password` = :password ";
 
-                    $stmt = $conn->prepare($sql); 
+                    $stmt = $conn->prepare($sql);   
                     $stmt->execute(array(':email' => $_POST['email'], ':password'=> $_POST['password']));
 
                     $num=$stmt->rowCount();
                     if($num > 0)
                         {
+                            $_SESSION ['login_user'] = $_POST ['email'];
                             header("location:dashboard.php");
                         }
                     else
