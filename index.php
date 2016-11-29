@@ -27,4 +27,5 @@ header("location: profile.php");
 </div>
 </div>
 </body>
+<!-- -->
 </html>
