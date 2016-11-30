@@ -6,3 +6,7 @@
 body {
   background-color: green !important; 
 }
+
+.login {
+    width: 20%;
+}

@@ -4,8 +4,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Your Home Page</title>
-<link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="/keuzedelen/bootstrap/css/bootstrap.min.css"  />
+        <link rel="stylesheet" type="text/css" href="/keuzedelen/style.css" media="screen" />
+        <title>Your Home Page</title>
 </head>
 <body>
     <div id="profile">
