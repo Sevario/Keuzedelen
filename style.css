@@ -7,9 +7,9 @@
     width: 200px;
     height: 200px;
     background: red;
+    border: 1px solid black;
+    float: left;
 }
-
-
 .login {
     width: 15%;
 }
