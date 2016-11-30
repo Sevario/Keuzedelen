@@ -9,10 +9,6 @@
     background: red;
 }
 
-$shadow-color = #23203b;
-$input-color = lighten(#AB9E95, 10%);
-$input-border-color = #5E5165;
-$button-background-color = #27AE60;
 
 .login {
     width: 15%;
