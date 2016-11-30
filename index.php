@@ -1,7 +1,7 @@
-
 <html>
     <head>
-<link rel="stylesheet" type="text/css" href="/keuzedelen/style.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/keuzedelen/bootstrap/css/bootstrap.min.css"  />
+        <link rel="stylesheet" type="text/css" href="/keuzedelen/style.css" media="screen" />
     </head>
     
     <body>
