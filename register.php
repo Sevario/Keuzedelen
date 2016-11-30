@@ -1,8 +1,22 @@
-<?php
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/keuzedelen/bootstrap/css/bootstrap.min.css"  />
+        <link rel="stylesheet" type="text/css" href="/keuzedelen/style.css" media="screen" />
+    </head>
+    
+    <body>
+        <div class="login">
+                <div class="heading">
+                    <form method=="post" role="form" class="login" action="createaccount.php" autocomplete="off" method="POST">
+                        <div class="input-group input-group-lg">
+                          <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input type="text" class="form-control" name="email" placeholder="Email">
+                        </div>
+                        <span class="help-block"></span>
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+                        <button class="btn btn-lg btn-default btnwidth" name="register" type="submit">Registreren</button>
+                    </form>
+            	</div>
+        </div>
+  </body>
+ </html>
