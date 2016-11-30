@@ -10,3 +10,8 @@ body {
 .login {
     width: 20%;
 }
+#keuzedeel {
+    width: 200px;
+    height: 200px;
+    background: red;
+}
