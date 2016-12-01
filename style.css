@@ -97,7 +97,7 @@ li a:hover {
 }
 li a.selected:link, a.selected:visited{
     display: block;
-    background-color: #066;
+    background-color: #514444;
     color: #fff;
 }
 #menu {
