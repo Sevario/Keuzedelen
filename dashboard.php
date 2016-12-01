@@ -19,7 +19,7 @@
     </div>
     <div id="menu">
         <ul>
-            <li><a href="dashboard.php">Home</a></li>
+            <li><a href="dashboard.php" class="selected">Home</a></li>
             <li><a>Account</a></li>
             <li><a>Beheer(Admin only)</a></li>
             <li><a href="logout.php">Log Out</a></li>

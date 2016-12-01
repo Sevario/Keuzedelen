@@ -95,6 +95,11 @@ li a:hover {
     background-color: #555;
     color: white;
 }
+li a.selected:link, a.selected:visited{
+    display: block;
+    background-color: #066;
+    color: #fff;
+}
 #menu {
     float: left;
     margin: 10px;
