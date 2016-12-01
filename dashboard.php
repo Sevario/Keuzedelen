@@ -16,65 +16,42 @@
         <b id="logout" class="btn btn-default"><a href="logout.php">Log Out</a></b>
     </div>
     <div id="geheel">
-        <div id="keuzedeel">
+        <div class="keuzedeel" id="test">
             <button>Get information</button>
         </div>
-        <div id="keuzedeel">
+        <div class="keuzedeel">
             <button>Get information</button>
         </div>
-        <div id="keuzedeel">
+        <div class="keuzedeel">
             <button>Get information</button>
         </div>
-        <div id="keuzedeel">
+        <div class="keuzedeel">
             <button>Get information</button>
         </div>
-        <div id="keuzedeel">
+        <div class="keuzedeel">
             <button>Get information</button>
         </div>
-        <div id="keuzedeel">
+        <div class="keuzedeel">
             <button>Get information</button>
         </div>
-        <div id="keuzedeel">
+        <div class="keuzedeel">
             <button>Get information</button>
         </div>
-        <div id="keuzedeel">
+        <div class="keuzedeel">
             <button>Get information</button>
         </div>
-        <div id="keuzedeel">
+        <div class="keuzedeel">
             <button>Get information</button>
         </div>
-        <div id="keuzedeel">
+        <div class="keuzedeel">
             <button>Get information</button>
         </div>
-        <div id="keuzedeel">
+        <div class="keuzedeel">
             <button>Get information</button>
         </div>
-        <div id="keuzedeel">
+        <div class="keuzedeel">
             <button>Get information</button>
         </div>
-        <div id="keuzedeel">
-            <button>Get information</button>
-        </div>
-        <div id="keuzedeel">
-            <button>Get information</button>
-        </div>
-        <div id="keuzedeel">
-            <button>Get information</button>
-        </div>
-        <div id="keuzedeel">
-            <button>Get information</button>
-        </div>
-        <div id="keuzedeel">
-            <button>Get information</button>
-        </div>
-        <div id="keuzedeel">
-            <button>Get information</button>
-        </div>
-        <div id="keuzedeel">
-            <button>Get information</button>
-        </div>
-        <div id="keuzedeel">
-            <button>Get information</button>
-        </div>
+
 </body>
 </html>

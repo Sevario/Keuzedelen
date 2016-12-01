@@ -1,9 +1,20 @@
-$(document).ready(function(){
-    $("button").click(function(){
-        $("#keuzedeel").animate({
-            height: '80vh',
-            width: '90%'
+//$(document).ready(function(){
+//    $("#keuzedeel").click(function(){
+//        $(this).animate({
+//            height: '80vh',
+//            width: '90%'
+//        });
+//    });
+//});
+
+var enlarged = false;
+$(document).ready(function() {
+    $('.keuzedeel').click(function () {
+        $(this).stop(true, false).animate({
+            width: enlarged ? 200 : 1000,
+            height: enlarged ? 200 : 600,
         });
-        $('#keuzedeel').css('zIndex', '60');
+
+        enlarged = !enlarged;
     });
 });
