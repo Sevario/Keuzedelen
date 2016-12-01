@@ -15,6 +15,14 @@
         <b id="welcome">Welcome : <i><?php echo $login_session; ?></i></b>
         <b id="logout" class="btn btn-default"><a href="logout.php">Log Out</a></b>
     </div>
+    <div id="menu">
+        <ul>
+            <li><a href="dashboard.php">Home</a></li>
+            <li><a>Account</a></li>
+            <li><a>Beheer(Admin only)</a></li>
+        </ul>
+
+    </div>
     <div id="geheel">
         <div class="keuzedeel" id="test">
             <button>Naam keuzedeel</button>
@@ -64,32 +72,6 @@
         <div class="keuzedeel">
             <button>Get information</button>
         </div>
-        <div class="keuzedeel">
-            <button>Get information</button>
-        </div>
-        <div class="keuzedeel">
-            <button>Get information</button>
-        </div>
-        <div class="keuzedeel">
-            <button>Get information</button>
-        </div>
-        <div class="keuzedeel">
-            <button>Get information</button>
-        </div>
-        <div class="keuzedeel">
-            <button>Get information</button>
-        </div>
-        <div class="keuzedeel">
-            <button>Get information</button>
-        </div>
-        <div class="keuzedeel">
-            <button>Get information</button>
-        </div>
-        <div class="keuzedeel">
-            <button>Get information</button>
-        </div>
-        <div class="keuzedeel">
-            <button>Get information</button>
-        </div>
+
 </body>
 </html>

@@ -25,7 +25,7 @@ $(document).ready(function() {
             $('.normal').show('fast');
         } else {
             $(this).animate({
-                width:  '98%',
+                width:  '95%',
                 height: '80%'
             });
 
