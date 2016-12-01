@@ -13,7 +13,7 @@
                             <input type="text" class="form-control" name="email" placeholder="Email">
                         </div>
                         <span class="help-block"></span>
-
+                        <a href="index.php" class="btn btn-lg btn-default btnwidth btn-fixpos">Terug</a>
                         <button class="btn btn-lg btn-default btnwidth" name="register" type="submit">Registreren</button>
                     </form>
             	</div>
