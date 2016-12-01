@@ -17,6 +17,42 @@
     </div>
     <div id="geheel">
         <div class="keuzedeel" id="test">
+            <button>Naam keuzedeel</button>
+            Informatie</br>
+            Leraar</br>
+            Plaatsen over</br>
+        </div>
+        <div class="keuzedeel">
+            <button>Get information</button>
+        </div>
+        <div class="keuzedeel">
+            <button>Get information</button>
+        </div>
+        <div class="keuzedeel">
+            <button>Get information</button>
+        </div>
+        <div class="keuzedeel">
+            <button>Get information</button>
+        </div>
+        <div class="keuzedeel">
+            <button>Get information</button>
+        </div>
+        <div class="keuzedeel">
+            <button>Get information</button>
+        </div>
+        <div class="keuzedeel">
+            <button>Get information</button>
+        </div>
+        <div class="keuzedeel">
+            <button>Get information</button>
+        </div>
+        <div class="keuzedeel">
+            <button>Get information</button>
+        </div>
+        <div class="keuzedeel">
+            <button>Get information</button>
+        </div>
+        <div class="keuzedeel">
             <button>Get information</button>
         </div>
         <div class="keuzedeel">
@@ -52,6 +88,8 @@
         <div class="keuzedeel">
             <button>Get information</button>
         </div>
-
+        <div class="keuzedeel">
+            <button>Get information</button>
+        </div>
 </body>
 </html>

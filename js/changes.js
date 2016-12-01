@@ -7,14 +7,32 @@
 //    });
 //});
 
-var enlarged = false;
 $(document).ready(function() {
-    $('.keuzedeel').click(function () {
-        $(this).stop(true, false).animate({
-            width: enlarged ? 200 : 1000,
-            height: enlarged ? 200 : 600,
-        });
+    $.each($('.keuzedeel'), function(key, value) {
+        $(value).addClass('normal');
+    });
 
-        enlarged = !enlarged;
+    $('.normal').click(function () {
+        if ($(this).hasClass('enlarged')) {
+            $(this).animate({
+                width:  200,
+                height: 200
+            });
+
+            $(this).removeClass('enlarged');
+            $(this).addClass('normal');
+
+            $('.normal').show('fast');
+        } else {
+            $(this).animate({
+                width:  '98%',
+                height: '80%'
+            });
+
+            $(this).removeClass('normal');
+            $(this).addClass('enlarged');
+
+            $('.normal').hide('fast');
+        }
     });
 });
