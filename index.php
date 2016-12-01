@@ -19,9 +19,9 @@
                             <input  type="password" class="form-control" name="password" placeholder="Password">
                         </div>
                         <span class="help-block"></span>
-
-                        <button class="btn btn-lg btn-default btnwidth" name="submit" type="submit">Login</button>
                         <a href="register.php" class="btn btn-lg btn-default btnwidth btn-fixpos">Registreren</a>
+                        <button class="btn btn-lg btn-default btnwidth" name="submit" type="submit">Login</button>
+                        
                     </form>
             	</div>
         </div>
