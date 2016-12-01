@@ -7,7 +7,7 @@
     <body>
         <div class="login">
                 <div class="heading">
-                    <form method=="post" role="form" class="login" action="createaccount.php" autocomplete="off" method="POST">
+                    <form method="post" role="form" class="register" action="createaccount.php" autocomplete="off">
                         <div class="input-group input-group-lg">
                           <span class="input-group-addon"><i class="fa fa-user"></i></span>
                             <input type="text" class="form-control" name="email" placeholder="Email">
