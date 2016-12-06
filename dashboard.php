@@ -39,32 +39,36 @@
             Informatie</br>
             Leraar</br>
             Plaatsen over</br>
+            <button class="informatie">Informatie</button><button class="inschrijven">Inschrijven</button>
         </div>
         <div class="keuzedeel" id="test">
             <button>Naam keuzedeel</button>
             Informatie</br>
             Leraar</br>
             Plaatsen over</br>
+            <button class="informatie">Informatie</button><button class="inschrijven">Inschrijven</button>
         </div>
         <div class="keuzedeel" id="test">
             <button>Naam keuzedeel</button>
             Informatie</br>
             Leraar</br>
             Plaatsen over</br>
+            <button class="informatie">Informatie</button><button class="inschrijven">Inschrijven</button>
         </div>
         <div class="keuzedeel" id="test">
             <button>Naam keuzedeel</button>
             Informatie</br>
             Leraar</br>
             Plaatsen over</br>
+            <button class="informatie">Informatie</button><button class="inschrijven">Inschrijven</button>
         </div>
         <div class="keuzedeel" id="test">
             <button>Naam keuzedeel</button>
             Informatie</br>
             Leraar</br>
             Plaatsen over</br>
+            <button class="informatie">Informatie</button><button class="inschrijven">Inschrijven</button>
         </div>
-
 
 
 

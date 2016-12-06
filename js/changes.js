@@ -16,7 +16,7 @@ $(document).ready(function() {
         if ($(this).hasClass('enlarged')) {
             $('.keuzedeel').animate({
                 width:  350,
-                height: 300,
+                height: 300
             });
 
             $(this).removeClass('enlarged');
