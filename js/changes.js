@@ -15,8 +15,8 @@ $(document).ready(function() {
     $('.normal').click(function () {
         if ($(this).hasClass('enlarged')) {
             $(this).animate({
-                width:  200,
-                height: 200
+                width:  350,
+                height: 300
             });
 
             $(this).removeClass('enlarged');

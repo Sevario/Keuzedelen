@@ -15,7 +15,7 @@
 </head>
 <body>
     <div id="profile">
-        <b id="welcome">Welcome : <i><?php echo $login_session; ?></i></b>
+        <b id="welcome">Welcome : <i><?php echo $login_session,  " " . $opleiding_naam; ?></i></b>
     </div>
     <div id="menu">
         <ul>
@@ -42,39 +42,17 @@
         <div class="keuzedeel">
             <button>Get information</button>
         </div>
+
         <div class="keuzedeel">
             <button>Get information</button>
         </div>
+
         <div class="keuzedeel">
             <button>Get information</button>
         </div>
-        <div class="keuzedeel">
-            <button>Get information</button>
-        </div>
-        <div class="keuzedeel">
-            <button>Get information</button>
-        </div>
-        <div class="keuzedeel">
-            <button>Get information</button>
-        </div>
-        <div class="keuzedeel">
-            <button>Get information</button>
-        </div>
-        <div class="keuzedeel">
-            <button>Get information</button>
-        </div>
-        <div class="keuzedeel">
-            <button>Get information</button>
-        </div>
-        <div class="keuzedeel">
-            <button>Get information</button>
-        </div>
-        <div class="keuzedeel">
-            <button>Get information</button>
-        </div>
-        <div class="keuzedeel">
-            <button>Get information</button>
-        </div>
+
+
+
 
 </body>
 </html>
