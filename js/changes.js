@@ -26,7 +26,7 @@ $(document).ready(function() {
         } else {
             $(this).animate({
                 width:  '84%',
-                height: '90vh'
+                height: '93vh'
             });
 
             $(this).removeClass('normal');
