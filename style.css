@@ -73,8 +73,15 @@ body {
         float: right;
     }
 
-button.inschrijven {
-    width: 50%;
+.informatie {
+    margin-top: 45%;
+    margin-right: 2%;
+    width: 48%;
+}
+.inschrijven {
+    margin-top: 45%;
+    margin-left: 2%;
+    width: 48%;
 }
 
 ul {

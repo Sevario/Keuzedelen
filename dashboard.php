@@ -32,7 +32,7 @@
             Informatie</br>
             Leraar</br>
             Plaatsen over</br>
-            <button class="inscrhijven">Inschrijven</button>
+            <button class="informatie">Informatie</button><button class="inschrijven">Inschrijven</button>
         </div>
         <div class="keuzedeel" id="test">
             <button>Naam keuzedeel</button>
