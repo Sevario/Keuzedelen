@@ -46,6 +46,7 @@
             echo' <div class="keuzedeel" id="test">
             <button>' . $keuzedelen_info['Name'] . '</button>
                 <h2>Klik hier voor informatie</h2>
+                <h1>' . $keuzedelen_info['Name'] . '</h1>
                 </br><button class="inschrijven">Inschrijven</button>
              </div>';
         }
