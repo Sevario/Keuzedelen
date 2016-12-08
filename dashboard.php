@@ -16,10 +16,6 @@
 <body>
     <div id="profile">
         <b id="welcome">Welcome : <i><?php echo $login_session,  " " . $opleiding_naam; ?></i></b>
-        <pre><?php
-        print_r($keuzedelen);
-        ?>
-</pre>
     </div>
     <div id="menu">
         <ul>
@@ -47,12 +43,10 @@
 
                     $keuzedelen_info =$row4;
                     
-                    print_r ($keuzedelen_info);
             echo' <div class="keuzedeel" id="test">
             <button>' . $keuzedelen_info['Name'] . '</button>
-            Informatie</br>
-            Leraar</br>
-            Plaatsen over</br><button class="inschrijven">Inschrijven</button>
+                <h2>Klik hier voor informatie</h2>
+                </br><button class="inschrijven">Inschrijven</button>
              </div>';
         }
             
