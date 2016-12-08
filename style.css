@@ -57,7 +57,7 @@ body {
     button {
       background: grey;
       border: none;
-      font-size: 1.6em;
+      font-size: 1em;
       font-weight: 300;
       padding: 5px 0;
       width: 100%;
@@ -76,7 +76,7 @@ body {
 button.inschrijven {
     width: 100%;
     border-radius: 0px 0px 5px 5px;
-    top: 87px;
+    top: 89px;
     bottom: 0;
     position: relative;
 }
