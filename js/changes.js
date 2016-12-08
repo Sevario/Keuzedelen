@@ -8,13 +8,13 @@
 //});
 
 $(document).ready(function() {
-    $.each($('button'), function(key, value) {
+    $.each($('.keuzedeel'), function(key, value) {
         $(value).addClass('normal');
     });
 
     $('.normal').click(function () {
         if ($(this).hasClass('enlarged')) {
-            $('.keuzedeel').animate({
+            $(this).animate({
                 width:  350,
                 height: 300
             });
@@ -24,7 +24,7 @@ $(document).ready(function() {
 
             $('.normal').show('fast');
         } else {
-            $('.keuzedeel').animate({
+            $(this).animate({
                 width:  '84%',
                 height: '93vh'
             });
