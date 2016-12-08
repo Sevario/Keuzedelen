@@ -11,7 +11,12 @@ $(document).ready(function() {
     $.each($('.keuzedeel'), function(key, value) {
         $(value).addClass('normal');
     });
-
+    
+    //hide info before clicking
+    $('h1').hide();
+    $('p').hide();
+    
+    //
     $('.normal').click(function () {
         if ($(this).hasClass('enlarged')) {
             $(this).animate({
@@ -26,6 +31,9 @@ $(document).ready(function() {
             $('button').show('fast');
             $('h2').show('fast');
             $('.keuzedeel').css("border", '');
+            $('.keuzedeel').css("padding", '');
+            $('h1').hide('fast');
+            $('p').hide('fast');
         } else {
             $(this).animate({
                 width:  '84%',
@@ -38,6 +46,9 @@ $(document).ready(function() {
             $('button').hide('fast');
             $('h2').hide('fast');
             $('.keuzedeel').css("border", 'solid','white', '1');
+            $('.keuzedeel').css("padding", '2em');
+            $('h1').show('fast');
+            $('p').show('fast');
         }
     });
 });
