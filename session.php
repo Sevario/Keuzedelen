@@ -43,6 +43,7 @@
     
     $keuzedelen = $row3;
     
+    
     if(!isset($login_session))
         {
             $conn = null; 

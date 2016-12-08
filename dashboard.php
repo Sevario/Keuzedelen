@@ -43,15 +43,31 @@
 
                     $keuzedelen_info =$row4;
                     
-            echo' <div class="keuzedeel" id="test">
-            <button>' . $keuzedelen_info['Name'] . '</button>
+                    $docent = $keuzedelen_info['Docent_ID'];
+                    
+                    $result5 = $conn->prepare("SELECT * FROM Docent WHERE ID = $docent"); 
+                                        
+                    $result5->execute(array(':keuzedeel' => $keuzedeel["Keuzedeel_ID"]));
+
+                    $row5 = $result5->fetch(PDO::FETCH_ASSOC);
+                    
+                    $docent_info = $row5;
+                    
+//                    $_SESSION ["keuzedelenid"] = $keuzedelen_info['ID'];
+                    
+                echo' <div class="keuzedeel" id="test">
+                <button>' . $keuzedelen_info['Name'] . '</button>
                 <h2>Klik hier voor informatie</h2>
                 <h1>' . $keuzedelen_info['Name'] . '</h1>
                 <p>Minimale studenten nodig om een klas te vormen: ' . $keuzedelen_info['MinStudents'] . '</p>
                 <p>Maximale studenten per klas: ' . $keuzedelen_info['MaxStudents'] . '</p>
                 <p>Informatie over het geselecteerde keuzedeel:<br> ' . $keuzedelen_info['Information'] . '</p>
-                </br><button class="inschrijven">Inschrijven</button>
-             </div>';
+                <p>Keuzedeeel code: ' . $keuzedelen_info['Code'] . '</p>
+                <p>Informatie over docent:<br> Afkorting:' . $docent_info['abbreviation'] . '<br>E-mail:' . $docent_info['email'] . '</p>
+                <a href="inschrijven.php?kd=' . $keuzedelen_info['ID'] . '" class="btn btn-lg btn-default btnwidth inschrijven">Inschrijven</a>
+                </div>';
+                
+
         }
             
         ?>

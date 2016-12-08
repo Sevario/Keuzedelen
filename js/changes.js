@@ -15,7 +15,7 @@ $(document).ready(function() {
     //hide info before clicking
     $('h1').hide();
     $('p').hide();
-    
+    $('.inschrijven').hide();
     //
     $('.normal').click(function () {
         if ($(this).hasClass('enlarged')) {
@@ -34,6 +34,7 @@ $(document).ready(function() {
             $('.keuzedeel').css("padding", '');
             $('h1').hide('fast');
             $('p').hide('fast');
+            $('.inschrijven').hide('fast');
         } else {
             $(this).animate({
                 width:  '84%',
@@ -49,6 +50,7 @@ $(document).ready(function() {
             $('.keuzedeel').css("padding", '2em');
             $('h1').show('fast');
             $('p').show('fast');
+            $('.inschrijven').show('fast');
         }
     });
 });
