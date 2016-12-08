@@ -9,31 +9,39 @@
     session_start();
     $user_check=$_SESSION['login_user'];
 
-    $result = $conn->prepare("SELECT * FROM User WHERE username = :user_check");
+    $result0 = $conn->prepare("SELECT * FROM User WHERE username = :user_check");
     
-    $result->execute(array(":user_check"=>$user_check));
-    $row = $result->fetch(PDO::FETCH_ASSOC);
+    $result0->execute(array(":user_check"=>$user_check));
+    $row0 = $result0->fetch(PDO::FETCH_ASSOC);
 
-    $login_session =$row['username'];
-    $user_id =$row['ID'];
-    $user_passwords = $row['password'];
-    $user_permissions = $row['permission'];
+    $login_session =$row0['username'];
+    $user_id =$row0['ID'];
+    $user_passwords = $row0['password'];
+    $user_permissions = $row0['permission'];
 
-    $result = $conn->prepare("SELECT Opleiding_ID FROM Student WHERE ID = $user_id");
+    $result1 = $conn->prepare("SELECT Opleiding_ID FROM Student WHERE ID = $user_id");
 
-    $result->execute();
+    $result1->execute();
 
-    $row = $result->fetch(PDO::FETCH_ASSOC);
+    $row1 = $result1->fetch(PDO::FETCH_ASSOC);
 
-    $opleiding_id =$row['Opleiding_ID'];
+    $opleiding_id =$row1['Opleiding_ID'];
 
-    $result = $conn->prepare("SELECT Naam FROM Opleiding WHERE ID = $opleiding_id");
+    $result2 = $conn->prepare("SELECT Naam FROM Opleiding WHERE ID = $opleiding_id");
 
-    $result->execute();
+    $result2->execute();
 
-    $row = $result->fetch(PDO::FETCH_ASSOC);
+    $row2 = $result2->fetch(PDO::FETCH_ASSOC);
 
-    $opleiding_naam =$row['Naam'];
+    $opleiding_naam =$row2['Naam'];
+    
+    $result3 = $conn->prepare("SELECT Keuzedeel_ID FROM Keuzedeel_Opleiding WHERE `Opleiding_ID` = $opleiding_id LIMIT 0 , 30");
+    
+    $result3->execute();
+
+    $row3 = $result3->fetchAll(PDO::FETCH_ASSOC);
+    
+    $keuzedelen = $row3;
     
     if(!isset($login_session))
         {

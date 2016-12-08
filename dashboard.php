@@ -16,6 +16,10 @@
 <body>
     <div id="profile">
         <b id="welcome">Welcome : <i><?php echo $login_session,  " " . $opleiding_naam; ?></i></b>
+        <pre><?php
+        print_r($keuzedelen);
+        ?>
+</pre>
     </div>
     <div id="menu">
         <ul>
@@ -27,42 +31,27 @@
 
     </div>
     <div id="geheel">
-        <div class="keuzedeel" id="test">
-            <button>Naam keuzedeel</button>
+        <?php
+            foreach ($keuzedelen as $keuzedeel){
+                    $result4 = $conn->prepare("SELECT * FROM Keuzedeel WHERE ID = :keuzedeel"); 
+    
+                    $result4->execute(array(':keuzedeel' => $keuzedeel["Keuzedeel_ID"]));
+
+                    $row4 = $result4->fetch(PDO::FETCH_ASSOC);
+
+                    $keuzedelen_info =$row4;
+                    
+                    print_r ($keuzedelen_info);
+            echo' <div class="keuzedeel" id="test">
+            <button>' . $keuzedelen_info['Name'] . '</button>
             Informatie</br>
             Leraar</br>
             Plaatsen over</br><button class="inschrijven">Inschrijven</button>
-        </div>
-        <div class="keuzedeel" id="test">
-            <button>Naam keuzedeel</button>
-            Informatie</br>
-            Leraar</br>
-            Plaatsen over</br><button class="inschrijven">Inschrijven</button>
-        </div>
-        <div class="keuzedeel" id="test">
-            <button>Naam keuzedeel</button>
-            Informatie</br>
-            Leraar</br>
-            Plaatsen over</br><button class="inschrijven">Inschrijven</button>
-        </div>
-        <div class="keuzedeel" id="test">
-            <button>Naam keuzedeel</button>
-            Informatie</br>
-            Leraar</br>
-            Plaatsen over</br><button class="inschrijven">Inschrijven</button>
-        </div>
-        <div class="keuzedeel" id="test">
-            <button>Naam keuzedeel</button>
-            Informatie</br>
-            Leraar</br>
-            Plaatsen over</br><button class="inschrijven">Inschrijven</button>
-        </div>
-        <div class="keuzedeel" id="test">
-            <button>Naam keuzedeel</button>
-            Informatie</br>
-            Leraar</br>
-            Plaatsen over</br><button class="inschrijven">Inschrijven</button>
-        </div>
+             </div>';
+        }
+            
+        ?>
+       
 
 
 
