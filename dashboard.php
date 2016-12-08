@@ -27,6 +27,12 @@
             <li><a>Account</a></li>
             <li><a>Beheer(Admin only)</a></li>
             <li><a href="logout.php">Log Out</a></li>
+            
+            <div id="myProgress">
+                <div id="myBar">
+                    <div id="label">1/3</div>
+                </div>
+            </div>
         </ul>
 
     </div>
