@@ -14,7 +14,9 @@
         <title>Your Home Page</title>
 </head>
 <body>
+
     <div id="profile">
+
         <b id="welcome">Welcome : <i><?php echo $login_session,  " " . $opleiding_naam; ?></i></b>
     </div>
     <div id="menu">
@@ -23,45 +25,34 @@
             <li><a>Account</a></li>
             <li><a>Beheer(Admin only)</a></li>
             <li><a href="logout.php">Log Out</a></li>
+            <div id="myProgress">
+                <div id="myBar">
+                    <div id="label">1/3</div>
+                </div>
+            </div>
         </ul>
+
 
     </div>
     <div id="geheel">
         <div class="keuzedeel" id="test">
-            <button>Naam keuzedeel</button>
-            Informatie</br>
-            Leraar</br>
-            Plaatsen over</br><button class="inschrijven">Inschrijven</button>
+
+            <button>Naam keuzedeel</button><h2>Klik hier voor informatie</h2><button class="inschrijven">Inschrijven</button>
         </div>
         <div class="keuzedeel" id="test">
-            <button>Naam keuzedeel</button>
-            Informatie</br>
-            Leraar</br>
-            Plaatsen over</br><button class="inschrijven">Inschrijven</button>
+            <button>Naam keuzedeel</button><h2>Klik hier voor informatie</h2><button class="inschrijven">Inschrijven</button>
         </div>
         <div class="keuzedeel" id="test">
-            <button>Naam keuzedeel</button>
-            Informatie</br>
-            Leraar</br>
-            Plaatsen over</br><button class="inschrijven">Inschrijven</button>
+            <button>Naam keuzedeel</button><h2>Klik hier voor informatie</h2><button class="inschrijven">Inschrijven</button>
         </div>
         <div class="keuzedeel" id="test">
-            <button>Naam keuzedeel</button>
-            Informatie</br>
-            Leraar</br>
-            Plaatsen over</br><button class="inschrijven">Inschrijven</button>
+            <button>Naam keuzedeel</button><h2>Klik hier voor informatie</h2><button class="inschrijven">Inschrijven</button>
         </div>
         <div class="keuzedeel" id="test">
-            <button>Naam keuzedeel</button>
-            Informatie</br>
-            Leraar</br>
-            Plaatsen over</br><button class="inschrijven">Inschrijven</button>
+            <button>Naam keuzedeel</button><h2>Klik hier voor informatie</h2><button class="inschrijven">Inschrijven</button>
         </div>
         <div class="keuzedeel" id="test">
-            <button>Naam keuzedeel</button>
-            Informatie</br>
-            Leraar</br>
-            Plaatsen over</br><button class="inschrijven">Inschrijven</button>
+            <button>Naam keuzedeel</button><h2>Klik hier voor informatie</h2><button class="inschrijven">Inschrijven</button>
         </div>
 
 
