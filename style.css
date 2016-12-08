@@ -7,7 +7,7 @@
     margin: 10px;
     width: 350px;
     height: 300px;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.6);
     /*border: 1px solid black;*/
     border-radius: 5px 5px 5px 5px;
     float: left;
@@ -73,17 +73,12 @@ body {
         float: right;
     }
 
-.informatie {
-    margin-top: 45%;
-    margin-right: 2%;
-    width: 48%;
-    border-radius: 0px 5px 0px 5px;
-}
-.inschrijven {
-    margin-top: 45%;
-    margin-left: 2%;
-    width: 48%;
-    border-radius: 5px 0px 5px 0px;
+button.inschrijven {
+    width: 100%;
+    border-radius: 0px 0px 5px 5px;
+    top: 87px;
+    bottom: 0;
+    position: relative;
 }
 
 ul {
@@ -118,4 +113,30 @@ li a.selected:link, a.selected:visited{
 #menu {
     float: left;
     margin: 10px;
+}
+h2 {
+    color: white;
+    opacity: 0.3;
+    margin-top: 25%;
+    text-align: center;
+}
+#myProgress {
+    position: relative;
+    width: 90%;
+    height: 30px;
+    background-color: grey;
+    border-radius: 5px 5px 5px 5px;
+    margin: auto;
+}
+#myBar {
+    position: absolute;
+    width: 33%;
+    height: 100%;
+    background-color: green;
+    border-radius: 5px 5px 5px 5px;
+}
+#label {
+    text-align: center;
+    line-height: 30px;
+    color: white;
 }

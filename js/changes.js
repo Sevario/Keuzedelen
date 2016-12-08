@@ -23,16 +23,21 @@ $(document).ready(function() {
             $(this).addClass('normal');
 
             $('.normal').show('fast');
+            $('button').show('fast');
+            $('h2').show('fast');
+            $('.keuzedeel').css("border", '');
         } else {
             $(this).animate({
                 width:  '84%',
                 height: '93vh'
             });
-
             $(this).removeClass('normal');
             $(this).addClass('enlarged');
 
             $('.normal').hide('fast');
+            $('button').hide('fast');
+            $('h2').hide('fast');
+            $('.keuzedeel').css("border", 'solid','white', '1');
         }
     });
 });
