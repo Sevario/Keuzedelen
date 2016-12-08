@@ -35,13 +35,25 @@
 
     $opleiding_naam =$row2['Naam'];
     
-    $result3 = $conn->prepare("SELECT Keuzedeel_ID FROM Keuzedeel_Opleiding WHERE `Opleiding_ID` = $opleiding_id LIMIT 0 , 30");
+    $result3 = $conn->prepare("SELECT Keuzedeel_ID FROM Keuzedeel_Opleiding WHERE `Opleiding_ID` = $opleiding_id");
     
     $result3->execute();
 
     $row3 = $result3->fetchAll(PDO::FETCH_ASSOC);
     
     $keuzedelen = $row3;
+    
+    if ($user_permissions == "1") {
+    
+    $result6 = $conn->prepare("SELECT * FROM Student WHERE `User_ID` = $user_id");
+    
+    $result6->execute();
+
+    $row6 = $result6->fetch(PDO::FETCH_ASSOC);
+    
+    $student_info = $row6;
+        
+    }
     
     
     if(!isset($login_session))
