@@ -15,7 +15,7 @@
 </head>
 <body>
     <div id="profile">
-        <b id="welcome">Welcome : <i><?php echo $login_session,  " " . $opleiding_naam; ?></i></b>
+        <b id="welcome">Welcome : <i><?php echo $login_session?></i></b> <?php  if ($user_permissions == "1") {echo $opleiding_naam;} ?>
     </div>
     <div id="menu">
         <ul>
@@ -38,6 +38,7 @@
     </div>
     <div id="geheel">
         <?php
+        if ($user_permissions == "1") {
             foreach ($keuzedelen as $keuzedeel){
                     $result4 = $conn->prepare("SELECT * FROM Keuzedeel WHERE ID = :keuzedeel"); 
     
@@ -46,7 +47,7 @@
                     $row4 = $result4->fetch(PDO::FETCH_ASSOC);
 
                     $keuzedelen_info =$row4;
-                    
+                    }
                     $docent = $keuzedelen_info['Docent_ID'];
                     
                     $result5 = $conn->prepare("SELECT * FROM Docent WHERE ID = $docent"); 
