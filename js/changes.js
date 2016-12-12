@@ -38,7 +38,7 @@ $(document).ready(function() {
         } else {
             $(this).animate({
                 width:  '84%',
-                height: '93vh'
+                height: '92vh'
             });
             $(this).removeClass('normal');
             $(this).addClass('enlarged');

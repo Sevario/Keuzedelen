@@ -40,14 +40,14 @@
         <?php
         if ($user_permissions == "1") {
             foreach ($keuzedelen as $keuzedeel){
-                    $result4 = $conn->prepare("SELECT * FROM Keuzedeel WHERE ID = :keuzedeel"); 
-    
-                    $result4->execute(array(':keuzedeel' => $keuzedeel["Keuzedeel_ID"]));
+                        $result4 = $conn->prepare("SELECT * FROM Keuzedeel WHERE ID = :keuzedeel"); 
 
-                    $row4 = $result4->fetch(PDO::FETCH_ASSOC);
+                        $result4->execute(array(':keuzedeel' => $keuzedeel["Keuzedeel_ID"]));
 
-                    $keuzedelen_info =$row4;
-                    }
+                        $row4 = $result4->fetch(PDO::FETCH_ASSOC);
+
+                        $keuzedelen_info =$row4;
+                    
                     $docent = $keuzedelen_info['Docent_ID'];
                     
                     $result5 = $conn->prepare("SELECT * FROM Docent WHERE ID = $docent"); 
@@ -58,6 +58,7 @@
                     
                     $docent_info = $row5;
                     
+            
 //                    $_SESSION ["keuzedelenid"] = $keuzedelen_info['ID'];
                     
                 echo' <div class="keuzedeel" id="test">
@@ -71,7 +72,7 @@
                 <p>Informatie over docent:<br> Afkorting:' . $docent_info['abbreviation'] . '<br>E-mail:' . $docent_info['email'] . '</p>
                 <a href="inschrijven.php?kd=' . $keuzedelen_info['ID'] . '" class="btn btn-lg btn-default btnwidth inschrijven">Inschrijven</a>
                 </div>';
-                
+            }
 
         }
             
