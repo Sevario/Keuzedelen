@@ -21,12 +21,10 @@
 html { 
   background: url(https://dl.dropboxusercontent.com/u/159328383/background.jpg) no-repeat center center fixed; 
   background-size: cover;
-  height: 100%;
 }
 
 body {
   background: transparent;
-  height: 100%;
 }
 
 .login {
@@ -149,12 +147,3 @@ h2 {
     color: white;
 }
 
-.wrapper {
-	min-height: 100%;
-	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
-	height: 100%;
-	margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
-}
-.footer, .push {
-	height: 155px; /* .push must be the same height as .footer */
-}

@@ -30,9 +30,7 @@
     
     $student_info = $row6;
     
-        
-    }
-    
+     
     $result1 = $conn->prepare("SELECT Opleiding_ID FROM Student WHERE ID = $student_info[ID]");
 
     $result1->execute();
@@ -40,7 +38,7 @@
     $row1 = $result1->fetch(PDO::FETCH_ASSOC);
 
     $opleiding_id =$row1['Opleiding_ID'];
-
+        
     $result2 = $conn->prepare("SELECT Naam FROM Opleiding WHERE ID = $opleiding_id");
 
     $result2->execute();
@@ -56,6 +54,10 @@
     $row3 = $result3->fetchAll(PDO::FETCH_ASSOC);
     
     $keuzedelen = $row3;
+    }
+   
+
+    
     
 
     
