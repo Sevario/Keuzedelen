@@ -82,7 +82,7 @@ ul {
     background-color: rgba(0,0,0,0.8);
     /*border: 1px solid black;*/
     border-radius: 5px 5px 5px 5px;
-    height: 60em;
+    height: 87vh;
 }
 
 #profile {
@@ -147,7 +147,8 @@ h2 {
     color: white;
 }
 footer {
-position:absolute;
+    float: left;
     width:100%;
     bottom:5px;
+    text-align: center;
 }
