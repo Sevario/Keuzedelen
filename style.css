@@ -21,10 +21,12 @@
 html { 
   background: url(https://dl.dropboxusercontent.com/u/159328383/background.jpg) no-repeat center center fixed; 
   background-size: cover;
+  height: 100%;
 }
 
 body {
   background: transparent;
+  height: 100%;
 }
 
 .login {
@@ -85,6 +87,19 @@ ul {
     height: 93vh;
 }
 
+#profile {
+    background-color: rgba(0,0,0,0.6);
+    width: 99%;
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
 li a {
     display: block;
     color: white;
@@ -132,4 +147,14 @@ h2 {
     text-align: center;
     line-height: 30px;
     color: white;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+	height: 100%;
+	margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+	height: 155px; /* .push must be the same height as .footer */
 }

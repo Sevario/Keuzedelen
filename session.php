@@ -19,7 +19,21 @@
     $user_passwords = $row0['password'];
     $user_permissions = $row0['permission'];
 
-    $result1 = $conn->prepare("SELECT Opleiding_ID FROM Student WHERE ID = $user_id");
+    
+    if ($user_permissions == "1") {
+    
+    $result6 = $conn->prepare("SELECT * FROM Student WHERE `User_ID` = $user_id");
+    
+    $result6->execute();
+
+    $row6 = $result6->fetch(PDO::FETCH_ASSOC);
+    
+    $student_info = $row6;
+    
+        
+    }
+    
+    $result1 = $conn->prepare("SELECT Opleiding_ID FROM Student WHERE ID = $student_info[ID]");
 
     $result1->execute();
 
@@ -43,17 +57,7 @@
     
     $keuzedelen = $row3;
     
-    if ($user_permissions == "1") {
-    
-    $result6 = $conn->prepare("SELECT * FROM Student WHERE `User_ID` = $user_id");
-    
-    $result6->execute();
 
-    $row6 = $result6->fetch(PDO::FETCH_ASSOC);
-    
-    $student_info = $row6;
-        
-    }
     
     
     if(!isset($login_session))

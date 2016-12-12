@@ -80,4 +80,7 @@
 
 
 </body>
+<footer id="profile">
+    &copy; ROCA12 Ede
+</footer>
 </html>
