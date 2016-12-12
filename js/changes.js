@@ -37,8 +37,8 @@ $(document).ready(function() {
             $('.inschrijven').hide('fast');
         } else {
             $(this).animate({
-                width:  '88%',
-                height: '88vh'
+                width:  '84%',
+                height: '87vh'
             });
             $(this).removeClass('normal');
             $(this).addClass('enlarged');
