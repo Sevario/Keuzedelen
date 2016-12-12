@@ -82,7 +82,7 @@ ul {
     background-color: rgba(0,0,0,0.8);
     /*border: 1px solid black;*/
     border-radius: 5px 5px 5px 5px;
-    height: 93vh;
+    height: 60em;
 }
 
 #profile {
@@ -93,7 +93,7 @@ ul {
     padding: 8px 16px;
     text-decoration: none;
     border-radius: 5px 5px 5px 5px;
-    margin-left: 5px;
+    margin-left: 10px;
     margin-right: 5px;
     margin-top: 10px;
 }
@@ -146,4 +146,8 @@ h2 {
     line-height: 30px;
     color: white;
 }
-
+footer {
+position:absolute;
+    width:100%;
+    bottom:5px;
+}
