@@ -152,7 +152,10 @@ footer {
     bottom:5px;
     text-align: center;
 }
-
+#inschrijffout {
+    height: 200px;
+    width: 200px;
+}
 .keuzedelen_beheer {    
     margin: 10px;
     width: 350px;

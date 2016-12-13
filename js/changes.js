@@ -1,11 +1,3 @@
-//$(document).ready(function(){
-//    $("#keuzedeel").click(function(){
-//        $(this).animate({
-//            height: '80vh',
-//            width: '90%'
-//        });
-//    });
-//});
 
 $(document).ready(function() {
     $.each($('.keuzedeel'), function(key, value) {
