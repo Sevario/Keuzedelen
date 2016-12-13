@@ -11,7 +11,7 @@
         <link rel="stylesheet" type="text/css" href="/keuzedelen/style.css" media="screen" />
         <script src="js/jquery.js"></script>
         <script src="js/changes.js"></script>
-        <title>Your Home Page</title>
+        <title>Dashboard</title>
 </head>
 <body>
     <div id="profile">
