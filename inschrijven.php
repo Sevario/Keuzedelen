@@ -12,11 +12,11 @@ if (isset( $_GET["kd"]) && !empty($_GET["kd"]))
     $row01 = $result01->fetch(PDO::FETCH_ASSOC);
      
     if ($row01 == !$IDkeuze ) {
-        $insert1 = $conn->prepare("INSERT INTO Keuzedeel_Student (`Keuzedeel_ID`, `Student_ID`, `Ingeschreven`) VALUES ($IDkeuze, $student_info[User_ID], 'Y');");
+        $insert1 = $conn->prepare("INSERT INTO Keuzedeel_Student (`Keuzedeel_ID`, `Student_ID`, `Ingeschreven`) VALUES ($IDkeuze, $student_info[ID], 'Y');");
 
         $insert1->execute();
         $result4 = $conn->prepare("SELECT * FROM Keuzedeel WHERE ID = $IDkeuze"); 
-        echo "<h1>Je bent succesvol ingeschreven voor het Keuzedeel:" . $IDkeuze . "</h1>";
+        echo "<h1>Je bent succesvol ingeschreven voor het Keuzedeel: " . $IDkeuze . "</h1>";
     
          }
         else {

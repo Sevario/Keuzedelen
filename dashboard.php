@@ -23,11 +23,11 @@
             <li><a>Account</a></li>
             <?php
             if ($user_permissions == 3) {
-            echo "<li><a>Beheer(Admin only)</a></li>";
+            echo "<li><a href='beheer.php'>Beheer(Admin only)</a></li>";
             }
             ?>
             <li><a href="logout.php">Log Out</a></li>
-            
+            <br>
             <div id="myProgress">
                 <div id="myBar">
                     <div id="label">1/3</div>
