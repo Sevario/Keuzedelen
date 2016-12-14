@@ -41,7 +41,7 @@ if ($user_permissions != 1) { //if not user, redirect to login page.
     <div id="changepw">
 
 
-        <form method="POST" action="password_change.php">
+        <form class="changepw" method="POST" action="password_change.php">
             <text>Change password</text>
             <table>
                 <tr>

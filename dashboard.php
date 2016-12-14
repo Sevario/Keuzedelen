@@ -35,7 +35,7 @@
                     <div id="label">1/3</div>
                 </div>
             </div>
-            <div id="gekozen_delen">Gekozen delen:</div>
+            <div id="gekozen_delen">Gekozen delen</div>
         </ul>
 
     </div>
