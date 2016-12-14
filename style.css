@@ -17,6 +17,9 @@
     width: 15%;
 }
 
+.beheerding {
+    margin-top: 0; 
+}
 
 html { 
   background: url(https://dl.dropboxusercontent.com/u/159328383/background.jpg) no-repeat center center fixed; 

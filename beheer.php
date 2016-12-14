@@ -41,7 +41,7 @@
     </div>
     <div id="geheel">
         <div id="beheer_keuzedelen">
-            <h2>Keuzedelen</h2>
+           <h2 class="beheerding">Keuzedelen</h2>
             
         </div>
         
