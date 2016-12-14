@@ -20,12 +20,14 @@
     <div id="menu">
         <ul>
             <li><a href="dashboard.php" class="selected">Home</a></li>
-            <li><a>Account</a></li>
             <?php
             if ($user_permissions == 3) {
             echo "<li><a href='beheer.php'>Beheer(Admin only)</a></li>";
             }
-            ?>
+            if ($user_permissions == 1) {
+                echo "<li><a href='account.php'>Account</a></li>";
+}
+?>
             <li><a href="logout.php">Log Out</a></li>
             <br>
             <div id="myProgress">
@@ -33,6 +35,7 @@
                     <div id="label">1/3</div>
                 </div>
             </div>
+            <div id="gekozen_delen">Gekozen delen:</div>
         </ul>
 
     </div>

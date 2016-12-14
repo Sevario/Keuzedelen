@@ -122,7 +122,7 @@ li a.selected:link, a.selected:visited{
 }
 h2 {
     color: white;
-    opacity: 0.3;
+    opacity: 0.1;
     margin-top: 30%;
     text-align: center;
 }
@@ -165,4 +165,31 @@ footer {
     border-radius: 5px 5px 5px 5px;
     float: left;
     color: white;
+}
+#gekozen_delen {
+    color: white;
+}
+#changepw {
+    float: left;
+    text-align: center;
+}
+text {
+    font-size: 24px;
+}
+form {
+    border: solid transparent 1px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 10px;
+    padding: 20px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    opacity: 0.8;
+    text-align: center;
+}
+input {
+    margin: 5px;
+    color: black;
+}
+td {
+    text-align: left;
 }

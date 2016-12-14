@@ -27,8 +27,8 @@ if (isset( $_GET["kd"]) && !empty($_GET["kd"]))
     
          }
         else {
-              echo "<div id='inschrijffout' style=
-                                            'background-color: black;
+              echo "<div id='inschrijffout' style='
+                                            background-color: black;
                                             width: 350px;
                                             height: auto;
                                             padding: 10px;
@@ -36,7 +36,7 @@ if (isset( $_GET["kd"]) && !empty($_GET["kd"]))
                                             border-radius: 2px 2px 2px 2px;
                                             margin-left: 35%;
                                             margin-right: 40%;
-                                            margin-top: 10%;'><h5 style='color: white;'>Het is niet mogelijk om je twee keer voor hetzelfde keuzedeel op te geven,
+                                            margin-top: 10%;'><h5 style='color: white;'>Het is niet mogelijk om je twee keer voor hetzelfde keuzedeel op te geven.
                     Je wordt teruggezonden naar de hoofdpagina.</h5></div>"; header("refresh:2;url=dashboard.php");
             }
     } 
