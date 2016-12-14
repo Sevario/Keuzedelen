@@ -7,7 +7,7 @@
         header ("Location: index.php");
     }
     ?>
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
         <link rel="stylesheet" type="text/css" href="/keuzedelen/bootstrap/css/bootstrap.min.css"  />
@@ -38,16 +38,21 @@
             </div>
         </ul>
 
-        
-    <div id="selectie">
-        <div class="keuzedelen_beheer">
-        <h2>Keuzedelen</h2>
-        </div>
-    
-    
     </div>
+    <div id="geheel">
+        <div id="beheer_keuzedelen">
+            <h2>Keuzedelen</h2>
+            
+        </div>
         
         
+        
+    </div>
+
+       
+
+
+
 </body>
 <footer id="profile">
     &copy; ROCA12 Ede

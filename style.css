@@ -156,16 +156,24 @@ footer {
     height: 200px;
     width: 200px;
 }
-.keuzedelen_beheer {    
+#beheer_keuzedelen{    
     margin: 10px;
-    width: 350px;
-    height: 300px;
+    width: 89%;
+    height: 50px;
     background: rgba(0,0,0,0.6);
     /*border: 1px solid black;*/
     border-radius: 5px 5px 5px 5px;
     float: left;
     color: white;
 }
+
+#beheer_keuzedelen.h2{   
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
 #gekozen_delen {
     color: white;
 }
