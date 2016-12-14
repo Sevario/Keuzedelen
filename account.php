@@ -42,22 +42,22 @@ if ($user_permissions != 1) { //if not user, redirect to login page.
 
 
         <form class="changepw" method="POST" action="password_change.php">
-            <text>Change password</text>
+            <text>Verander je wachtwoord</text>
             <table>
                 <tr>
-                    <td>Enter your username:</td>
+                    <td>Gebruikersnaam:</td>
                     <td><input type="username" size="10" name="username"></td>
                 </tr>
                 <tr>
-                    <td>Enter your existing password:</td>
+                    <td>Huidig wachtwoord:</td>
                     <td><input type="password" size="10" name="password"></td>
                 </tr>
                 <tr>
-                    <td>Enter your new password:</td>
+                    <td>Nieuw wachtwoord:</td>
                     <td><input type="password" size="10" name="newpassword"></td>
                 </tr>
                 <tr>
-                    <td>Re-enter your new password:</td>
+                    <td>Herhaal nieuw wachtwoord:</td>
                     <td><input type="password" size="10" name="confirmnewpassword"></td>
                 </tr>
             </table>

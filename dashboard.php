@@ -35,7 +35,14 @@
                     <div id="label">1/3</div>
                 </div>
             </div>
-            <div id="gekozen_delen">Gekozen delen</div>
+            <div id="gekozen_delen">Gekozen delen<br>__________
+               <text style="font-size: 14px;">Deel 1:<br><br>
+                Deel 2:<br><br>
+                Deel 3:<br><br>
+                   </text>
+
+
+            </div>
         </ul>
 
     </div>
