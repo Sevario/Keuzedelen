@@ -54,6 +54,17 @@
     $row3 = $result3->fetchAll(PDO::FETCH_ASSOC);
     
     $keuzedelen = $row3;
+
+    $result7 = $conn->prepare("SELECT Keuzedeel_ID FROM Keuzedeel_Student WHERE `Student_ID` = $student_info[ID]");
+
+    $result7->execute();
+
+        $row7 = $result7->fetchAll(PDO::FETCH_ASSOC);
+
+        $keuzedeel_id = $row7;
+
+
+
     }
    
 

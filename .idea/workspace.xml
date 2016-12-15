@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="239ccdcd-0c39-44e8-95b3-0cbb464c049c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account.php" afterPath="$PROJECT_DIR$/account.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard.php" afterPath="$PROJECT_DIR$/dashboard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/session.php" afterPath="$PROJECT_DIR$/session.php" />
     </list>
     <ignored path="keuzedelen.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,15 +35,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.181818">
-              <caret line="62" column="90" selection-start-line="62" selection-start-column="90" selection-end-line="62" selection-end-column="90" />
+            <state vertical-scroll-proportion="0.3520871">
+              <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
               <folding>
-                <marker date="1481720339588" expanded="true" signature="1715:1760" placeholder="SELECT * FRO... Keuzedeel" />
-                <marker date="1481720339588" expanded="true" signature="2128:2160" placeholder="SELECT * FRO... Docent" />
-                <marker date="1481720339588" expanded="true" signature="2614:3482" placeholder="..." />
+                <element signature="n#style#0;n#text#0;n#div#1;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1481805887960" expanded="true" signature="1497:1548" placeholder="SELECT Name Keuzedeel" />
+                <marker date="1481805887960" expanded="true" signature="2220:2265" placeholder="SELECT * FRO... Keuzedeel" />
+                <marker date="1481805887960" expanded="true" signature="2633:2665" placeholder="SELECT * FRO... Docent" />
+                <marker date="1481805887960" expanded="true" signature="3119:3987" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -63,7 +64,7 @@
       <file leaf-file-name="logout.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/logout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-3.9230769">
               <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
               <folding />
             </state>
@@ -73,26 +74,29 @@
       <file leaf-file-name="session.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/session.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.769231">
-              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+            <state vertical-scroll-proportion="-15.692307">
+              <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
               <folding>
-                <marker date="1481798484979" expanded="true" signature="299:346" placeholder="SELECT * FRO... User" />
-                <marker date="1481798484979" expanded="true" signature="691:731" placeholder="SELECT * FRO... Student" />
-                <marker date="1481798484979" expanded="true" signature="895:939" placeholder="SELECT Oplei... Student" />
-                <marker date="1481798484979" expanded="true" signature="1117:1155" placeholder="SELECT Naam Opleiding" />
-                <marker date="1481798484979" expanded="true" signature="1319:1387" placeholder="SELECT Keuze... Keuzedeel_Opleiding" />
+                <marker date="1481803465072" expanded="true" signature="299:346" placeholder="SELECT * FRO... User" />
+                <marker date="1481803465072" expanded="true" signature="691:731" placeholder="SELECT * FRO... Student" />
+                <marker date="1481803465072" expanded="true" signature="895:939" placeholder="SELECT Oplei... Student" />
+                <marker date="1481803465072" expanded="true" signature="1117:1155" placeholder="SELECT Naam Opleiding" />
+                <marker date="1481803465072" expanded="true" signature="1319:1387" placeholder="SELECT Keuze... Keuzedeel_Opleiding" />
+                <marker date="1481803465072" expanded="true" signature="1547:1607" placeholder="SELECT Keuze... Keuzedeel_Student" />
+                <marker date="1481803465072" expanded="true" signature="1547:1611" placeholder="SELECT Keuze... Keuzedeel_Student" />
+                <marker date="1481803465072" expanded="true" signature="1547:1612" placeholder="SELECT Keuze... Keuzedeel_Student" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47241378">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state vertical-scroll-proportion="-13.730769">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
-                <marker date="1481800591031" expanded="true" signature="673:744" placeholder="SELECT * FRO... User" />
+                <marker date="1481800662121" expanded="true" signature="640:711" placeholder="SELECT * FRO... User" />
               </folding>
             </state>
           </provider>
@@ -101,7 +105,7 @@
       <file leaf-file-name="inschrijven.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inschrijven.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.3461537">
+            <state vertical-scroll-proportion="-9.153846">
               <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
               <folding>
                 <marker date="1481629075659" expanded="true" signature="375:437" placeholder="SELECT Keuze... Keuzedeel_Student" />
@@ -122,7 +126,7 @@
       <file leaf-file-name="beheer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/beheer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-33.346153">
               <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
               <folding />
             </state>
@@ -132,10 +136,10 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-40.615383">
-              <caret line="206" column="12" selection-start-line="206" selection-start-column="12" selection-end-line="206" selection-end-column="12" />
+            <state vertical-scroll-proportion="-48.46154">
+              <caret line="209" column="12" selection-start-line="209" selection-start-column="12" selection-end-line="209" selection-end-column="12" />
               <folding>
-                <marker date="1481720286024" expanded="true" signature="279:420" placeholder="{...}" />
+                <marker date="1481800694941" expanded="true" signature="315:456" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -148,9 +152,9 @@
               <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
               <folding>
                 <element signature="n#style#0;n#button#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1481797877997" expanded="true" signature="1591:1676" placeholder="..." />
-                <marker date="1481797877997" expanded="true" signature="1761:1845" placeholder="..." />
-                <marker date="1481797877997" expanded="true" signature="1933:2025" placeholder="..." />
+                <marker date="1481800695399" expanded="true" signature="1591:1676" placeholder="..." />
+                <marker date="1481800695399" expanded="true" signature="1761:1845" placeholder="..." />
+                <marker date="1481800695399" expanded="true" signature="1933:2025" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -176,10 +180,10 @@
         <option value="$PROJECT_DIR$/inschrijven.php" />
         <option value="$PROJECT_DIR$/js/changes.js" />
         <option value="$PROJECT_DIR$/style.css" />
-        <option value="$PROJECT_DIR$/dashboard.php" />
         <option value="$PROJECT_DIR$/account.php" />
-        <option value="$PROJECT_DIR$/session.php" />
         <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/session.php" />
+        <option value="$PROJECT_DIR$/dashboard.php" />
       </list>
     </option>
   </component>
@@ -375,7 +379,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
           <folding>
-            <marker date="1481800591031" expanded="true" signature="673:744" placeholder="SELECT * FRO... User" />
+            <marker date="1481800662121" expanded="true" signature="640:711" placeholder="SELECT * FRO... User" />
           </folding>
         </state>
       </provider>
@@ -393,9 +397,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
           <folding>
-            <marker date="1481720339588" expanded="true" signature="1715:1760" placeholder="SELECT * FRO... Keuzedeel" />
-            <marker date="1481720339588" expanded="true" signature="2128:2160" placeholder="SELECT * FRO... Docent" />
-            <marker date="1481720339588" expanded="true" signature="2614:3482" placeholder="..." />
+            <element signature="n#style#0;n#text#0;n#div#1;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1481805887960" expanded="true" signature="1497:1548" placeholder="SELECT Name Keuzedeel" />
+            <marker date="1481805887960" expanded="true" signature="2220:2265" placeholder="SELECT * FRO... Keuzedeel" />
+            <marker date="1481805887960" expanded="true" signature="2633:2665" placeholder="SELECT * FRO... Docent" />
+            <marker date="1481805887960" expanded="true" signature="3119:3987" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -421,7 +427,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481720286024" expanded="true" signature="279:420" placeholder="{...}" />
+            <marker date="1481800694941" expanded="true" signature="315:456" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -431,11 +437,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
           <folding>
-            <marker date="1481798484979" expanded="true" signature="299:346" placeholder="SELECT * FRO... User" />
-            <marker date="1481798484979" expanded="true" signature="691:731" placeholder="SELECT * FRO... Student" />
-            <marker date="1481798484979" expanded="true" signature="895:939" placeholder="SELECT Oplei... Student" />
-            <marker date="1481798484979" expanded="true" signature="1117:1155" placeholder="SELECT Naam Opleiding" />
-            <marker date="1481798484979" expanded="true" signature="1319:1387" placeholder="SELECT Keuze... Keuzedeel_Opleiding" />
+            <marker date="1481803465072" expanded="true" signature="299:346" placeholder="SELECT * FRO... User" />
+            <marker date="1481803465072" expanded="true" signature="691:731" placeholder="SELECT * FRO... Student" />
+            <marker date="1481803465072" expanded="true" signature="895:939" placeholder="SELECT Oplei... Student" />
+            <marker date="1481803465072" expanded="true" signature="1117:1155" placeholder="SELECT Naam Opleiding" />
+            <marker date="1481803465072" expanded="true" signature="1319:1387" placeholder="SELECT Keuze... Keuzedeel_Opleiding" />
+            <marker date="1481803465072" expanded="true" signature="1547:1607" placeholder="SELECT Keuze... Keuzedeel_Student" />
+            <marker date="1481803465072" expanded="true" signature="1547:1611" placeholder="SELECT Keuze... Keuzedeel_Student" />
+            <marker date="1481803465072" expanded="true" signature="1547:1612" placeholder="SELECT Keuze... Keuzedeel_Student" />
           </folding>
         </state>
       </provider>
@@ -445,7 +454,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
           <folding>
-            <marker date="1481800591031" expanded="true" signature="673:744" placeholder="SELECT * FRO... User" />
+            <marker date="1481800662121" expanded="true" signature="640:711" placeholder="SELECT * FRO... User" />
           </folding>
         </state>
       </provider>
@@ -463,9 +472,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
           <folding>
-            <marker date="1481720339588" expanded="true" signature="1715:1760" placeholder="SELECT * FRO... Keuzedeel" />
-            <marker date="1481720339588" expanded="true" signature="2128:2160" placeholder="SELECT * FRO... Docent" />
-            <marker date="1481720339588" expanded="true" signature="2614:3482" placeholder="..." />
+            <element signature="n#style#0;n#text#0;n#div#1;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1481805887960" expanded="true" signature="1497:1548" placeholder="SELECT Name Keuzedeel" />
+            <marker date="1481805887960" expanded="true" signature="2220:2265" placeholder="SELECT * FRO... Keuzedeel" />
+            <marker date="1481805887960" expanded="true" signature="2633:2665" placeholder="SELECT * FRO... Docent" />
+            <marker date="1481805887960" expanded="true" signature="3119:3987" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -491,7 +502,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding>
-            <marker date="1481720286024" expanded="true" signature="279:420" placeholder="{...}" />
+            <marker date="1481800694941" expanded="true" signature="315:456" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -501,11 +512,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
           <folding>
-            <marker date="1481798484979" expanded="true" signature="299:346" placeholder="SELECT * FRO... User" />
-            <marker date="1481798484979" expanded="true" signature="691:731" placeholder="SELECT * FRO... Student" />
-            <marker date="1481798484979" expanded="true" signature="895:939" placeholder="SELECT Oplei... Student" />
-            <marker date="1481798484979" expanded="true" signature="1117:1155" placeholder="SELECT Naam Opleiding" />
-            <marker date="1481798484979" expanded="true" signature="1319:1387" placeholder="SELECT Keuze... Keuzedeel_Opleiding" />
+            <marker date="1481803465072" expanded="true" signature="299:346" placeholder="SELECT * FRO... User" />
+            <marker date="1481803465072" expanded="true" signature="691:731" placeholder="SELECT * FRO... Student" />
+            <marker date="1481803465072" expanded="true" signature="895:939" placeholder="SELECT Oplei... Student" />
+            <marker date="1481803465072" expanded="true" signature="1117:1155" placeholder="SELECT Naam Opleiding" />
+            <marker date="1481803465072" expanded="true" signature="1319:1387" placeholder="SELECT Keuze... Keuzedeel_Opleiding" />
+            <marker date="1481803465072" expanded="true" signature="1547:1607" placeholder="SELECT Keuze... Keuzedeel_Student" />
+            <marker date="1481803465072" expanded="true" signature="1547:1611" placeholder="SELECT Keuze... Keuzedeel_Student" />
+            <marker date="1481803465072" expanded="true" signature="1547:1612" placeholder="SELECT Keuze... Keuzedeel_Student" />
           </folding>
         </state>
       </provider>
@@ -515,7 +529,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
           <folding>
-            <marker date="1481800591031" expanded="true" signature="673:744" placeholder="SELECT * FRO... User" />
+            <marker date="1481800662121" expanded="true" signature="640:711" placeholder="SELECT * FRO... User" />
           </folding>
         </state>
       </provider>
@@ -533,9 +547,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481720339588" expanded="true" signature="1715:1760" placeholder="SELECT * FRO... Keuzedeel" />
-            <marker date="1481720339588" expanded="true" signature="2128:2160" placeholder="SELECT * FRO... Docent" />
-            <marker date="1481720339588" expanded="true" signature="2614:3482" placeholder="..." />
+            <element signature="n#style#0;n#text#0;n#div#1;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1481805887960" expanded="true" signature="1497:1548" placeholder="SELECT Name Keuzedeel" />
+            <marker date="1481805887960" expanded="true" signature="2220:2265" placeholder="SELECT * FRO... Keuzedeel" />
+            <marker date="1481805887960" expanded="true" signature="2633:2665" placeholder="SELECT * FRO... Docent" />
+            <marker date="1481805887960" expanded="true" signature="3119:3987" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -561,7 +577,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
           <folding>
-            <marker date="1481720286024" expanded="true" signature="279:420" placeholder="{...}" />
+            <marker date="1481800694941" expanded="true" signature="315:456" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -571,11 +587,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
           <folding>
-            <marker date="1481798484979" expanded="true" signature="299:346" placeholder="SELECT * FRO... User" />
-            <marker date="1481798484979" expanded="true" signature="691:731" placeholder="SELECT * FRO... Student" />
-            <marker date="1481798484979" expanded="true" signature="895:939" placeholder="SELECT Oplei... Student" />
-            <marker date="1481798484979" expanded="true" signature="1117:1155" placeholder="SELECT Naam Opleiding" />
-            <marker date="1481798484979" expanded="true" signature="1319:1387" placeholder="SELECT Keuze... Keuzedeel_Opleiding" />
+            <marker date="1481803465072" expanded="true" signature="299:346" placeholder="SELECT * FRO... User" />
+            <marker date="1481803465072" expanded="true" signature="691:731" placeholder="SELECT * FRO... Student" />
+            <marker date="1481803465072" expanded="true" signature="895:939" placeholder="SELECT Oplei... Student" />
+            <marker date="1481803465072" expanded="true" signature="1117:1155" placeholder="SELECT Naam Opleiding" />
+            <marker date="1481803465072" expanded="true" signature="1319:1387" placeholder="SELECT Keuze... Keuzedeel_Opleiding" />
+            <marker date="1481803465072" expanded="true" signature="1547:1607" placeholder="SELECT Keuze... Keuzedeel_Student" />
+            <marker date="1481803465072" expanded="true" signature="1547:1611" placeholder="SELECT Keuze... Keuzedeel_Student" />
+            <marker date="1481803465072" expanded="true" signature="1547:1612" placeholder="SELECT Keuze... Keuzedeel_Student" />
           </folding>
         </state>
       </provider>
@@ -585,7 +604,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
           <folding>
-            <marker date="1481800591031" expanded="true" signature="673:744" placeholder="SELECT * FRO... User" />
+            <marker date="1481800662121" expanded="true" signature="640:711" placeholder="SELECT * FRO... User" />
           </folding>
         </state>
       </provider>
@@ -603,9 +622,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="77" column="14" selection-start-line="77" selection-start-column="14" selection-end-line="77" selection-end-column="14" />
           <folding>
-            <marker date="1481720339588" expanded="true" signature="1715:1760" placeholder="SELECT * FRO... Keuzedeel" />
-            <marker date="1481720339588" expanded="true" signature="2128:2160" placeholder="SELECT * FRO... Docent" />
-            <marker date="1481720339588" expanded="true" signature="2614:3482" placeholder="..." />
+            <element signature="n#style#0;n#text#0;n#div#1;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1481805887960" expanded="true" signature="1497:1548" placeholder="SELECT Name Keuzedeel" />
+            <marker date="1481805887960" expanded="true" signature="2220:2265" placeholder="SELECT * FRO... Keuzedeel" />
+            <marker date="1481805887960" expanded="true" signature="2633:2665" placeholder="SELECT * FRO... Docent" />
+            <marker date="1481805887960" expanded="true" signature="3119:3987" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -631,7 +652,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
           <folding>
-            <marker date="1481720286024" expanded="true" signature="279:420" placeholder="{...}" />
+            <marker date="1481800694941" expanded="true" signature="315:456" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -641,11 +662,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
           <folding>
-            <marker date="1481798484979" expanded="true" signature="299:346" placeholder="SELECT * FRO... User" />
-            <marker date="1481798484979" expanded="true" signature="691:731" placeholder="SELECT * FRO... Student" />
-            <marker date="1481798484979" expanded="true" signature="895:939" placeholder="SELECT Oplei... Student" />
-            <marker date="1481798484979" expanded="true" signature="1117:1155" placeholder="SELECT Naam Opleiding" />
-            <marker date="1481798484979" expanded="true" signature="1319:1387" placeholder="SELECT Keuze... Keuzedeel_Opleiding" />
+            <marker date="1481803465072" expanded="true" signature="299:346" placeholder="SELECT * FRO... User" />
+            <marker date="1481803465072" expanded="true" signature="691:731" placeholder="SELECT * FRO... Student" />
+            <marker date="1481803465072" expanded="true" signature="895:939" placeholder="SELECT Oplei... Student" />
+            <marker date="1481803465072" expanded="true" signature="1117:1155" placeholder="SELECT Naam Opleiding" />
+            <marker date="1481803465072" expanded="true" signature="1319:1387" placeholder="SELECT Keuze... Keuzedeel_Opleiding" />
+            <marker date="1481803465072" expanded="true" signature="1547:1607" placeholder="SELECT Keuze... Keuzedeel_Student" />
+            <marker date="1481803465072" expanded="true" signature="1547:1611" placeholder="SELECT Keuze... Keuzedeel_Student" />
+            <marker date="1481803465072" expanded="true" signature="1547:1612" placeholder="SELECT Keuze... Keuzedeel_Student" />
           </folding>
         </state>
       </provider>
@@ -655,7 +679,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481800591031" expanded="true" signature="673:744" placeholder="SELECT * FRO... User" />
+            <marker date="1481800662121" expanded="true" signature="640:711" placeholder="SELECT * FRO... User" />
           </folding>
         </state>
       </provider>
@@ -673,9 +697,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481720339588" expanded="true" signature="1715:1760" placeholder="SELECT * FRO... Keuzedeel" />
-            <marker date="1481720339588" expanded="true" signature="2128:2160" placeholder="SELECT * FRO... Docent" />
-            <marker date="1481720339588" expanded="true" signature="2614:3482" placeholder="..." />
+            <element signature="n#style#0;n#text#0;n#div#1;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1481805887960" expanded="true" signature="1497:1548" placeholder="SELECT Name Keuzedeel" />
+            <marker date="1481805887960" expanded="true" signature="2220:2265" placeholder="SELECT * FRO... Keuzedeel" />
+            <marker date="1481805887960" expanded="true" signature="2633:2665" placeholder="SELECT * FRO... Docent" />
+            <marker date="1481805887960" expanded="true" signature="3119:3987" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -693,11 +719,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481798484979" expanded="true" signature="299:346" placeholder="SELECT * FRO... User" />
-            <marker date="1481798484979" expanded="true" signature="691:731" placeholder="SELECT * FRO... Student" />
-            <marker date="1481798484979" expanded="true" signature="895:939" placeholder="SELECT Oplei... Student" />
-            <marker date="1481798484979" expanded="true" signature="1117:1155" placeholder="SELECT Naam Opleiding" />
-            <marker date="1481798484979" expanded="true" signature="1319:1387" placeholder="SELECT Keuze... Keuzedeel_Opleiding" />
+            <marker date="1481803465072" expanded="true" signature="299:346" placeholder="SELECT * FRO... User" />
+            <marker date="1481803465072" expanded="true" signature="691:731" placeholder="SELECT * FRO... Student" />
+            <marker date="1481803465072" expanded="true" signature="895:939" placeholder="SELECT Oplei... Student" />
+            <marker date="1481803465072" expanded="true" signature="1117:1155" placeholder="SELECT Naam Opleiding" />
+            <marker date="1481803465072" expanded="true" signature="1319:1387" placeholder="SELECT Keuze... Keuzedeel_Opleiding" />
+            <marker date="1481803465072" expanded="true" signature="1547:1607" placeholder="SELECT Keuze... Keuzedeel_Student" />
+            <marker date="1481803465072" expanded="true" signature="1547:1611" placeholder="SELECT Keuze... Keuzedeel_Student" />
+            <marker date="1481803465072" expanded="true" signature="1547:1612" placeholder="SELECT Keuze... Keuzedeel_Student" />
           </folding>
         </state>
       </provider>
@@ -707,7 +736,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481720286024" expanded="true" signature="279:420" placeholder="{...}" />
+            <marker date="1481800694941" expanded="true" signature="315:456" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -717,7 +746,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
           <folding>
-            <marker date="1481800591031" expanded="true" signature="673:744" placeholder="SELECT * FRO... User" />
+            <marker date="1481800662121" expanded="true" signature="640:711" placeholder="SELECT * FRO... User" />
           </folding>
         </state>
       </provider>
@@ -735,7 +764,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
           <folding>
-            <marker date="1481800591031" expanded="true" signature="673:744" placeholder="SELECT * FRO... User" />
+            <marker date="1481800662121" expanded="true" signature="640:711" placeholder="SELECT * FRO... User" />
           </folding>
         </state>
       </provider>
@@ -753,7 +782,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481800591031" expanded="true" signature="673:744" placeholder="SELECT * FRO... User" />
+            <marker date="1481800662121" expanded="true" signature="640:711" placeholder="SELECT * FRO... User" />
           </folding>
         </state>
       </provider>
@@ -780,25 +809,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beheer.php">
+    <entry file="file://$PROJECT_DIR$/js/changes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
+          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-3.9230769">
           <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.730769">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <marker date="1481800662121" expanded="true" signature="640:711" placeholder="SELECT * FRO... User" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-32.03846">
+          <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1481800695399" expanded="true" signature="1591:1676" placeholder="..." />
+            <marker date="1481800695399" expanded="true" signature="1761:1845" placeholder="..." />
+            <marker date="1481800695399" expanded="true" signature="1933:2025" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beheer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-33.346153">
+          <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-48.46154">
+          <caret line="209" column="12" selection-start-line="209" selection-start-column="12" selection-end-line="209" selection-end-column="12" />
+          <folding>
+            <marker date="1481800694941" expanded="true" signature="315:456" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/inschrijven.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3461537">
+        <state vertical-scroll-proportion="-9.153846">
           <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
           <folding>
             <marker date="1481629075659" expanded="true" signature="375:437" placeholder="SELECT Keuze... Keuzedeel_Student" />
@@ -815,69 +885,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
+    <entry file="file://$PROJECT_DIR$/session.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-40.615383">
-          <caret line="206" column="12" selection-start-line="206" selection-start-column="12" selection-end-line="206" selection-end-column="12" />
+        <state vertical-scroll-proportion="-15.692307">
+          <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
           <folding>
-            <marker date="1481720286024" expanded="true" signature="279:420" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/changes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/account.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-32.03846">
-          <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1481797877997" expanded="true" signature="1591:1676" placeholder="..." />
-            <marker date="1481797877997" expanded="true" signature="1761:1845" placeholder="..." />
-            <marker date="1481797877997" expanded="true" signature="1933:2025" placeholder="..." />
+            <marker date="1481803465072" expanded="true" signature="299:346" placeholder="SELECT * FRO... User" />
+            <marker date="1481803465072" expanded="true" signature="691:731" placeholder="SELECT * FRO... Student" />
+            <marker date="1481803465072" expanded="true" signature="895:939" placeholder="SELECT Oplei... Student" />
+            <marker date="1481803465072" expanded="true" signature="1117:1155" placeholder="SELECT Naam Opleiding" />
+            <marker date="1481803465072" expanded="true" signature="1319:1387" placeholder="SELECT Keuze... Keuzedeel_Opleiding" />
+            <marker date="1481803465072" expanded="true" signature="1547:1607" placeholder="SELECT Keuze... Keuzedeel_Student" />
+            <marker date="1481803465072" expanded="true" signature="1547:1611" placeholder="SELECT Keuze... Keuzedeel_Student" />
+            <marker date="1481803465072" expanded="true" signature="1547:1612" placeholder="SELECT Keuze... Keuzedeel_Student" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.181818">
-          <caret line="62" column="90" selection-start-line="62" selection-start-column="90" selection-end-line="62" selection-end-column="90" />
+        <state vertical-scroll-proportion="0.3520871">
+          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
           <folding>
-            <marker date="1481720339588" expanded="true" signature="1715:1760" placeholder="SELECT * FRO... Keuzedeel" />
-            <marker date="1481720339588" expanded="true" signature="2128:2160" placeholder="SELECT * FRO... Docent" />
-            <marker date="1481720339588" expanded="true" signature="2614:3482" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <marker date="1481798484979" expanded="true" signature="299:346" placeholder="SELECT * FRO... User" />
-            <marker date="1481798484979" expanded="true" signature="691:731" placeholder="SELECT * FRO... Student" />
-            <marker date="1481798484979" expanded="true" signature="895:939" placeholder="SELECT Oplei... Student" />
-            <marker date="1481798484979" expanded="true" signature="1117:1155" placeholder="SELECT Naam Opleiding" />
-            <marker date="1481798484979" expanded="true" signature="1319:1387" placeholder="SELECT Keuze... Keuzedeel_Opleiding" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47241378">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <marker date="1481800591031" expanded="true" signature="673:744" placeholder="SELECT * FRO... User" />
+            <element signature="n#style#0;n#text#0;n#div#1;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1481805887960" expanded="true" signature="1497:1548" placeholder="SELECT Name Keuzedeel" />
+            <marker date="1481805887960" expanded="true" signature="2220:2265" placeholder="SELECT * FRO... Keuzedeel" />
+            <marker date="1481805887960" expanded="true" signature="2633:2665" placeholder="SELECT * FRO... Docent" />
+            <marker date="1481805887960" expanded="true" signature="3119:3987" placeholder="..." />
           </folding>
         </state>
       </provider>
