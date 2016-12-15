@@ -70,6 +70,30 @@ if ($user_permissions != 1) { //if not user, redirect to login page.
 
     </div>
 
+    <?php
+
+    if ($user_permissions == "1"){
+    echo "{<div id='gekozen_delen'>
+            <text style='text-align: center'>Gekozen delen</text><br>";
+        foreach ($keuzedeel_id as $naam_keuzedeel){
+
+            $result8 = $conn->prepare("SELECT Name FROM Keuzedeel WHERE ID = :keuzedeel_id");
+
+            $result8->execute(array(':keuzedeel_id' => $naam_keuzedeel["Keuzedeel_ID"]));
+
+            $row8 = $result8->fetch(PDO::FETCH_ASSOC);
+            //echo "<pre>";var_dump($row8);echo "</pre>";
+            echo " - " . $row8["Name"];
+            echo "<br>";
+        }
+    echo "</div>";
+
+    }
+
+
+    ?>
+
+
 
 </body>
 <footer id="profile">

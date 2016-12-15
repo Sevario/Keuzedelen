@@ -35,37 +35,7 @@
                     <div id="label">1/3</div>
                 </div>
             </div>
-            <div id="gekozen_delen">
-                <?php
-                if ($user_permissions == "1"){
-                    foreach ($keuzedeel_id as $naam_keuzedeel){
 
-                        $result8 = $conn->prepare("SELECT Name FROM Keuzedeel WHERE ID = :keuzedeel_id");
-
-
-                        //$result8->execute(array(':keuzedeel_id' => $ke));
-
-                        $row8 = $result8->fetch(PDO::FETCH_ASSOC);
-
-                        $naam_keuzedeel = $row8;
-
-
-
-                    }
-
-                }
-
-
-?>
-
-                Gekozen delen<br>__________
-                <text style="font-size: 14px;">Deel 1: <br><br>
-                Deel 2:<br><br>
-                Deel 3:<br><br>
-                   </text>
-
-
-            </div>
         </ul>
 
     </div>
