@@ -46,7 +46,9 @@ if ($user_permissions != 1) { //if not user, redirect to login page.
             <table>
                 <tr>
                     <td>Gebruikersnaam:</td>
-                    <td><input type="username" size="10" name="username"></td>
+                    <td><?php
+                        echo "$student_info[email]";
+                        ?></td>
                 </tr>
                 <tr>
                     <td>Huidig wachtwoord:</td>
@@ -61,7 +63,7 @@ if ($user_permissions != 1) { //if not user, redirect to login page.
                     <td><input type="password" size="10" name="confirmnewpassword"></td>
                 </tr>
             </table>
-            <button class="btn btn-lg btn-default btnwidth changepw" style="width: 70%; margin: 5px;">submit</button>
+            <button class="btn btn-lg btn-default btnwidth wijzigww" style="width: 70%; margin: 5px;">submit</button>
         </form>
 
 
