@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="239ccdcd-0c39-44e8-95b3-0cbb464c049c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beheer.php" afterPath="$PROJECT_DIR$/beheer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/changes.js" afterPath="$PROJECT_DIR$/js/changes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <ignored path="keuzedelen.iws" />
@@ -37,10 +34,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41034484">
+            <state vertical-scroll-proportion="-9.153846">
               <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
               <folding>
                 <marker date="1481810480135" expanded="true" signature="1478:1523" placeholder="SELECT * FRO... Keuzedeel" />
@@ -127,17 +124,17 @@
         <entry file="file://$PROJECT_DIR$/beheer.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-18.307692">
-              <caret line="58" column="35" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
+              <caret line="56" column="14" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.230769">
-              <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.8241379">
+              <caret line="216" column="1" selection-start-line="216" selection-start-column="1" selection-end-line="216" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -146,12 +143,13 @@
       <file leaf-file-name="account.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/account.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.884615">
+            <state vertical-scroll-proportion="-21.653847">
               <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
               <folding>
-                <marker date="1481810480133" expanded="true" signature="2351:2421" placeholder="..." />
-                <marker date="1481810480133" expanded="true" signature="2378:2396" placeholder="..." />
-                <marker date="1481810480133" expanded="true" signature="2517:2568" placeholder="SELECT Name Keuzedeel" />
+                <element signature="n#style#0;n#button#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1482150670550" expanded="true" signature="2430:2500" placeholder="..." />
+                <marker date="1482150670550" expanded="true" signature="2457:2475" placeholder="..." />
+                <marker date="1482150670550" expanded="true" signature="2596:2647" placeholder="SELECT Name Keuzedeel" />
               </folding>
             </state>
           </provider>
@@ -180,8 +178,8 @@
         <option value="$PROJECT_DIR$/dashboard.php" />
         <option value="$PROJECT_DIR$/account.php" />
         <option value="$PROJECT_DIR$/beheer.php" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/js/changes.js" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -841,31 +839,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/account.php">
+    <entry file="file://$PROJECT_DIR$/beheer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.884615">
-          <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
+        <state vertical-scroll-proportion="-18.307692">
+          <caret line="56" column="14" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
           <folding>
-            <marker date="1481810480133" expanded="true" signature="2351:2421" placeholder="..." />
-            <marker date="1481810480133" expanded="true" signature="2378:2396" placeholder="..." />
-            <marker date="1481810480133" expanded="true" signature="2517:2568" placeholder="SELECT Name Keuzedeel" />
+            <marker date="1481810480135" expanded="true" signature="1478:1523" placeholder="SELECT * FRO... Keuzedeel" />
+            <marker date="1481810480135" expanded="true" signature="1891:1923" placeholder="SELECT * FRO... Docent" />
+            <marker date="1481810480135" expanded="true" signature="2377:3245" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beheer.php">
+    <entry file="file://$PROJECT_DIR$/account.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.307692">
-          <caret line="58" column="35" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.230769">
-          <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="-21.653847">
+          <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1482150670550" expanded="true" signature="2430:2500" placeholder="..." />
+            <marker date="1482150670550" expanded="true" signature="2457:2475" placeholder="..." />
+            <marker date="1482150670550" expanded="true" signature="2596:2647" placeholder="SELECT Name Keuzedeel" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -877,15 +880,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard.php">
+    <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41034484">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding>
-            <marker date="1481810480135" expanded="true" signature="1478:1523" placeholder="SELECT * FRO... Keuzedeel" />
-            <marker date="1481810480135" expanded="true" signature="1891:1923" placeholder="SELECT * FRO... Docent" />
-            <marker date="1481810480135" expanded="true" signature="2377:3245" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.8241379">
+          <caret line="216" column="1" selection-start-line="216" selection-start-column="1" selection-end-line="216" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
