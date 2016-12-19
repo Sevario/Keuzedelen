@@ -27,7 +27,7 @@ if (isset($_POST['submit'])){
                  if ($newpassword == $confirmnewpassword) {
                     $newpass = $conn->prepare("UPDATE User SET password='$newpassword' WHERE ID = $user_id");
                     $newpass->execute();
-                    echo "Je nieuwe wachtwoord is succesvol veranderd. <br>";
+                    echo "Je wachtwoord is succesvol veranderd. <br>";
                     echo "Je wordt teruggezonden naar de vorige pagina."; header("refresh:4;url=account.php");
                     }
                     else {
