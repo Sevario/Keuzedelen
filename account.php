@@ -3,9 +3,6 @@ include('session.php');
 if(!isset($_SESSION['login_user'])){ //if login in session is not set
     header("Location: index.php");
 }
-if ($user_permissions != 1) { //if not user, redirect to login page.
-    header ("Location: index.php");
-}
 ?>
 <!DOCTYPE html>
 <html>
@@ -22,12 +19,14 @@ if ($user_permissions != 1) { //if not user, redirect to login page.
 </div>
 <div id="menu">
     <ul>
-        <li><a href="dashboard.php">Home</a></li>
         <?php
         if ($user_permissions == 1) {
-            echo " <li><a href='account.php' class='selected'>Account</a></li>";
-        }
-            ?>
+
+
+        echo "<li><a href='dashboard.php'>Home</a></li>";
+                };
+        ?>
+        <li><a href='account.php' class='selected'>Account</a></li>
         <li><a href="logout.php">Log Out</a></li>
         <br>
         <div id="myProgress">
@@ -47,7 +46,7 @@ if ($user_permissions != 1) { //if not user, redirect to login page.
                 <tr>
                     <td>Gebruikersnaam:</td>
                     <td><?php
-                        echo "$student_info[email]";
+                        echo "$login_session";
                         ?></td>
                 </tr>
                 <tr>

@@ -28,9 +28,8 @@
             if ($user_permissions == 3) {
             header("Location: beheer.php");
             }
-            if ($user_permissions == 1) {
-                echo "<li><a href='account.php'>Account</a></li>";
-}
+            echo "<li><a href='account.php'>Account</a></li>";
+
 ?>
             <li><a href="logout.php">Log Out</a></li>
             <br>

@@ -22,6 +22,7 @@
     </div>
     <div id="menu">
         <ul>
+            <li><a href="account.php">Account</a></li>
             <?php
             if ($user_permissions == 3) {
             echo "<li><a href='beheer.php' class='selected'>Beheer(Admin only)</a></li>";
