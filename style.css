@@ -3,6 +3,21 @@
     padding: 0;
 }
 
+
+#gekozen_delen {
+    margin: 10px;
+    padding: 20px;
+    width: 350px;
+    height: auto;
+    background: rgba(0,0,0,0.6);
+    /*border: 1px solid black;*/
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    color: white;
+    opacity: 0.8;
+}
+
+
 .keuzedeel {
     margin: 10px;
     width: 350px;
@@ -180,19 +195,6 @@ footer {
     height: auto;
 }
 
-#gekozen_delen {
-    margin: 10px;
-    padding: 20px;
-    width: 350px;
-    height: auto;
-    background: rgba(0,0,0,0.6);
-    /*border: 1px solid black;*/
-    border-radius: 5px 5px 5px 5px;
-    float: left;
-    color: white;
-    opacity: 0.8;
-
-}
 #changepw {
     float: left;
     text-align: center;
