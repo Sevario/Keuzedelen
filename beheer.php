@@ -22,10 +22,9 @@
     </div>
     <div id="menu">
         <ul>
-            <li><a href="dashboard.php" class="selected">Home</a></li>
             <?php
             if ($user_permissions == 3) {
-            echo "<li><a href='beheer.php'>Beheer(Admin only)</a></li>";
+            echo "<li><a href='beheer.php' class='selected'>Beheer(Admin only)</a></li>";
             }
             ?>
             <li><a href="logout.php">Log Out</a></li>

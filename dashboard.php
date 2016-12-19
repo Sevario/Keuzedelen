@@ -1,7 +1,9 @@
 <?php
     include('session.php');
+
     if(!isset($_SESSION['login_user'])){ //if login in session is not set
     header("Location: index.php");
+
 }
 ?>
 <!DOCTYPE html>
@@ -19,10 +21,12 @@
     </div>
     <div id="menu">
         <ul>
-            <li><a href="dashboard.php" class="selected">Home</a></li>
             <?php
+            if ($user_permissions == 1) {
+                echo "<li><a href='dashboard.php' class='selected'>Home</a></li>";
+            }
             if ($user_permissions == 3) {
-            echo "<li><a href='beheer.php'>Beheer(Admin only)</a></li>";
+            header("Location: beheer.php");
             }
             if ($user_permissions == 1) {
                 echo "<li><a href='account.php'>Account</a></li>";

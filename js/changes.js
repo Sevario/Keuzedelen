@@ -64,6 +64,7 @@ $(document).ready(function() {
 
             $('.normal2').show('fast');
             $('.beheer_all').css("border", '');
+            $('h2').css("opacity", '0.6');
         } else {
             $(this).animate({
                 height: '87vh'
@@ -73,6 +74,7 @@ $(document).ready(function() {
 
             $('.normal2').hide('fast');
             $('.beheer_all').css("border", 'solid','white', '1');
+            $('h2').css("opacity", '1');
 
         }
     });
