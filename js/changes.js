@@ -45,13 +45,12 @@ $(document).ready(function() {
             $('.inschrijven').show('fast');
         }
     });
-    $.each($('.beheer_all'), function(key, value) {
+    $.each($('h2'), function(key, value) {
         $(value).addClass('normal2');
     });
 
-    //hide info before clicking
+    $('.verdwijn').hide();
 
-    //
     $('.normal2').click(function () {
         if ($(this).hasClass('enlarged2')) {
             $(this).animate({
@@ -65,8 +64,9 @@ $(document).ready(function() {
             $('.normal2').show('fast');
             $('.beheer_all').css("border", '');
             $('h2').css("opacity", '0.6');
+            $('.verdwijn').hide();
         } else {
-            $(this).animate({
+            $('.beheer_all').animate({
                 height: '87vh'
             });
             $(this).removeClass('normal2');
@@ -75,6 +75,7 @@ $(document).ready(function() {
             $('.normal2').hide('fast');
             $('.beheer_all').css("border", 'solid','white', '1');
             $('h2').css("opacity", '1');
+            $('.verdwijn').show();
 
         }
     });
