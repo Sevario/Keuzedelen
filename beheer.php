@@ -41,7 +41,19 @@
     <div id="geheel">
         <div id="beheer_keuzedelen" class="beheer_all">
            <h2 class="beheerding">Keuzedelen</h2>
+            <?php
             
+            $resultgetkeuze = $conn->prepare("SELECT Name FROM Keuzedelen");
+    
+            $resultgetkeuze->execute();
+
+            $rowkeuze = $resultgetkeuze->fetch(PDO::FETCH_ASSOC);
+
+            $arraykeuzen = $rowkeuze;
+            
+            
+            
+            ?>
         </div>
         <div id="beheer_keuzedelen" class="beheer_all">
             <h2 class="beheerding">Studenten</h2>
