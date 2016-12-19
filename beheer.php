@@ -40,11 +40,26 @@
 
     </div>
     <div id="geheel">
-        <div id="beheer_keuzedelen">
+        <div id="beheer_keuzedelen" class="beheer_all">
            <h2 class="beheerding">Keuzedelen</h2>
             
         </div>
-        
+        <div id="beheer_keuzedelen" class="beheer_all">
+            <h2 class="beheerding">Studenten</h2>
+
+        </div>
+        <div id="beheer_keuzedelen" class="beheer_all">
+            <h2 class="beheerding">Docenten</h2>
+
+        </div>
+        <div id="beheer_keuzedelen" class="beheer_all">
+            <h2 class="beheerding">Opleiding</h2>
+
+        </div>
+        <div id="beheer_keuzedelen" class="beheer_all">
+            <h2 class="beheerding">Gebruikers</h2>
+
+        </div>
         
         
     </div>

@@ -45,4 +45,41 @@ $(document).ready(function() {
             $('.inschrijven').show('fast');
         }
     });
-});
+    $.each($('.beheer_all'), function(key, value) {
+        $(value).addClass('normal2');
+    });
+
+    //hide info before clicking
+
+    //
+    $('.normal2').click(function () {
+        if ($(this).hasClass('enlarged2')) {
+            $(this).animate({
+                width:  '84%',
+                height: 50
+            });
+
+            $(this).removeClass('enlarged2');
+            $(this).addClass('normal2');
+
+            $('.normal2').show('fast');
+            $('.beheer_all').css("border", '');
+        } else {
+            $(this).animate({
+                height: '87vh'
+            });
+            $(this).removeClass('normal2');
+            $(this).addClass('enlarged2');
+
+            $('.normal2').hide('fast');
+            $('.beheer_all').css("border", 'solid','white', '1');
+
+        }
+    });
+
+
+    });
+
+
+
+
