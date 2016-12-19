@@ -41,19 +41,23 @@
     <div id="geheel">
         <div id="beheer_keuzedelen" class="beheer_all">
            <h2 class="beheerding">Keuzedelen</h2>
+           <div class ="verdwijn">
             <?php
             
-            $resultgetkeuze = $conn->prepare("SELECT Name FROM Keuzedelen");
+            $resultgetkeuze = $conn->prepare("SELECT Name FROM Keuzedeel");
     
             $resultgetkeuze->execute();
 
-            $rowkeuze = $resultgetkeuze->fetch(PDO::FETCH_ASSOC);
+            $rowkeuze = $resultgetkeuze->fetchall(PDO::FETCH_ASSOC);
 
             $arraykeuzen = $rowkeuze;
             
+            echo "test";   
             
+            print_r($arraykeuzen);
             
             ?>
+           </div>
         </div>
         <div id="beheer_keuzedelen" class="beheer_all">
             <h2 class="beheerding">Studenten</h2>
