@@ -51,10 +51,16 @@
             $rowkeuze = $resultgetkeuze->fetchall(PDO::FETCH_ASSOC);
 
             $arraykeuzen = $rowkeuze;
+
             
-            echo "test";   
+            echo "<select name='Keuzedelen' class='keuzedrop'>";
+            foreach ($arraykeuzen as $row) {
+            print_r($row['Name']); ?>
+            <option value="<?php echo $row['Name']; ?>"><?php echo $row['Name']; ?></option>
+            <?php
+            }
             
-            print_r($arraykeuzen);
+            echo "</select>"
             
             ?>
            </div>

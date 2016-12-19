@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+.keuzedrop {
+width: 400px;
+  height: 30px;
+  color: black;
+    margin-left: 50px;
+}
 
 #gekozen_delen {
     margin: 10px;
