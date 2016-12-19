@@ -52,18 +52,18 @@ if ($user_permissions != 1) { //if not user, redirect to login page.
                 </tr>
                 <tr>
                     <td>Huidig wachtwoord:</td>
-                    <td><input type="password" size="10" name="password"></td>
+                    <td><input class="pwchange" type="password" size="10" name="password"></td>
                 </tr>
                 <tr>
                     <td>Nieuw wachtwoord:</td>
-                    <td><input type="password" size="10" name="newpassword"></td>
+                    <td><input class="pwchange" type="password" size="10" name="newpassword"></td>
                 </tr>
                 <tr>
                     <td>Herhaal nieuw wachtwoord:</td>
-                    <td><input type="password" size="10" name="confirmnewpassword"></td>
+                    <td><input class="pwchange" type="password" size="10" name="confirmnewpassword"></td>
                 </tr>
             </table>
-            <button class="btn btn-lg btn-default btnwidth wijzigww" style="width: 70%; margin: 5px;">submit</button>
+            <button class="btn btn-lg btn-default btnwidth wijzigww" style="width: 70%; margin: 5px;" name="submit" type="submit">submit</button>
         </form>
 
 

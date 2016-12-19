@@ -23,7 +23,6 @@
     <div id="menu">
         <ul>
             <li><a href="dashboard.php" class="selected">Home</a></li>
-            <li><a>Account</a></li>
             <?php
             if ($user_permissions == 3) {
             echo "<li><a href='beheer.php'>Beheer(Admin only)</a></li>";
