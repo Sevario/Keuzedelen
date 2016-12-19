@@ -65,14 +65,14 @@ body {
 
       }
     
-    
+      
      input.form-control {
 
       padding: 10px;
       font-size: 1.6em;
       width: 100%;
       background: white;
-
+      
     }
 
     button {
@@ -177,6 +177,7 @@ footer {
     height: 200px;
     width: 200px;
 }
+
 #beheer_keuzedelen{    
     margin: 10px;
     width: 89%;
@@ -202,7 +203,7 @@ footer {
 text {
     font-size: 24px;
 }
-/*form {*/
+/*  form {*/
     /*border: solid transparent 1px;*/
     /*border-radius: 5px 5px 5px 5px;*/
     /*margin: 10px;*/
@@ -212,10 +213,12 @@ text {
     /*opacity: 0.8;*/
     /*text-align: center;*/
 /*}*/
-input {
+
+.pwchange {
     margin: 5px;
     color: black;
 }
+
 td {
     text-align: left;
 }
