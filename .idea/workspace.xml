@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="239ccdcd-0c39-44e8-95b3-0cbb464c049c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account.php" afterPath="$PROJECT_DIR$/account.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/changes.js" afterPath="$PROJECT_DIR$/js/changes.js" />
     </list>
     <ignored path="keuzedelen.iws" />
@@ -29,7 +28,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
@@ -39,8 +38,8 @@
       <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.346153">
-              <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+            <state vertical-scroll-proportion="-6.5384617">
+              <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
               <folding>
                 <marker date="1482152724261" expanded="true" signature="1472:1517" placeholder="SELECT * FRO... Keuzedeel" />
                 <marker date="1482152724261" expanded="true" signature="1885:1917" placeholder="SELECT * FRO... Docent" />
@@ -53,8 +52,8 @@
       <file leaf-file-name="changes.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/changes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.2062706">
-              <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.84158415">
+              <caret line="75" column="24" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -73,7 +72,7 @@
       <file leaf-file-name="session.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/session.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.423077">
+            <state vertical-scroll-proportion="0.0">
               <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="21" />
               <folding>
                 <marker date="1481807510616" expanded="true" signature="299:346" placeholder="SELECT * FRO... User" />
@@ -92,7 +91,7 @@
       <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.076923">
+            <state vertical-scroll-proportion="0.0">
               <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="54" />
               <folding>
                 <marker date="1482152288624" expanded="true" signature="640:711" placeholder="SELECT * FRO... User" />
@@ -125,7 +124,7 @@
       <file leaf-file-name="beheer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/beheer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-43.807693">
+            <state vertical-scroll-proportion="-13.807693">
               <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding>
                 <marker date="1482154956564" expanded="true" signature="1571:1597" placeholder="SELECT Name Keuzedeel" />
@@ -137,7 +136,7 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-30.807692">
+            <state vertical-scroll-proportion="0.0">
               <caret line="216" column="1" selection-start-line="216" selection-start-column="1" selection-end-line="216" selection-end-column="1" />
               <folding />
             </state>
@@ -147,20 +146,9 @@
       <file leaf-file-name="account.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/account.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-              <folding>
-                <element signature="n#style#0;n#button#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1482155840409" expanded="true" signature="1323:1449" placeholder="..." />
-                <marker date="1482155840409" expanded="true" signature="1344:1449" placeholder="..." />
-                <marker date="1482155840409" expanded="true" signature="1414:1449" placeholder="..." />
-                <marker date="1482155840409" expanded="true" signature="1541:1627" placeholder="..." />
-                <marker date="1482155840409" expanded="true" signature="1728:1813" placeholder="..." />
-                <marker date="1482155840409" expanded="true" signature="1917:2010" placeholder="..." />
-                <marker date="1482155840409" expanded="true" signature="2380:2450" placeholder="..." />
-                <marker date="1482155840409" expanded="true" signature="2407:2425" placeholder="..." />
-                <marker date="1482155840409" expanded="true" signature="2546:2597" placeholder="SELECT Name Keuzedeel" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -233,7 +221,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -268,6 +255,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -816,7 +804,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-30.807692">
+        <state vertical-scroll-proportion="0.0">
           <caret line="216" column="1" selection-start-line="216" selection-start-column="1" selection-end-line="216" selection-end-column="1" />
           <folding />
         </state>
@@ -824,7 +812,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
@@ -832,7 +820,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.076923">
+        <state vertical-scroll-proportion="0.0">
           <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="54" />
           <folding>
             <marker date="1482152288624" expanded="true" signature="640:711" placeholder="SELECT * FRO... User" />
@@ -842,7 +830,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/session.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.423077">
+        <state vertical-scroll-proportion="0.0">
           <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="21" />
           <folding>
             <marker date="1481807510616" expanded="true" signature="299:346" placeholder="SELECT * FRO... User" />
@@ -861,24 +849,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1482155840409" expanded="true" signature="1323:1449" placeholder="..." />
-            <marker date="1482155840409" expanded="true" signature="1344:1449" placeholder="..." />
-            <marker date="1482155840409" expanded="true" signature="1414:1449" placeholder="..." />
-            <marker date="1482155840409" expanded="true" signature="1541:1627" placeholder="..." />
-            <marker date="1482155840409" expanded="true" signature="1728:1813" placeholder="..." />
-            <marker date="1482155840409" expanded="true" signature="1917:2010" placeholder="..." />
-            <marker date="1482155840409" expanded="true" signature="2380:2450" placeholder="..." />
-            <marker date="1482155840409" expanded="true" signature="2407:2425" placeholder="..." />
-            <marker date="1482155840409" expanded="true" signature="2546:2597" placeholder="SELECT Name Keuzedeel" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/beheer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-43.807693">
+        <state vertical-scroll-proportion="-13.807693">
           <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding>
             <marker date="1482154956564" expanded="true" signature="1571:1597" placeholder="SELECT Name Keuzedeel" />
@@ -888,8 +865,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.346153">
-          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
           <folding>
             <marker date="1482152724261" expanded="true" signature="1472:1517" placeholder="SELECT * FRO... Keuzedeel" />
             <marker date="1482152724261" expanded="true" signature="1885:1917" placeholder="SELECT * FRO... Docent" />
@@ -900,8 +877,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/changes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2062706">
-          <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.84158415">
+          <caret line="75" column="24" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
           <folding />
         </state>
       </provider>

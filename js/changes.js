@@ -53,25 +53,24 @@ $(document).ready(function() {
 
     $('.normal2').click(function () {
         if ($(this).hasClass('enlarged2')) {
-            $(this).animate({
+            $('.beheer_all').animate({
                 width:  '84%',
                 height: 50
             });
-
             $(this).removeClass('enlarged2');
             $(this).addClass('normal2');
-
             $('.normal2').show('fast');
             $('.beheer_all').css("border", '');
             $('h2').css("opacity", '0.6');
             $('.verdwijn').hide();
-        } else {
+        }
+
+        else {
             $('.beheer_all').animate({
                 height: '87vh'
             });
             $(this).removeClass('normal2');
             $(this).addClass('enlarged2');
-
             $('.normal2').hide('fast');
             $('.beheer_all').css("border", 'solid','white', '1');
             $('h2').css("opacity", '1');
