@@ -183,7 +183,7 @@ footer {
     height: 200px;
     width: 200px;
 }
-#beheer_keuzedelen{
+#beheer_keuzedelen, #beheer_studenten, #beheer_docenten, #beheer_opleiding, #beheer_gebruikers{
     margin: 10px;
     width: 84%;
     height: 50px;

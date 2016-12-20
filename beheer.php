@@ -63,7 +63,7 @@
             echo "</select>"
             
             ?>
-            <script>$('.keuzedrop :selected').text();</script>
+            
            </div>
         </div>
         <div id="beheer_studenten" class="beheer_all">
