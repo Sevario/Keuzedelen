@@ -45,7 +45,7 @@ $(document).ready(function() {
             $('.inschrijven').show('fast');
         }
     });
-    $.each($('h2'), function(key, value) {
+    $.each($('.beheer_all'), function(key, value) {
         $(value).addClass('normal2');
     });
 
@@ -53,7 +53,7 @@ $(document).ready(function() {
 
     $('.normal2').click(function () {
         if ($(this).hasClass('enlarged2')) {
-            $('.beheer_all').animate({
+            $(this).animate({
                 width:  '84%',
                 height: 50
             });
@@ -66,7 +66,7 @@ $(document).ready(function() {
         }
 
         else {
-            $('.beheer_all').animate({
+            $(this).animate({
                 height: '87vh'
             });
             $(this).removeClass('normal2');
