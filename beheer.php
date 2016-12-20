@@ -63,23 +63,112 @@
             echo "</select>"
             
             ?>
+            <script>$('.keuzedrop :selected').text();</script>
            </div>
         </div>
-        <div id="beheer_keuzedelen" class="beheer_all">
+        <div id="beheer_studenten" class="beheer_all">
             <h2 class="beheerding">Studenten</h2>
+            <div class ="verdwijn">
+            <?php
+            
+            $resultgetkeuze2 = $conn->prepare("SELECT email FROM Student");
+    
+            $resultgetkeuze2->execute();
 
+            $rowkeuze2 = $resultgetkeuze2->fetchall(PDO::FETCH_ASSOC);
+
+            $arraykeuzen2 = $rowkeuze2;
+
+            
+            echo "<select name='Keuzedelen' class='keuzedrop'>";
+            foreach ($arraykeuzen2 as $row) {
+            print_r($row['email']); ?>
+            <option value="<?php echo $row['email']; ?>"><?php echo $row['email']; ?></option>
+            <?php
+            }
+            
+            echo "</select>"
+            
+            ?>
+           </div>
         </div>
-        <div id="beheer_keuzedelen" class="beheer_all">
+        <div id="beheer_docenten" class="beheer_all">
             <h2 class="beheerding">Docenten</h2>
+            <div class ="verdwijn">    
+            <?php
+            
+            $resultgetkeuze3 = $conn->prepare("SELECT abbreviation FROM Docent");
+    
+            $resultgetkeuze3->execute();
 
+            $rowkeuze3 = $resultgetkeuze3->fetchall(PDO::FETCH_ASSOC);
+
+            $arraykeuzen3 = $rowkeuze3;
+
+            
+            echo "<select name='Keuzedelen' class='keuzedrop'>";
+            foreach ($arraykeuzen3 as $row) {
+            print_r($row['abbreviation']); ?>
+            <option value="<?php echo $row['abbreviation']; ?>"><?php echo $row['abbreviation']; ?></option>
+            <?php
+            }
+            
+            echo "</select>"
+            
+            ?>
+           </div>
         </div>
-        <div id="beheer_keuzedelen" class="beheer_all">
+        <div id="beheer_opleiding" class="beheer_all">
             <h2 class="beheerding">Opleiding</h2>
+            <div class ="verdwijn">
+            <?php
+            
+            $resultgetkeuze = $conn->prepare("SELECT Naam FROM Opleiding");
+    
+            $resultgetkeuze->execute();
 
+            $rowkeuze = $resultgetkeuze->fetchall(PDO::FETCH_ASSOC);
+
+            $arraykeuzen = $rowkeuze;
+
+            
+            echo "<select name='Keuzedelen' class='keuzedrop'>";
+            foreach ($arraykeuzen as $row) {
+            print_r($row['Naam']); ?>
+            <option value="<?php echo $row['Naam']; ?>"><?php echo $row['Naam']; ?></option>
+            <?php
+            }
+            
+            echo "</select>"
+            
+            ?>
+           </div>
         </div>
-        <div id="beheer_keuzedelen" class="beheer_all">
+        <div id="beheer_gebruikers" class="beheer_all">
             <h2 class="beheerding">Gebruikers</h2>
+            <div class ="verdwijn">
+            <?php
+            
+            $resultgetkeuze = $conn->prepare("SELECT username FROM User");
+    
+            $resultgetkeuze->execute();
 
+            $rowkeuze = $resultgetkeuze->fetchall(PDO::FETCH_ASSOC);
+
+            $arraykeuzen = $rowkeuze;
+
+            
+            echo "<select name='Keuzedelen' class='keuzedrop'>";
+            foreach ($arraykeuzen as $row) {
+            print_r($row['username']); ?>
+            <option value="<?php echo $row['username']; ?>"><?php echo $row['username']; ?></option>
+            <?php
+            }
+            
+            echo "</select>"
+            
+            ?>
+           </div>
         </div>
         
         
