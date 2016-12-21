@@ -1,5 +1,12 @@
 
 $(document).ready(function() {
+
+    $("select").change(function() {
+
+        console.log($("select option:selected").val());
+    });
+
+
     $.each($('.keuzedeel'), function(key, value) {
         $(value).addClass('normal');
     });
@@ -275,6 +282,7 @@ $(document).ready(function() {
             }
         });
     });
+
 
 
 
