@@ -91,7 +91,179 @@ $(document).ready(function() {
         }
     });
     
+  $.each($('.beheerding_studenten'), function(key, value) {
+        $(value).addClass('normal3');
+    });
+            $('.verdwijn_studenten').hide();
+            $('.verdwijn_keuzedelen').hide();
+            $('.verdwijn_docenten').hide();
+            $('.verdwijn_opleiding').hide();
+            $('.verdwijn_gebruikers').hide();
+    $('.normal3').click(function () {
+        if ($(this).hasClass('enlarged2')) {
+            $('.beheer_studenten').animate({
+                width:  '84%',
+                height: 50
+            });
+            $(this).removeClass('enlarged2');
+            $(this).addClass('normal3');
+            $('.normal3').show('fast');
+            $('.beheer_studenten').css("border", '');
+            $('beheerding_studenten').css("opacity", '0.6');
+            $('.verdwijn_studenten').hide();
+            $('.beheer_keuzedelen').show();
+            $('.beheer_docenten').show();
+            $('.beheer_opleiding').show();
+            $('.beheer_gebruikers').show();
+        }
 
+        else {
+            $('.beheer_studenten').animate({
+                height: '87vh'
+            });
+            $(this).removeClass('normal3');
+            $(this).addClass('enlarged2');
+            $('.normal3').hide('fast');
+            $('.beheer_studenten').css("border", 'solid','white', '1');
+            $('beheerding_studenten').css("opacity", '1');
+            $('.verdwijn_studenten').show();
+            $('.beheer_keuzedelen').hide();
+            $('.beheer_docenten').hide();
+            $('.beheer_opleiding').hide();
+            $('.beheer_gebruikers').hide();
+
+        }
+    });
+
+    $.each($('.beheerding_docenten'), function(key, value) {
+            $(value).addClass('normal4');
+        });
+                $('.verdwijn_docenten').hide();
+                $('.verdwijn_keuzedelen').hide();
+                $('.verdwijn_studenten').hide();
+                $('.verdwijn_opleiding').hide();
+                $('.verdwijn_gebruikers').hide();
+        $('.normal4').click(function () {
+            if ($(this).hasClass('enlarged2')) {
+                $('.beheer_docenten').animate({
+                    width:  '84%',
+                    height: 50
+                });
+                $(this).removeClass('enlarged2');
+                $(this).addClass('normal4');
+                $('.normal4').show('fast');
+                $('.beheer_docenten').css("border", '');
+                $('beheerding_docenten').css("opacity", '0.6');
+                $('.verdwijn_docenten').hide();
+                $('.beheer_keuzedelen').show();
+                $('.beheer_studenten').show();
+                $('.beheer_opleiding').show();
+                $('.beheer_gebruikers').show();
+            }
+
+            else {
+                $('.beheer_docenten').animate({
+                    height: '87vh'
+                });
+                $(this).removeClass('normal4');
+                $(this).addClass('enlarged2');
+                $('.normal4').hide('fast');
+                $('.beheer_docenten').css("border", 'solid','white', '1');
+                $('beheerding_docenten').css("opacity", '1');
+                $('.verdwijn_docenten').show();
+                $('.beheer_keuzedelen').hide();
+                $('.beheer_studenten').hide();
+                $('.beheer_opleiding').hide();
+                $('.beheer_gebruikers').hide();
+
+            }
+        });
+        $.each($('.beheerding_opleiding'), function(key, value) {
+            $(value).addClass('normal5');
+        });
+                $('.verdwijn_opleiding').hide();
+                $('.verdwijn_keuzedelen').hide();
+                $('.verdwijn_studenten').hide();
+                $('.verdwijn_docenten').hide();
+                $('.verdwijn_gebruikers').hide();
+        $('.normal5').click(function () {
+            if ($(this).hasClass('enlarged2')) {
+                $('.beheer_opleiding').animate({
+                    width:  '84%',
+                    height: 50
+                });
+                $(this).removeClass('enlarged2');
+                $(this).addClass('normal5');
+                $('.normal5').show('fast');
+                $('.beheer_opleiding').css("border", '');
+                $('beheerding_opleiding').css("opacity", '0.6');
+                $('.verdwijn_opleiding').hide();
+                $('.beheer_keuzedelen').show();
+                $('.beheer_studenten').show();
+                $('.beheer_docenten').show();
+                $('.beheer_gebruikers').show();
+            }
+
+            else {
+                $('.beheer_opleiding').animate({
+                    height: '87vh'
+                });
+                $(this).removeClass('normal5');
+                $(this).addClass('enlarged2');
+                $('.normal5').hide('fast');
+                $('.beheer_opleiding').css("border", 'solid','white', '1');
+                $('beheerding_opleiding').css("opacity", '1');
+                $('.verdwijn_opleiding').show();
+                $('.beheer_keuzedelen').hide();
+                $('.beheer_studenten').hide();
+                $('.beheer_docenten').hide();
+                $('.beheer_gebruikers').hide();
+
+            }
+        });
+        $.each($('.beheerding_gebruikers'), function(key, value) {
+            $(value).addClass('normal6');
+        });
+                $('.verdwijn_gebruikers').hide();
+                $('.verdwijn_keuzedelen').hide();
+                $('.verdwijn_studenten').hide();
+                $('.verdwijn_docenten').hide();
+                $('.verdwijn_opleiding').hide();
+        $('.normal6').click(function () {
+            if ($(this).hasClass('enlarged2')) {
+                $('.beheer_gebruikers').animate({
+                    width:  '84%',
+                    height: 50
+                });
+                $(this).removeClass('enlarged2');
+                $(this).addClass('normal6');
+                $('.normal6').show('fast');
+                $('.beheer_gebruikers').css("border", '');
+                $('beheerding_gebruikers').css("opacity", '0.6');
+                $('.verdwijn_gebruikers').hide();
+                $('.beheer_keuzedelen').show();
+                $('.beheer_studenten').show();
+                $('.beheer_docenten').show();
+                $('.beheer_opleiding').show();
+            }
+
+            else {
+                $('.beheer_gebruikers').animate({
+                    height: '87vh'
+                });
+                $(this).removeClass('normal6');
+                $(this).addClass('enlarged2');
+                $('.normal6').hide('fast');
+                $('.beheer_gebruikers').css("border", 'solid','white', '1');
+                $('beheerding_gebruikers').css("opacity", '1');
+                $('.verdwijn_gebruikers').show();
+                $('.beheer_keuzedelen').hide();
+                $('.beheer_studenten').hide();
+                $('.beheer_docenten').hide();
+                $('.beheer_opleiding').hide();
+
+            }
+        });
     });
 
 
