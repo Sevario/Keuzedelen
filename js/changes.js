@@ -65,6 +65,7 @@ $(document).ready(function() {
             $(this).addClass('normal2');
             $('.normal2').show('fast');
             $('.beheer_keuzedelen').css("border", '');
+            $('h2').css("opacity", '0.6');
             $('beheerding_keuzedelen').css("opacity", '0.6');
             $('.verdwijn_keuzedelen').hide();
             $('.beheer_studenten').show();
@@ -80,6 +81,7 @@ $(document).ready(function() {
             $(this).removeClass('normal2');
             $(this).addClass('enlarged2');
             $('.normal2').hide('fast');
+            $('h2').css("opacity", '1');
             $('.beheer_keuzedelen').css("border", 'solid','white', '1');
             $('beheerding_keuzedelen').css("opacity", '1');
             $('.verdwijn_keuzedelen').show();
@@ -109,6 +111,7 @@ $(document).ready(function() {
             $(this).addClass('normal3');
             $('.normal3').show('fast');
             $('.beheer_studenten').css("border", '');
+            $('h2').css("opacity", '0.6');
             $('beheerding_studenten').css("opacity", '0.6');
             $('.verdwijn_studenten').hide();
             $('.beheer_keuzedelen').show();
@@ -124,6 +127,7 @@ $(document).ready(function() {
             $(this).removeClass('normal3');
             $(this).addClass('enlarged2');
             $('.normal3').hide('fast');
+            $('h2').css("opacity", '1');
             $('.beheer_studenten').css("border", 'solid','white', '1');
             $('beheerding_studenten').css("opacity", '1');
             $('.verdwijn_studenten').show();
@@ -153,6 +157,7 @@ $(document).ready(function() {
                 $(this).addClass('normal4');
                 $('.normal4').show('fast');
                 $('.beheer_docenten').css("border", '');
+                $('h2').css("opacity", '0.6');
                 $('beheerding_docenten').css("opacity", '0.6');
                 $('.verdwijn_docenten').hide();
                 $('.beheer_keuzedelen').show();
@@ -168,6 +173,7 @@ $(document).ready(function() {
                 $(this).removeClass('normal4');
                 $(this).addClass('enlarged2');
                 $('.normal4').hide('fast');
+                $('h2').css("opacity", '1');
                 $('.beheer_docenten').css("border", 'solid','white', '1');
                 $('beheerding_docenten').css("opacity", '1');
                 $('.verdwijn_docenten').show();
@@ -196,6 +202,7 @@ $(document).ready(function() {
                 $(this).addClass('normal5');
                 $('.normal5').show('fast');
                 $('.beheer_opleiding').css("border", '');
+                $('h2').css("opacity", '0.6');
                 $('beheerding_opleiding').css("opacity", '0.6');
                 $('.verdwijn_opleiding').hide();
                 $('.beheer_keuzedelen').show();
@@ -211,6 +218,7 @@ $(document).ready(function() {
                 $(this).removeClass('normal5');
                 $(this).addClass('enlarged2');
                 $('.normal5').hide('fast');
+                $('h2').css("opacity", '1');
                 $('.beheer_opleiding').css("border", 'solid','white', '1');
                 $('beheerding_opleiding').css("opacity", '1');
                 $('.verdwijn_opleiding').show();
@@ -239,6 +247,7 @@ $(document).ready(function() {
                 $(this).addClass('normal6');
                 $('.normal6').show('fast');
                 $('.beheer_gebruikers').css("border", '');
+                $('h2').css("opacity", '0.6');
                 $('beheerding_gebruikers').css("opacity", '0.6');
                 $('.verdwijn_gebruikers').hide();
                 $('.beheer_keuzedelen').show();
@@ -254,6 +263,7 @@ $(document).ready(function() {
                 $(this).removeClass('normal6');
                 $(this).addClass('enlarged2');
                 $('.normal6').hide('fast');
+                $('h2').css("opacity", '1');
                 $('.beheer_gebruikers').css("border", 'solid','white', '1');
                 $('beheerding_gebruikers').css("opacity", '1');
                 $('.verdwijn_gebruikers').show();

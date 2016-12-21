@@ -194,11 +194,12 @@ footer {
 .beheer_keuzedelen, .beheer_studenten, .beheer_docenten, .beheer_opleiding, .beheer_gebruikers{
     margin: 10px;
     width: 84%;
-    height: 50px;
+    height: auto;
     background: rgba(0,0,0,0.6);
     border-radius: 5px 5px 5px 5px;
     float: left;
     color: white;
+    padding: 10px;
 }
 
 
