@@ -45,40 +45,52 @@ $(document).ready(function() {
             $('.inschrijven').show('fast');
         }
     });
-    $.each($('h2'), function(key, value) {
+    
+    
+    $.each($('.beheerding_keuzedelen'), function(key, value) {
         $(value).addClass('normal2');
     });
-
-    $('.verdwijn').hide();
-
+            $('.verdwijn_keuzedelen').hide();
+            $('.verdwijn_studenten').hide();
+            $('.verdwijn_docenten').hide();
+            $('.verdwijn_opleiding').hide();
+            $('.verdwijn_gebruikers').hide();
     $('.normal2').click(function () {
         if ($(this).hasClass('enlarged2')) {
-            $('.beheer_all').animate({
+            $('.beheer_keuzedelen').animate({
                 width:  '84%',
                 height: 50
             });
             $(this).removeClass('enlarged2');
             $(this).addClass('normal2');
             $('.normal2').show('fast');
-            $('.beheer_all').css("border", '');
-            $('h2').css("opacity", '0.6');
-            $('.verdwijn').hide();
+            $('.beheer_keuzedelen').css("border", '');
+            $('beheerding_keuzedelen').css("opacity", '0.6');
+            $('.verdwijn_keuzedelen').hide();
+            $('.beheer_studenten').show();
+            $('.beheer_docenten').show();
+            $('.beheer_opleiding').show();
+            $('.beheer_gebruikers').show();
         }
 
         else {
-            $('.beheer_all').animate({
+            $('.beheer_keuzedelen').animate({
                 height: '87vh'
             });
             $(this).removeClass('normal2');
             $(this).addClass('enlarged2');
             $('.normal2').hide('fast');
-            $('.beheer_all').css("border", 'solid','white', '1');
-            $('h2').css("opacity", '1');
-            $('.verdwijn').show();
+            $('.beheer_keuzedelen').css("border", 'solid','white', '1');
+            $('beheerding_keuzedelen').css("opacity", '1');
+            $('.verdwijn_keuzedelen').show();
+            $('.beheer_studenten').hide();
+            $('.beheer_docenten').hide();
+            $('.beheer_opleiding').hide();
+            $('.beheer_gebruikers').hide();
 
         }
     });
-
+    
 
     });
 

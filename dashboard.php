@@ -69,7 +69,7 @@
                     
                 echo' <div class="keuzedeel" id="test">
                 <button>' . $keuzedelen_info['Name'] . '</button>
-                <h2>Klik hier voor informatie</h2>
+                <h2 id="dashboardh2">Klik hier voor informatie</h2>
                 <h1>' . $keuzedelen_info['Name'] . '</h1>
                 <p>Minimale studenten nodig om een klas te vormen: ' . $keuzedelen_info['MinStudents'] . '</p>
                 <p>Maximale studenten per klas: ' . $keuzedelen_info['MaxStudents'] . '</p>

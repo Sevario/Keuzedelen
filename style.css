@@ -38,7 +38,15 @@ width: 400px;
     width: 15%;
 }
 
-
+.beheerding_keuzedelen,.beheerding_studenten,.beheerding_docenten,.beheerding_opleiding,.beheerding_gebruikers{   
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: auto;
+    height: auto;
+    color: white;
+    opacity: 0.6;
+}
 
 .beheerding {
     margin-top: 5px; 
@@ -147,7 +155,7 @@ li a.selected:link, a.selected:visited{
     float: left;
     margin: 10px;
 }
-h2 {
+#dashboardh2 {
     color: white;
     opacity: 0.1;
     margin-top: 30%;
@@ -183,7 +191,7 @@ footer {
     height: 200px;
     width: 200px;
 }
-#beheer_keuzedelen, #beheer_studenten, #beheer_docenten, #beheer_opleiding, #beheer_gebruikers{
+.beheer_keuzedelen, .beheer_studenten, .beheer_docenten, .beheer_opleiding, .beheer_gebruikers{
     margin: 10px;
     width: 84%;
     height: 50px;
@@ -193,12 +201,7 @@ footer {
     color: white;
 }
 
-#beheer_keuzedelen.h2{   
-    margin: 0;
-    padding: 0;
-    width: auto;
-    height: auto;
-}
+
 
 #changepw {
     float: left;

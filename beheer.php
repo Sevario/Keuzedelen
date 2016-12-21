@@ -39,9 +39,9 @@
 
     </div>
     <div id="geheel">
-        <div id="beheer_keuzedelen" class="beheer_all">
-           <h2 class="beheerding">Keuzedelen</h2>
-           <div class ="verdwijn">
+        <div  class="beheer_keuzedelen">
+           <h2 class="beheerding_keuzedelen">Keuzedelen</h2>
+           <div class ="verdwijn_keuzedelen">
             <?php
             
             $resultgetkeuze = $conn->prepare("SELECT Name FROM Keuzedeel");
@@ -66,9 +66,9 @@
             
            </div>
         </div>
-        <div id="beheer_studenten" class="beheer_all">
-            <h2 class="beheerding">Studenten</h2>
-            <div class ="verdwijn">
+        <div  class="beheer_studenten">
+            <h2 class="beheerding_studenten">Studenten</h2>
+            <div class ="verdwijn_studenten">
             <?php
             
             $resultgetkeuze2 = $conn->prepare("SELECT email FROM Student");
@@ -92,9 +92,9 @@
             ?>
            </div>
         </div>
-        <div id="beheer_docenten" class="beheer_all">
-            <h2 class="beheerding">Docenten</h2>
-            <div class ="verdwijn">    
+        <div class="beheer_docenten">
+            <h2 class="beheerding_docenten">Docenten</h2>
+            <div class ="verdwijn_docenten">    
             <?php
             
             $resultgetkeuze3 = $conn->prepare("SELECT abbreviation FROM Docent");
@@ -118,9 +118,9 @@
             ?>
            </div>
         </div>
-        <div id="beheer_opleiding" class="beheer_all">
-            <h2 class="beheerding">Opleiding</h2>
-            <div class ="verdwijn">
+        <div class="beheer_opleiding">
+            <h2 class="beheerding_opleiding">Opleiding</h2>
+            <div class ="verdwijn_opleiding">
             <?php
             
             $resultgetkeuze = $conn->prepare("SELECT Naam FROM Opleiding");
@@ -144,9 +144,9 @@
             ?>
            </div>
         </div>
-        <div id="beheer_gebruikers" class="beheer_all">
-            <h2 class="beheerding">Gebruikers</h2>
-            <div class ="verdwijn">
+        <div class="beheer_gebruikers">
+            <h2 class="beheerding_gebruikers">Gebruikers</h2>
+            <div class ="verdwijn_gebruikers">
             <?php
             
             $resultgetkeuze = $conn->prepare("SELECT username FROM User");
