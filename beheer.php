@@ -135,7 +135,7 @@
             echo "<select name='Keuzedelen' class='keuzedrop'>";
             foreach ($arraykeuzen as $row) {
             print_r($row['Naam']); ?>
-            <option value="<?php echo $row['Naam']; ?>"><?php echo $row['Naam']; ?></option>
+            <option value="Voorbereiding HBO Wiskunde voor de techniek"<?=$row['Naam'] == 'Voorbereiding HBO Wiskunde voor de techniek' ? ' selected="selected"' : ''; ?>"><?php echo $row['Naam']; ?></option>
             <?php
             }
             
