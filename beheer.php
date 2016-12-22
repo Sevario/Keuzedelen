@@ -55,7 +55,7 @@
             $arraykeuzen = $rowkeuze;
 
             
-            echo "<select name='Keuzedelen' class='keuzedrop'>";
+            echo "<select name='Keuzedelen' class='keuzedrop' id='sel_keuzedelen'>";
             foreach ($arraykeuzen as $row) {
             print_r($row['Name']); ?>
             <option value="<?php echo $row['Name']; ?>"><?php echo $row['Name']; ?></option>
@@ -85,7 +85,7 @@
             $arraykeuzen2 = $rowkeuze2;
 
             
-            echo "<select name='Keuzedelen' class='keuzedrop'>";
+            echo "<select name='Keuzedelen' class='keuzedrop' id='sel_studenten'>";
             foreach ($arraykeuzen2 as $row) {
             print_r($row['email']); ?>
             <option value="<?php echo $row['email']; ?>"><?php echo $row['email']; ?></option>
@@ -114,7 +114,7 @@
             $arraykeuzen3 = $rowkeuze3;
 
             
-            echo "<select name='Keuzedelen' class='keuzedrop'>";
+            echo "<select name='Keuzedelen' class='keuzedrop' id='sel_docenten'>";
             foreach ($arraykeuzen3 as $row) {
             print_r($row['abbreviation']); ?>
             <option value="<?php echo $row['abbreviation']; ?>"><?php echo $row['abbreviation']; ?></option>
@@ -124,6 +124,9 @@
             echo "</select>"
             
             ?>
+                <div id="keuzes3">
+
+                </div>
            </div>
         </div>
         <div class="beheer_opleiding">
@@ -140,7 +143,7 @@
             $arraykeuzen = $rowkeuze;
 
             
-            echo "<select name='Keuzedelen' class='keuzedrop'>";
+            echo "<select name='Keuzedelen' class='keuzedrop' id='sel_opleiding'>";
             foreach ($arraykeuzen as $row) {
             print_r($row['Naam']); ?>
             <option value="<?php echo $row['Naam']; ?>"><?php echo $row['Naam']; ?></option>
@@ -150,6 +153,9 @@
             echo "</select>"
             
             ?>
+                <div id="keuzes4">
+
+                </div>
            </div>
         </div>
         <div class="beheer_gebruikers">
@@ -166,7 +172,7 @@
             $arraykeuzen = $rowkeuze;
 
             
-            echo "<select name='Keuzedelen' class='keuzedrop'>";
+            echo "<select name='Keuzedelen' class='keuzedrop' id='sel_gebruikers'>";
             foreach ($arraykeuzen as $row) {
             print_r($row['username']); ?>
             <option value="<?php echo $row['username']; ?>"><?php echo $row['username']; ?></option>
@@ -176,6 +182,9 @@
             echo "</select>"
             
             ?>
+                <div id="keuzes5">
+
+                </div>
            </div>
         </div>
         

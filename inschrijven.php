@@ -42,7 +42,7 @@ if (isset( $_GET["kd"]) && !empty($_GET["kd"]))
             $insert1 = $conn->prepare("INSERT INTO Keuzedeel_Student (`Keuzedeel_ID`, `Student_ID`, `Ingeschreven`) VALUES ($IDkeuze, $student_info[ID], 'Y');");
             $insert1->execute();
             echo "<h1>Je bent succesvol ingeschreven voor het Keuzedeel: " . $IDkeuze . "</h1>";
-            echo "Je wordt teruggezonden naar de hoofdpagina.</h5></div>"; //header("refresh:2;url=dashboard.php");
+            echo "Je wordt teruggezonden naar de hoofdpagina.</h5></div>"; header("refresh:4;url=dashboard.php");
 
         }
     } 

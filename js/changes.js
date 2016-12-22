@@ -5,13 +5,48 @@ $(document).ready(function() {
     //
     //     console.log($("select option:selected").val());
     // });
-    $("select").change(function () {
+    $("#sel_keuzedelen").change(function () {
         $.post('my_ajax_receiver.php', 'val=' + $(this).val(), function (response) {
             var json = JSON.parse(response);
             
             console.log(json.echo);
             
             $("#keuzes").html(json.echo);
+
+            $("#keuzes").text(json[0]);
+            $('#keuzes').show();
+        });
+    });
+    $("#sel_studenten").change(function () {
+        $.post('my_ajax_receiver.php', 'val=' + $(this).val(), function (response) {
+            var json = JSON.parse(response);
+
+            $("#keuzes2").text(json[0]);
+            $('#keuzes2').show();
+        });
+    });
+    $("#sel_docenten").change(function () {
+        $.post('my_ajax_receiver.php', 'val=' + $(this).val(), function (response) {
+            var json = JSON.parse(response);
+
+            $("#keuzes3").text(json[0]);
+            $('#keuzes3').show();
+        });
+    });
+    $("#sel_opleiding").change(function () {
+        $.post('my_ajax_receiver.php', 'val=' + $(this).val(), function (response) {
+            var json = JSON.parse(response);
+
+            $("#keuzes4").text(json[0]);
+            $('#keuzes4').show();
+        });
+    });
+    $("#sel_gebruikers").change(function () {
+        $.post('my_ajax_receiver.php', 'val=' + $(this).val(), function (response) {
+            var json = JSON.parse(response);
+
+            $("#keuzes5").text(json[0]);
+            $('#keuzes5').show();
         });
     });
 
@@ -88,6 +123,7 @@ $(document).ready(function() {
             $('.beheer_docenten').show();
             $('.beheer_opleiding').show();
             $('.beheer_gebruikers').show();
+            $('#keuzes').hide();
         }
 
         else {
@@ -105,6 +141,7 @@ $(document).ready(function() {
             $('.beheer_docenten').hide();
             $('.beheer_opleiding').hide();
             $('.beheer_gebruikers').hide();
+
 
         }
     });
@@ -134,6 +171,7 @@ $(document).ready(function() {
             $('.beheer_docenten').show();
             $('.beheer_opleiding').show();
             $('.beheer_gebruikers').show();
+            $('#keuzes2').hide();
         }
 
         else {
@@ -180,6 +218,7 @@ $(document).ready(function() {
                 $('.beheer_studenten').show();
                 $('.beheer_opleiding').show();
                 $('.beheer_gebruikers').show();
+                $('#keuzes3').hide();
             }
 
             else {
@@ -225,6 +264,7 @@ $(document).ready(function() {
                 $('.beheer_studenten').show();
                 $('.beheer_docenten').show();
                 $('.beheer_gebruikers').show();
+                $('#keuzes4').hide();
             }
 
             else {
@@ -270,6 +310,7 @@ $(document).ready(function() {
                 $('.beheer_studenten').show();
                 $('.beheer_docenten').show();
                 $('.beheer_opleiding').show();
+                $('#keuzes5').hide();
             }
 
             else {
