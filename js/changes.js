@@ -8,8 +8,10 @@ $(document).ready(function() {
     $("select").change(function () {
         $.post('my_ajax_receiver.php', 'val=' + $(this).val(), function (response) {
             var json = JSON.parse(response);
-
-            $("#keuzes").text(json[0]);
+            
+            console.log(json.echo);
+            
+            $("#keuzes").html(json.echo);
         });
     });
 
