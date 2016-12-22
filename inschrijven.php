@@ -16,18 +16,17 @@ if (isset( $_GET["kd"]) && !empty($_GET["kd"]))
     
     $result01->execute();
 
-    $row01 = $result01->fetch(PDO::FETCH_ASSOC);
-     
-    if ($row01 == !$IDkeuze ) {
-        $insert1 = $conn->prepare("INSERT INTO Keuzedeel_Student (`Keuzedeel_ID`, `Student_ID`, `Ingeschreven`) VALUES ($IDkeuze, $student_info[ID], 'Y');");
+    $row01 = $result01->fetchALL(PDO::FETCH_ASSOC);
 
-        $insert1->execute();
-        $result4 = $conn->prepare("SELECT * FROM Keuzedeel WHERE ID = $IDkeuze"); 
-        echo "<h1>Je bent succesvol ingeschreven voor het Keuzedeel: " . $IDkeuze . "</h1>";
+    $arr = array();
+    foreach($row01 as $key => $value) {
+        array_push($arr, $value["Keuzedeel_ID"]);
+    }
+   
     
-         }
-    else {
-    echo "<div id='inschrijffout' style='
+        if (in_array($IDkeuze, $arr)) {
+
+            echo "<div id='inschrijffout' style='
                                     background-color: black;
                                     width: 350px;
                                     height: auto;
@@ -36,12 +35,18 @@ if (isset( $_GET["kd"]) && !empty($_GET["kd"]))
                                     border-radius: 2px 2px 2px 2px;
                                     margin-left: 35%;
                                     margin-right: 40%;
-                                    margin-top: 10%;'><h5 style='color: white;'>Het is niet mogelijk om je twee keer voor hetzelfde keuzedeel op te geven.
-                    Je wordt teruggezonden naar de hoofdpagina.</h5></div>"; header("refresh:2;url=dashboard.php");
-            }
-    } 
-Else {
-echo "An unexpected error has occurred.";
-}
+                                    margin-top: 10%;'>
+                    <h5 style='color: white;'>Het is niet mogelijk om je twee keer voor hetzelfde keuzedeel op te geven. Je wordt teruggezonden naar de hoofdpagina.</h5>
+                    </div>";
+                header("refresh:2;url=dashboard.php");
+        }
+        else {
+            $insert1 = $conn->prepare("INSERT INTO Keuzedeel_Student (`Keuzedeel_ID`, `Student_ID`, `Ingeschreven`) VALUES ($IDkeuze, $student_info[ID], 'Y');");
+            $insert1->execute();
+            echo "<h1>Je bent succesvol ingeschreven voor het Keuzedeel: " . $IDkeuze . "</h1>";
+            echo "Je wordt teruggezonden naar de hoofdpagina.</h5></div>"; //header("refresh:2;url=dashboard.php");
+
+        }
+    }
 ?>
 </html>
