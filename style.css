@@ -187,10 +187,10 @@ footer {
     bottom:5px;
     text-align: center;
 }
-#inschrijffout {
-    height: 200px;
-    width: 200px;
-}
+/*#inschrijffout {*/
+    /*height: 200px;*/
+    /*width: 200px;*/
+/*}*/
 .beheer_keuzedelen, .beheer_studenten, .beheer_docenten, .beheer_opleiding, .beheer_gebruikers{
     margin: 10px;
     width: 84%;

@@ -7,6 +7,7 @@
         header ("Location: index.php");
     }
     ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,6 +18,7 @@
         <title>Dashboard</title>
 </head>
 <body>
+
     <div id="profile">
         <b id="welcome">Welcome : <i><?php echo $login_session?></i></b> <?php  if ($user_permissions == "1") {echo $opleiding_naam;} ?>
     </div>
@@ -63,7 +65,10 @@
             echo "</select>"
             
             ?>
-            
+               <div id="keuzes">
+
+               </div>
+
            </div>
         </div>
         <div  class="beheer_studenten">
@@ -90,6 +95,9 @@
             echo "</select>"
             
             ?>
+                <div id="keuzes2">
+
+                </div>
            </div>
         </div>
         <div class="beheer_docenten">

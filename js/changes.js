@@ -1,9 +1,16 @@
 
 $(document).ready(function() {
 
-    $("select").change(function() {
+    // $("select").change(function() {
+    //
+    //     console.log($("select option:selected").val());
+    // });
+    $("select").change(function () {
+        $.post('my_ajax_receiver.php', 'val=' + $(this).val(), function (response) {
+            var json = JSON.parse(response);
 
-        console.log($("select option:selected").val());
+            $("#keuzes").text(json[0]);
+        });
     });
 
 

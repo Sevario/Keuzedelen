@@ -26,7 +26,13 @@ if(!isset($_SESSION['login_user'])){ //if login in session is not set
         echo "<li><a href='dashboard.php'>Home</a></li>";
                 };
         ?>
-        <li><a href="beheer.php">Beheer(Admin only)</a></li>
+        <?php
+        if ($user_permissions == 3) {
+
+            echo "<li><a href='beheer.php'>Beheer(Admin only)</a></li>";
+        }
+        ?>
+
         <li><a href='account.php' class='selected'>Account</a></li>
         <li><a href="logout.php">Log Out</a></li>
         <br>
