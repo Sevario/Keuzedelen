@@ -62,10 +62,10 @@ $html = "
             </tr>
             <tr>
                 <td>
-                    <button>Test</button>
+                    
                 </td>
                 <td>
-                    
+                    <button class='namechange'>Test</button>
                 </td>
                 <td>
                     

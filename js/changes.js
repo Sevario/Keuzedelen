@@ -15,6 +15,14 @@ $(document).ready(function() {
 
             $("#keuzes").text(json[0]);
             $('#keuzes').show();
+            
+            
+            $(".namechange").click(function() {
+                var newname = prompt("Vul de nieuwe waarde in");
+                $.post('updatekeuzedelen.php', 'val=' + $(this).val(), function (response) {});
+            });
+            
+            
         });
     });
     $("#sel_studenten").change(function () {
