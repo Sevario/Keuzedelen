@@ -6,7 +6,8 @@ $(document).ready(function() {
     //     console.log($("select option:selected").val());
     // });
     $("#sel_keuzedelen").change(function () {
-        $.post('my_ajax_receiver.php', 'val=' + $(this).val(), function (response) {
+        $.post('my_ajax_receiver.php', {val: $(this).val()}, function (response) {
+            
             var json = JSON.parse(response);
             
             console.log(json.echo);
@@ -19,7 +20,7 @@ $(document).ready(function() {
             
             $(".namechange").click(function() {
                 var newname = prompt("Vul de nieuwe waarde in");
-                $.post('updatekeuzedelen.php', 'val=' + $(this).val(), function (response) {});
+                $.post('updatekeuzedelen.php', {val: newname, val2: $(this).val()}, function (response) {});
             });
             
             
