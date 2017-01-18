@@ -2,13 +2,12 @@
 
 require "session.php";
 
-$value = $_POST['val'];
-$value2 = $_POST['val2'];
+$newval = $_POST['newVal'];
+$name = $_POST['name'];
+$column = $_POST["updateColumn"];
 
-$result021 = $conn->prepare("UPDATE Keuzedeel SET Name='$value' WHERE ");
+echo $newval . " | " . $name . " | " . $column . " | " . "UPDATE `Keuzedeel` SET `$column`='$newval' WHERE `Name` = '$name'";
+
+$result021 = $conn->prepare("UPDATE `Keuzedeel` SET `$column`='$newval' WHERE `Name` = '$name'");
 
     $result021->execute();
-
-    $row021 = $result021->fetch(PDO::FETCH_ASSOC);
-
-    $keuzeinfo = $row021;

@@ -5,8 +5,13 @@ $(document).ready(function() {
     //
     //     console.log($("select option:selected").val());
     // });
+    
+    
+    //Keuzedelen Beheer.
     $("#sel_keuzedelen").change(function () {
-        $.post('my_ajax_receiver.php', {val: $(this).val()}, function (response) {
+        var oldname = $(this).val();
+            
+        $.post('ajax_keuzedeel.php', {val: oldname}, function (response) {
             
             var json = JSON.parse(response);
             
@@ -19,10 +24,34 @@ $(document).ready(function() {
             
             
             $(".namechange").click(function() {
-                var newname = prompt("Vul de nieuwe waarde in");
-                $.post('updatekeuzedelen.php', {val: newname, val2: $(this).val()}, function (response) {});
+                var newval = prompt("Vul de nieuwe waarde in");
+                $.post('updatekeuzedelen.php', { updateColumn: "Name", newName: newval, name: oldname}, function (response) {});
             });
             
+                $(".minstuds").click(function() {
+                var newval = prompt("Vul de nieuwe waarde in");
+                $.post('updatekeuzedelen.php', { updateColumn: "MinStudents", newVal: newval, name: oldname}, function (response) {});
+            });
+            
+                $(".maxstuds").click(function() {
+                var newval = prompt("Vul de nieuwe waarde in");
+                $.post('updatekeuzedelen.php', { updateColumn: "MaxStudents", newVal: newval, name: oldname}, function (response) {});
+            });
+            
+                $(".info").click(function() {
+                var newval = prompt("Vul de nieuwe waarde in");
+                $.post('updatekeuzedelen.php', { updateColumn: "Information", newVal: newval, name: oldname}, function (response) {});
+            });
+            
+                $(".docent").click(function() {
+                var newval = prompt("Vul de nieuwe waarde in");
+                $.post('updatekeuzedelen.php', { updateColumn: "Docent_ID", newVal: newval, name: oldname}, function (response) {});
+            });
+            
+                $(".kcode").click(function() {
+                var newval = prompt("Vul de nieuwe waarde in");
+                $.post('updatekeuzedelen.php', { updateColumn: "Code", newVal: newval, name: oldname}, function (response) {});
+            });
             
         });
     });

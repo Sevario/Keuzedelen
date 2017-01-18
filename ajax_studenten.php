@@ -65,22 +65,22 @@ $html = "
                     
                 </td>
                 <td>
-                    <button class='namechange'>Test</button>
+                    <button class='namechange'>Edit</button>
                 </td>
                 <td>
-                    
+                    <button class='minstuds'>Edit</button>
                 </td>
                 <td>
-                    
+                    <button class='maxstuds'>Edit</button>
                 </td>
                 <td>
-                    
+                    <button class='info'>Edit</button>
                 </td>
                 <td>
-                    
+                    <button class='docent'>Edit</button>
                 </td>
                 <td>
-                    ]
+                    <button class='kcode'>Edit</button>
                 </td>
             </tr>
         </table>
@@ -98,3 +98,4 @@ $html = "
 
 echo json_encode(array("value" => $_POST['val'], "echo" => $html));
 ?>
+
