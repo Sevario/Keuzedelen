@@ -79,7 +79,7 @@ if(!isset($_SESSION['login_user'])){ //if login in session is not set
     <?php
 
     if ($user_permissions == "1"){
-    echo "{<div id='gekozen_delen'>
+    echo "<div id='gekozen_delen'>
             <text style='text-align: center'>Gekozen delen</text><br>";
         foreach ($keuzedeel_id as $naam_keuzedeel){
 
@@ -95,14 +95,16 @@ if(!isset($_SESSION['login_user'])){ //if login in session is not set
 
             echo "<button class=\"button\">Verwijder</button>";
             echo "</form>";
-            echo "<br>";
         }
 
     echo "</div>";
 
     }
     if ($user_permissions == "2"){
-        echo "<div id='gekozen_delen'></div>";
+        echo "<div id='gekozen_delen'>
+            <text style='text-align: center'>Klassen</text><br>
+
+    </div>";
     }
 
     ?>

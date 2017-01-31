@@ -22,6 +22,7 @@ width: 400px;
     float: left;
     color: white;
     opacity: 0.8;
+    text-align: center;
 }
 
 
@@ -96,9 +97,10 @@ body {
       font-size: 1em;
       font-weight: 300;
       padding: 5px 0;
-      width: 100%;
+      width: 90%;
       border-radius: 5px 5px 5px 5px;
       color: white;
+      margin: 2px;
 
     }
   
