@@ -28,7 +28,7 @@ if (isset( $_GET["kd"]) && !empty($_GET["kd"]))
 
             echo "<div id='inschrijffout' style='
                                     background-color: black;
-                                    width: 350px;
+                                    width: auto;
                                     height: auto;
                                     padding: 10px;
                                     border: 1px solid white;
@@ -41,7 +41,16 @@ if (isset( $_GET["kd"]) && !empty($_GET["kd"]))
             else {
             $insert1 = $conn->prepare("INSERT INTO Keuzedeel_Student (`Keuzedeel_ID`, `Student_ID`, `Ingeschreven`) VALUES ($IDkeuze, $student_info[ID], 'Y');");
             $insert1->execute();
-            echo "<h1>Je bent succesvol ingeschreven voor het Keuzedeel: " . $IDkeuze . "</h1>";
+            echo "<div id='inschrijffout 'style='
+                                    background-color: black;
+                                    width: auto;
+                                    height: auto;
+                                    padding: 10px;
+                                    border: 1px solid white;
+                                    border-radius: 2px 2px 2px 2px;
+                                    margin-left: 35%;
+                                    margin-right: 40%;
+                                    margin-top: 10%;'><h5 style='color: white;'>Je bent succesvol ingeschreven voor het keuzedeel . ";
             echo "Je wordt teruggezonden naar de hoofdpagina.</h5></div>"; header("refresh:4;url=dashboard.php");
 
         }
