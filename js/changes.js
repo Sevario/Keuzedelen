@@ -25,7 +25,7 @@ $(document).ready(function() {
             
             $(".namechange").click(function() {
                 var newval = prompt("Vul de nieuwe waarde in");
-                $.post('updatekeuzedelen.php', { updateColumn: "Name", newName: newval, name: oldname}, function (response) {});
+                $.post('updatekeuzedelen.php', { updateColumn: "Name", newVal: newval, name: oldname}, function (response) {});
             });
             
                 $(".minstuds").click(function() {

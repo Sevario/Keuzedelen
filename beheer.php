@@ -27,7 +27,7 @@
             <li><a href="account.php">Account</a></li>
             <?php
             if ($user_permissions == 3) {
-            echo "<li><a href='beheer.php' class='selected'>Beheer(Admin only)</a></li>";
+            echo "<li><a href='beheer.php' class='selected'>Beheer</a></li>";
             }
             ?>
             <li><a href="logout.php">Log Out</a></li>
