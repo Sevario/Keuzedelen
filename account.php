@@ -101,7 +101,9 @@ if(!isset($_SESSION['login_user'])){ //if login in session is not set
     echo "</div>";
 
     }
-
+    if ($user_permissions == "2"){
+        echo "<div id='gekozen_delen'></div>";
+    }
 
     ?>
 

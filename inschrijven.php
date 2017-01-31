@@ -35,7 +35,7 @@ if (isset( $_GET["kd"]) && !empty($_GET["kd"]))
                                     border-radius: 2px 2px 2px 2px;
                                     margin-left: 35%;
                                     margin-right: 40%;
-                                    margin-top: 10%;'><h5 style='color: white;'>Het is niet mogelijk om je twee keer voor hetzelfde keuzedeel op te geven.
+                                    margin-top: 10%;'><h5 style='color: white;'>Het is niet mogelijk om je meer dan één keer voor hetzelfde keuzedeel op te geven.
                     Je wordt teruggezonden naar de hoofdpagina.</h5></div>"; header("refresh:4;url=dashboard.php");
             }
             else {
