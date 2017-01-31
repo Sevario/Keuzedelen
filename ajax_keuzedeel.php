@@ -62,7 +62,7 @@ $html = "
             </tr>
             <tr>
                 <td>
-                    
+                    <button class='delete'>Verwijder</button>
                 </td>
                 <td>
                     <button class='namechange'>Edit</button>

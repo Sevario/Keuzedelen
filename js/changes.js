@@ -52,6 +52,15 @@ $(document).ready(function() {
                 var newval = prompt("Vul de nieuwe waarde in");
                 $.post('updatekeuzedelen.php', { updateColumn: "Code", newVal: newval, name: oldname}, function (response) {});
             });
+                $(".delete").click(function() {
+                if (confirm('Weet je zeker dat jet het keuzedeel wilt verwijderen?')) {
+                    var newval = "delcheck";
+                $.post('updatekeuzedelen.php', { updateColumn: "Code", newVal: newval, name: oldname}, function (response) {});
+                } else {
+                    // Do nothing!
+                }
+
+            });
             
         });
     });
