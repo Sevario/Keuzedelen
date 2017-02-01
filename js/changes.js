@@ -336,7 +336,7 @@ $(document).ready(function() {
                 $('.beheer_docenten').show();
                 $('.beheer_gebruikers').show();
                 $('.beheer_lesgroepen').show();
-                $('#keuzes4').hide();
+                $('#beheeropleiding').hide();
             }
 
             else {
@@ -385,7 +385,7 @@ $(document).ready(function() {
                 $('.beheer_docenten').show();
                 $('.beheer_opleiding').show();
                 $('.beheer_lesgroepen').show();
-                $('#keuzes5').hide();
+                $('#beheergebruikers').hide();
             }
 
             else {
@@ -434,7 +434,7 @@ $(document).ready(function() {
             $('.beheer_docenten').show();
             $('.beheer_opleiding').show();
             $('.beheer_gebruikers').show();
-            $('#keuzes6').hide();
+            $('#beheerlesgroepen').hide();
         }
 
         else {
