@@ -165,7 +165,7 @@ $(document).ready(function() {
         if ($(this).hasClass('enlarged2')) {
             $('.beheer_keuzedelen').animate({
                 width:  '84%',
-                height: 50
+                height: 53
             });
             $(this).removeClass('enlarged2');
             $(this).addClass('normal2');
@@ -216,7 +216,7 @@ $(document).ready(function() {
         if ($(this).hasClass('enlarged2')) {
             $('.beheer_studenten').animate({
                 width:  '84%',
-                height: 50
+                height: 53
             });
             $(this).removeClass('enlarged2');
             $(this).addClass('normal3');
@@ -266,7 +266,7 @@ $(document).ready(function() {
             if ($(this).hasClass('enlarged2')) {
                 $('.beheer_docenten').animate({
                     width:  '84%',
-                    height: 50
+                    height: 53
                 });
                 $(this).removeClass('enlarged2');
                 $(this).addClass('normal4');
@@ -315,7 +315,7 @@ $(document).ready(function() {
             if ($(this).hasClass('enlarged2')) {
                 $('.beheer_opleiding').animate({
                     width:  '84%',
-                    height: 50
+                    height: 53
                 });
                 $(this).removeClass('enlarged2');
                 $(this).addClass('normal5');
@@ -364,7 +364,7 @@ $(document).ready(function() {
             if ($(this).hasClass('enlarged2')) {
                 $('.beheer_gebruikers').animate({
                     width:  '84%',
-                    height: 50
+                    height: 53
                 });
                 $(this).removeClass('enlarged2');
                 $(this).addClass('normal6');
@@ -413,7 +413,7 @@ $(document).ready(function() {
         if ($(this).hasClass('enlarged2')) {
             $('.beheer_lesgroepen').animate({
                 width:  '84%',
-                height: 50
+                height: 53
             });
             $(this).removeClass('enlarged2');
             $(this).addClass('normal7');

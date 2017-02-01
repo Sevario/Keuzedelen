@@ -48,7 +48,7 @@ if(!isset($_SESSION['login_user'])){ //if login in session is not set
 <?php
 if ($user_permissions == "2"){
     echo "<div id='gekozen_delen'>
-            <text style='text-align: center'>Klassen</text><br>
+            <text style='text-align: center'>Lesgroepen</text><br>
 
     </div>";
 }

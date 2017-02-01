@@ -192,7 +192,7 @@
             <div class ="verdwijn_lesgroepen">
                 <?php
 
-                $resultgetkeuze = $conn->prepare("SELECT username FROM User");
+                $resultgetkeuze = $conn->prepare("SELECT naam FROM Lesgroep");
 
                 $resultgetkeuze->execute();
 
@@ -203,8 +203,8 @@
 
                 echo "<select name='Keuzedelen' class='keuzedrop' id='sel_lesgroepen'>";
                 foreach ($arraykeuzen as $row) {
-                    print_r($row['username']); ?>
-                    <option value="<?php echo $row['username']; ?>"><?php echo $row['username']; ?></option>
+                    print_r($row['naam']); ?>
+                    <option value="<?php echo $row['naam']; ?>"><?php echo $row['naam']; ?></option>
                     <?php
                 }
 
