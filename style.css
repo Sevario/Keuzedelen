@@ -74,7 +74,13 @@ body {
   margin: 2% auto 0 auto;
   margin-top: 15%;
   }
-
+.login2 {
+    padding: 15px;
+    width: 400px;
+    min-height: 400px;
+    margin: 2% auto 0 auto;
+    margin-top: 20%;
+}
 
     
       span {
@@ -242,5 +248,13 @@ td {
     background: rgba(0,0,0,0.6);
     color: white;
     opacity: 0.8;
+    text-align: center;
+}
+h1 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: -10%;
     text-align: center;
 }

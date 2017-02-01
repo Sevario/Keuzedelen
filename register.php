@@ -5,7 +5,8 @@
     </head>
     
     <body>
-        <div class="login">
+    <h1>Keuzedelen</h1>
+        <div class="login2">
                 <div class="heading">
                     <form method="post" role="form" class="register" action="createaccount.php" autocomplete="off">
                         <div class="input-group input-group-lg">
