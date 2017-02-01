@@ -43,7 +43,7 @@ width: 400px;
     width: 15%;
 }
 
-.beheerding_keuzedelen,.beheerding_studenten,.beheerding_docenten,.beheerding_opleiding,.beheerding_gebruikers{   
+.beheerding_keuzedelen,.beheerding_studenten,.beheerding_docenten,.beheerding_opleiding,.beheerding_gebruikers,.beheerding_lesgroepen{
     margin: 0;
     padding: 0;
     text-align: center;
@@ -197,7 +197,7 @@ footer {
     /*height: 200px;*/
     /*width: 200px;*/
 /*}*/
-.beheer_keuzedelen, .beheer_studenten, .beheer_docenten, .beheer_opleiding, .beheer_gebruikers{
+.beheer_keuzedelen, .beheer_studenten, .beheer_docenten, .beheer_opleiding, .beheer_gebruikers, .beheer_lesgroepen{
     margin: 10px;
     width: 84%;
     height: auto;
