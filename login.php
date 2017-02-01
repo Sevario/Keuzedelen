@@ -28,7 +28,7 @@
                         }
                     else
                         {
-                            header("location:index.php?login=false");
+                            header("location:index.php");
                         }
 
                 }

@@ -5,18 +5,11 @@
     </head>
     
     <body>
+
         <div class="login">
 
                 <div class="heading">
                     <form role="form" class="login" action="login.php" autocomplete="off" method="POST">
-                        <?php 
-                        if (empty($_GET["login"])){
-                        $_GET["login"] = "true";
-                        }
-                        if ($_GET["login"] == "false" ){
-                            echo "<p class='loginerror'>De gebruikersnaam of het wachtwoord is incorrect. Probeer opnieuw.</p>";
-                        }
-                        ?>
                         <div class="input-group input-group-lg">
                           <span class="input-group-addon"><i class="fa fa-user"></i></span>
                             <input type="text" class="form-control" name="email" placeholder="Email">
