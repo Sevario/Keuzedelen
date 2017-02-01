@@ -3,22 +3,31 @@ require "session.php";
 
 $value = $_POST['val'];
 
-$result001 = $conn->prepare("SELECT * FROM Keuzedeel WHERE Name = '$value'");
+$result001 = $conn->prepare("SELECT * FROM Student WHERE email = '$value'");
 
     $result001->execute();
 
     $row001 = $result001->fetch(PDO::FETCH_ASSOC);
 
-    $keuzeinfo = $row001;
+    $studentinfo = $row001;
 
     
-    $result002 = $conn->prepare("SELECT abbreviation FROM Docent WHERE ID = $keuzeinfo[Docent_ID]");
+    $result002 = $conn->prepare("SELECT * FROM User WHERE ID = '$studentinfo[User_ID]'");
 
     $result002->execute();
 
     $row002 = $result002->fetch(PDO::FETCH_ASSOC);
 
-    $docent_naam = $row002;
+    $userinfo = $row002;
+    
+    $result003 = $conn->prepare("SELECT * FROM Opleiding WHERE ID = '$studentinfo[Opleiding_ID]'");
+
+    $result003->execute();
+
+    $row003 = $result003->fetch(PDO::FETCH_ASSOC);
+
+    $opleidinginfo = $row003;
+
 
 $html = "
         <link rel='stylesheet' type='text/css' href='/keuzedelen/ajax.css' media='screen' />
@@ -28,36 +37,28 @@ $html = "
             <thead>
                 <tr>
                     <th class='text-left'>ID</th>
-                    <th class='text-left'>Naam</th>
-                    <th class='text-left'>Min Students</th>
-                    <th class='text-left'>Max Students</th>
-                    <th class='text-left'>Informatie</th>
-                    <th class='text-left'>Docent</th>
-                    <th class='text-left'>K-Code</th>
+                    <th class='text-left'>Email</th>
+                    <th class='text-left'>Student Nummer</th>
+                    <th class='text-left'>Gebruiker</th>
+                    <th class='text-left'>Opleiding</th>
                 </tr>
             </thead>
              <tbody class='table-hover'>
             <tr>
                 <td>
-                    $keuzeinfo[ID]
+                    $studentinfo[ID]
                 </td>
                 <td>
-                    $keuzeinfo[Name]
+                    $studentinfo[email]
                 </td>
                 <td>
-                    $keuzeinfo[MinStudents]
+                    $studentinfo[studentnumber]
                 </td>
                 <td>
-                    $keuzeinfo[MaxStudents]
+                    $userinfo[username]
                 </td>
                 <td>
-                    $keuzeinfo[Information]
-                </td>
-                <td>
-                    $docent_naam[abbreviation]
-                </td>
-                <td>
-                    $keuzeinfo[Code]
+                    $opleidinginfo[Naam]
                 </td>
             </tr>
             <tr>
@@ -65,22 +66,15 @@ $html = "
                     
                 </td>
                 <td>
-                    <button class='namechange'>Edit</button>
+                    <button class='email'>Edit</button>
                 </td>
                 <td>
-                    <button class='minstuds'>Edit</button>
+                    <button class='studnumber'>Edit</button>
                 </td>
                 <td>
-                    <button class='maxstuds'>Edit</button>
                 </td>
                 <td>
-                    <button class='info'>Edit</button>
-                </td>
-                <td>
-                    <button class='docent'>Edit</button>
-                </td>
-                <td>
-                    <button class='kcode'>Edit</button>
+                    <button class='opleiding'>Edit</button>
                 </td>
             </tr>
         </table>

@@ -56,11 +56,19 @@ $(document).ready(function() {
         });
     });
     $("#sel_studenten").change(function () {
-        $.post('my_ajax_receiver.php', 'val=' + $(this).val(), function (response) {
+         var oldname = $(this).val();
+            
+        $.post('ajax_studenten.php', {val: oldname}, function (response) {
+            
             var json = JSON.parse(response);
+            
+            console.log(json.echo);
+            
+            $("#beheerstudenten").html(json.echo);
 
-            $("#keuzes2").text(json[0]);
-            $('#keuzes2').show();
+            $("#beheerstudenten").text(json[0]);
+            $('#beheerstudenten').show();
+            
         });
     });
     $("#sel_docenten").change(function () {
