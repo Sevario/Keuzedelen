@@ -287,7 +287,7 @@ $(document).ready(function() {
                 $('.beheer_opleiding').show();
                 $('.beheer_gebruikers').show();
                 $('.beheer_lesgroepen').show();
-                $('#keuzes3').hide();
+                $('#beheerdocenten').hide();
             }
 
             else {
