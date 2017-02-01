@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+.loginerror {
+    color: white;
+}
 
 .keuzedrop {
 width: 400px;
