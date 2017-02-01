@@ -153,7 +153,7 @@
             echo "</select>"
             
             ?>
-                <div id="keuzes4">
+                <div id="beheeropleiding">
 
                 </div>
            </div>

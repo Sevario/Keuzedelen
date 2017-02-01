@@ -87,11 +87,18 @@ $(document).ready(function() {
         });
     });
     $("#sel_opleiding").change(function () {
-        $.post('my_ajax_receiver.php', 'val=' + $(this).val(), function (response) {
+         var oldname = $(this).val();
+            
+        $.post('ajax_opleiding.php', {val: oldname}, function (response) {
+            
             var json = JSON.parse(response);
+            
+            console.log(json.echo);
+            
+            $("#beheeropleiding").html(json.echo);
 
-            $("#keuzes4").text(json[0]);
-            $('#keuzes4').show();
+            $("#beheeropleiding").text(json[0]);
+            $('#beheeropleiding').show();
         });
     });
     $("#sel_gebruikers").change(function () {
