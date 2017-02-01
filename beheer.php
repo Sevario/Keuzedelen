@@ -124,7 +124,7 @@
             echo "</select>"
             
             ?>
-                <div id="keuzes3">
+                <div id="beheerdocenten">
 
                 </div>
            </div>

@@ -72,11 +72,18 @@ $(document).ready(function() {
         });
     });
     $("#sel_docenten").change(function () {
-        $.post('my_ajax_receiver.php', 'val=' + $(this).val(), function (response) {
+         var oldname = $(this).val();
+            
+        $.post('ajax_docenten.php', {val: oldname}, function (response) {
+            
             var json = JSON.parse(response);
+            
+            console.log(json.echo);
+            
+            $("#beheerdocenten").html(json.echo);
 
-            $("#keuzes3").text(json[0]);
-            $('#keuzes3').show();
+            $("#beheerdocenten").text(json[0]);
+            $('#beheerdocenten').show();
         });
     });
     $("#sel_opleiding").change(function () {
