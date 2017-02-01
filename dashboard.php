@@ -22,8 +22,14 @@
     <div id="menu">
         <ul>
             <?php
+            if ($user_permissions == 2) {
+                header("Location: dashboarddocent.php");
+            }
             if ($user_permissions == 1) {
                 echo "<li><a href='dashboard.php' class='selected'>Home</a></li>";
+            }
+            if ($user_permissions == 2) {
+                echo "<li><a href='dashboarddocent.php' class='selected'>Home</a></li>";
             }
             if ($user_permissions == 3) {
             header("Location: beheer.php");
