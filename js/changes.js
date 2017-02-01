@@ -230,7 +230,7 @@ $(document).ready(function() {
             $('.beheer_opleiding').show();
             $('.beheer_gebruikers').show();
             $('.beheer_lesgroepen').show();
-            $('#keuzes2').hide();
+            $('#beheerstudenten').hide();
         }
 
         else {
