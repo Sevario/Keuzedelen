@@ -46,29 +46,68 @@ if(!isset($_SESSION['login_user'])){ //if login in session is not set
 
 </div>
 <?php
-if ($user_permissions == "2"){
+if ($user_permissions == "2") {
     echo "<div id='gekozen_delen'>
-            <text style='text-align: center'>Lesgroepen</text><br>
+            <text style='text-align: center'>Lesgroepen</text><br>";
 
-    </div>";
 
     $result26 = $conn->prepare("SELECT ID FROM Docent WHERE User_ID = $user_id");
+
     $result26->execute();
+
     $row26 = $result26->fetch(PDO::FETCH_ASSOC);
+
     $Docent_id = $row26;
-    print_r($Docent_id);
+
 
     $result25 = $conn->prepare("SELECT naam FROM Lesgroep WHERE Docent_ID = $Docent_id[ID]");
+
     $result25->execute();
+
     $row25 = $result25->fetch(PDO::FETCH_ASSOC);
+
     $lesgroep_naam = $row25;
-    print_r($lesgroep_naam);
-
-
-
 }
-?>
-<div id="geheel">
+   ?>
+        <link rel='stylesheet' type='text/css' href='/keuzedelen/ajax.css' media='screen' />
+ 
+
+<table class='table-fill'>
+            <thead>
+                <tr>
+                    <th class='text-left'>Naam</th>
+                    <th class='text-left'>Studenten</th>
+                    <th class='text-left'>Keuzedeel afgerond</th>
+                </tr>
+            </thead>
+             <tbody class='table-hover'>
+            <tr>
+                <td>
+                    <?php print_r($lesgroep_naam['naam']);?>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class='docemail'>Edit</button>
+                </td>
+                <td>
+                    <button class='docemail'>Edit</button>
+                </td>
+                <td>
+                    <button class='abbreviation'>Edit</button>
+                </td>
+            </tr>
+        </table>
+        
+
+</body>
+
+
+
+
+</div>
+
+<div id="geheel"></div>
 </body>
 <footer id="profile">
     &copy; ROCA12 Ede
