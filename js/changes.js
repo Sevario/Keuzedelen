@@ -69,6 +69,22 @@ $(document).ready(function() {
             $("#beheerstudenten").text(json[0]);
             $('#beheerstudenten').show();
             
+              
+                $(".email").click(function() {
+                var newval = prompt("Vul de nieuwe waarde in");
+                $.post('updatestudenten.php', { updateColumn: "email", newVal: newVal, name: oldname}, function (response) {});
+            });
+            
+                $(".studnumber").click(function() {
+                var newval = prompt("Vul de nieuwe waarde in");
+                $.post('updatestudenten.php', { updateColumn: "studentnumber", newVal: newval, name: oldname}, function (response) {});
+            });
+            
+                $(".opleiding").click(function() {
+                var newval = prompt("Vul de nieuwe waarde in");
+                $.post('updatestudenten.php', { updateColumn: "Opleiding_ID", newVal: newval, name: oldname}, function (response) {});
+            });
+            
         });
     });
     $("#sel_docenten").change(function () {
@@ -84,6 +100,16 @@ $(document).ready(function() {
 
             $("#beheerdocenten").text(json[0]);
             $('#beheerdocenten').show();
+            
+                $(".docemail").click(function() {
+                var newval = prompt("Vul de nieuwe waarde in");
+                $.post('updatedocenten.php', { updateColumn: "email", newVal: newval, name: oldname}, function (response) {});
+            });
+            
+                $(".abbreviation").click(function() {
+                var newval = prompt("Vul de nieuwe waarde in");
+                $.post('updatedocenten.php', { updateColumn: "abbreviation", newVal: newval, name: oldname}, function (response) {});
+            });
         });
     });
     $("#sel_opleiding").change(function () {
