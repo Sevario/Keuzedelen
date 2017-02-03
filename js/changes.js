@@ -102,19 +102,33 @@ $(document).ready(function() {
         });
     });
     $("#sel_gebruikers").change(function () {
-        $.post('my_ajax_receiver.php', 'val=' + $(this).val(), function (response) {
+         var oldname = $(this).val();
+            
+        $.post('ajax_gebruikers.php', {val: oldname}, function (response) {
+            
             var json = JSON.parse(response);
+            
+            console.log(json.echo);
+            
+            $("#beheergebruikers").html(json.echo);
 
-            $("#keuzes5").text(json[0]);
-            $('#keuzes5').show();
+            $("#beheergebruikers").text(json[0]);
+            $('#beheergebruikers').show();
         });
     });
     $("#sel_lesgroepen").change(function () {
-        $.post('my_ajax_receiver.php', 'val=' + $(this).val(), function (response) {
+         var oldname = $(this).val();
+            
+        $.post('ajax_lesgroep.php', {val: oldname}, function (response) {
+            
             var json = JSON.parse(response);
+            
+            console.log(json.echo);
+            
+            $("#beheerlesgroepen").html(json.echo);
 
-            $("#keuzes6").text(json[0]);
-            $('#keuzes6').show();
+            $("#beheerlesgroepen").text(json[0]);
+            $('#beheerlesgroepen').show();
         });
     });
 

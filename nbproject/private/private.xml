@@ -2,20 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/xampp/htdocs/Keuzedelen/dashboard.php</file>
-            <file>file:/C:/xampp/htdocs/Keuzedelen/createaccount.php</file>
-            <file>file:/C:/xampp/htdocs/Keuzedelen/beheer.php</file>
-            <file>file:/C:/xampp/htdocs/Keuzedelen/account.php</file>
-            <file>file:/C:/xampp/htdocs/Keuzedelen/inschrijven.php</file>
-            <file>file:/C:/xampp/htdocs/Keuzedelen/ajax_keuzedeel.php</file>
-            <file>file:/C:/xampp/htdocs/Keuzedelen/ajax_studenten.php</file>
-            <file>file:/C:/xampp/htdocs/Keuzedelen/updatekeuzedelen.php</file>
-            <file>file:/C:/xampp/htdocs/Keuzedelen/index.php</file>
-            <file>file:/C:/xampp/htdocs/Keuzedelen/login.php</file>
-            <file>file:/C:/xampp/htdocs/Keuzedelen/session.php</file>
-            <file>file:/C:/xampp/htdocs/Keuzedelen/js/changes.js</file>
-            <file>file:/C:/xampp/htdocs/Keuzedelen/style.css</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

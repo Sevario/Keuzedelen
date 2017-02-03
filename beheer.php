@@ -182,7 +182,7 @@
             echo "</select>"
             
             ?>
-                <div id="keuzes5">
+                <div id="beheergebruikers">
 
                 </div>
            </div>
@@ -211,7 +211,7 @@
                 echo "</select>"
 
                 ?>
-                <div id="keuzes6">
+                <div id="beheerlesgroepen">
 
                 </div>
             </div>
