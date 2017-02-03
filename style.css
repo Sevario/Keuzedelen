@@ -250,7 +250,7 @@ td {
     opacity: 0.8;
     text-align: center;
 }
-h1 {
+#inlog_titel {
     font-size: 72px;
     background: -webkit-linear-gradient(#eee, #333);
     -webkit-background-clip: text;

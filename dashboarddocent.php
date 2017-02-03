@@ -51,6 +51,21 @@ if ($user_permissions == "2"){
             <text style='text-align: center'>Lesgroepen</text><br>
 
     </div>";
+
+    $result26 = $conn->prepare("SELECT ID FROM Docent WHERE User_ID = $user_id");
+    $result26->execute();
+    $row26 = $result26->fetch(PDO::FETCH_ASSOC);
+    $Docent_id = $row26;
+    print_r($Docent_id);
+
+    $result25 = $conn->prepare("SELECT naam FROM Lesgroep WHERE Docent_ID = $Docent_id[ID]");
+    $result25->execute();
+    $row25 = $result25->fetch(PDO::FETCH_ASSOC);
+    $lesgroep_naam = $row25;
+    print_r($lesgroep_naam);
+
+
+
 }
 ?>
 <div id="geheel">
