@@ -30,7 +30,7 @@ if(!isset($_SESSION['login_user'])){ //if login in session is not set
         if ($user_permissions == 2) {
 
 
-        echo "<li><a href='dashboarddocent.php'>Home</a></li>";
+        echo "<li><a href='dashboarddocent.php'>Lesgroepen</a></li>";
         };
         ?>
         <?php

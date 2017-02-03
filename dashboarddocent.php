@@ -26,7 +26,7 @@ if(!isset($_SESSION['login_user'])){ //if login in session is not set
             echo "<li><a href='dashboard.php' class='selected'>Home</a></li>";
         }
         if ($user_permissions == 2) {
-            echo "<li><a href='dashboarddocent.php' class='selected'>Home</a></li>";
+            echo "<li><a href='dashboarddocent.php' class='selected'>Lesgroepen</a></li>";
         }
         if ($user_permissions == 3) {
             header("Location: beheer.php");
@@ -47,10 +47,6 @@ if(!isset($_SESSION['login_user'])){ //if login in session is not set
 </div>
 <?php
 if ($user_permissions == "2") {
-    echo "<div id='gekozen_delen'>
-            <text style='text-align: center'>Lesgroepen</text><br>";
-
-
     $result26 = $conn->prepare("SELECT ID FROM Docent WHERE User_ID = $user_id");
 
     $result26->execute();
@@ -67,36 +63,30 @@ if ($user_permissions == "2") {
     $row25 = $result25->fetch(PDO::FETCH_ASSOC);
 
     $lesgroep_naam = $row25;
+    echo "<div id='gekozen_delen'>
+            <text style='text-align: center'>";print_r($lesgroep_naam['naam']);
+    echo "</text><br>";
+
+
+
 }
    ?>
         <link rel='stylesheet' type='text/css' href='/keuzedelen/ajax.css' media='screen' />
- 
+
 
 <table class='table-fill'>
             <thead>
                 <tr>
-                    <th class='text-left'>Naam</th>
-                    <th class='text-left'>Studenten</th>
-                    <th class='text-left'>Keuzedeel afgerond</th>
+                    <th class='text-left'>Student</th>
+                    <th class='text-left'>Geslaagd</th>
                 </tr>
             </thead>
              <tbody class='table-hover'>
             <tr>
-                <td>
-                    <?php print_r($lesgroep_naam['naam']);?>
-                </td>
+                <td></td>
+                <td></td>
             </tr>
-            <tr>
-                <td>
-                    <button class='docemail'>Edit</button>
-                </td>
-                <td>
-                    <button class='docemail'>Edit</button>
-                </td>
-                <td>
-                    <button class='abbreviation'>Edit</button>
-                </td>
-            </tr>
+
         </table>
         
 
