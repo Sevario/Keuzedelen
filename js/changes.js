@@ -72,7 +72,7 @@ $(document).ready(function() {
               
                 $(".email").click(function() {
                 var newval = prompt("Vul de nieuwe waarde in");
-                $.post('updatestudenten.php', { updateColumn: "email", newVal: newVal, name: oldname}, function (response) {});
+                $.post('updatestudenten.php', { updateColumn: "email", newVal: newval, name: oldname}, function (response) {});
             });
             
                 $(".studnumber").click(function() {
