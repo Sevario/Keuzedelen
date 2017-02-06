@@ -1,11 +1,5 @@
 
 $(document).ready(function() {
-
-    // $("select").change(function() {
-    //
-    //     console.log($("select option:selected").val());
-    // });
-    
     
     //Keuzedelen Beheer.
     $("#sel_keuzedelen").change(function () {

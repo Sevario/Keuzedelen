@@ -61,7 +61,7 @@ tr:last-child {
 tr:nth-child(odd) td {
   background:#EBEBEB;
 }
- 
+
 tr:nth-child(odd):hover td {
   background:#4E5066;
 }

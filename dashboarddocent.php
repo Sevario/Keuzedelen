@@ -74,21 +74,37 @@ if ($user_permissions == "2") {
         <link rel='stylesheet' type='text/css' href='/keuzedelen/ajax.css' media='screen' />
 
 
-<table class='table-fill'>
-            <thead>
-                <tr>
-                    <th class='text-left'>Student</th>
-                    <th class='text-left'>Geslaagd</th>
-                </tr>
-            </thead>
-             <tbody class='table-hover'>
-            <tr>
-                <td></td>
-                <td></td>
-            </tr>
+<?php
+//    print_r($lesgroep_naam);
+    $getid = $conn->prepare("SELECT ID FROM Lesgroep WHERE naam = '$lesgroep_naam[naam]'");
 
-        </table>
-        
+    $getid->execute();
+
+    $row28 = $getid->fetch(PDO::FETCH_ASSOC);
+
+    $lesgroep = $row28;
+
+    $getstudent = $conn->prepare("SELECT Student_ID FROM Student_Lesgroep WHERE Lesgroep_ID = $lesgroep[ID]");
+
+    $getstudent->execute();
+
+    $row27 = $getstudent->fetchAll(PDO::FETCH_ASSOC);
+
+    echo "<table>";
+    foreach ($row27 as $row) {
+
+        $getemail = $conn->prepare("SELECT email FROM Student WHERE ID = $row[Student_ID]");
+
+        $getemail->execute();
+
+        $row29 = $getemail->fetch(PDO::FETCH_ASSOC);
+
+    echo "<tr><td>";
+    print_r($row29['email']);
+    echo "</td></tr>";}
+    echo "</table>";
+    ?>
+
 
 </body>
 
