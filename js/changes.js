@@ -25,7 +25,7 @@ $(document).ready(function() {
             
             $(".namechange").click(function() {
                 var newval = prompt("Vul de nieuwe waarde in");
-                $.post('updatekeuzedelen.php', { updateColumn: "Name", newName: newval, name: oldname}, function (response) {});
+                $.post('updatekeuzedelen.php', { updateColumn: "Name", newVal: newval, name: oldname}, function (response) {});
             });
             
                 $(".minstuds").click(function() {
@@ -53,6 +53,14 @@ $(document).ready(function() {
                 $.post('updatekeuzedelen.php', { updateColumn: "Code", newVal: newval, name: oldname}, function (response) {});
             });
             
+                $(".deletekeuzedeel").click(function() {
+                if (confirm("Weet je zeker dat je dit keuzedeel wilt verwijderen?")) {
+                $.post('verwijder.php', { name: oldname, table: "Keuzedeel", delcolumn: "Name"}, function (response) {});
+            }
+                    else {
+                        
+                    }});
+            
         });
     });
     $("#sel_studenten").change(function () {
@@ -72,7 +80,7 @@ $(document).ready(function() {
               
                 $(".email").click(function() {
                 var newval = prompt("Vul de nieuwe waarde in");
-                $.post('updatestudenten.php', { updateColumn: "email", newVal: newVal, name: oldname}, function (response) {});
+                $.post('updatestudenten.php', { updateColumn: "email", newVal: newval, name: oldname}, function (response) {});
             });
             
                 $(".studnumber").click(function() {
@@ -84,6 +92,14 @@ $(document).ready(function() {
                 var newval = prompt("Vul de nieuwe waarde in");
                 $.post('updatestudenten.php', { updateColumn: "Opleiding_ID", newVal: newval, name: oldname}, function (response) {});
             });
+            
+                $(".delstudenten").click(function() {
+                if (confirm("Weet je zeker dat je deze student wilt verwijderen?")) {
+                $.post('verwijder.php', { name: oldname, table: "Student", delcolumn: "email"}, function (response) {});
+                }
+                    else {
+                        
+                 }});
             
         });
     });
@@ -118,13 +134,18 @@ $(document).ready(function() {
         $.post('ajax_opleiding.php', {val: oldname}, function (response) {
             
             var json = JSON.parse(response);
-            
+                    
             console.log(json.echo);
             
             $("#beheeropleiding").html(json.echo);
 
             $("#beheeropleiding").text(json[0]);
             $('#beheeropleiding').show();
+            
+            $(".opleidingnaam").click(function() {
+                var newval = prompt("Vul de nieuwe waarde in");
+                $.post('updateopleiding.php', { updateColumn: "Naam", newVal: newval, name: oldname}, function (response) {});
+            });
         });
     });
     $("#sel_gebruikers").change(function () {
@@ -140,6 +161,15 @@ $(document).ready(function() {
 
             $("#beheergebruikers").text(json[0]);
             $('#beheergebruikers').show();
+            
+            $(".usernameedit").click(function() {
+                var newval = prompt("Vul de nieuwe waarde in");
+                $.post('updategebruikers.php', { updateColumn: "username", newVal: newval, name: oldname}, function (response) {});
+            });
+            $(".passwordedit").click(function() {
+                var newval = prompt("Vul de nieuwe waarde in");
+                $.post('updategebruikers.php', { updateColumn: "password", newVal: newval, name: oldname}, function (response) {});
+            });
         });
     });
     $("#sel_lesgroepen").change(function () {
@@ -155,6 +185,21 @@ $(document).ready(function() {
 
             $("#beheerlesgroepen").text(json[0]);
             $('#beheerlesgroepen').show();
+            
+            $(".keuzedeeledit").click(function() {
+                var newval = prompt("Vul de nieuwe waarde in");
+                $.post('updatelesgroep.php', { updateColumn: "Keuzedeel_ID", newVal: newval, name: oldname}, function (response) {});
+            });
+            
+            $(".docentedit").click(function() {
+                var newval = prompt("Vul de nieuwe waarde in");
+                $.post('updatelesgroep.php', { updateColumn: "Docent_ID", newVal: newval, name: oldname}, function (response) {});
+            });
+            
+            $(".naamedit").click(function() {
+                var newval = prompt("Vul de nieuwe waarde in");
+                $.post('updatelesgroep.php', { updateColumn: "naam", newVal: newval, name: oldname}, function (response) {});
+            });
         });
     });
 

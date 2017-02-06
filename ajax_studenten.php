@@ -63,7 +63,7 @@ $html = "
             </tr>
             <tr>
                 <td>
-                    
+                    <button class='delstudenten'>Delete</button>
                 </td>
                 <td>
                     <button class='email'>Edit</button>

@@ -62,13 +62,11 @@ $html = "
                     
                 </td>
                 <td>
-                    <button class='usernameedit'>Edit</button>
                 </td>
                 <td>
-                    <button class='passwordedit'>Edit</button>
                 </td>
                 <td>
-                    <button class='permissionedit'>Edit</button>
+                    <button class='naamedit'>Edit</button>
                 </td>
             </tr>
         </table>

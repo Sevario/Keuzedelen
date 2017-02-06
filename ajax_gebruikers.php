@@ -51,7 +51,6 @@ $html = "
                     <button class='passwordedit'>Edit</button>
                 </td>
                 <td>
-                    <button class='permissionedit'>Edit</button>
                 </td>
             </tr>
         </table>
