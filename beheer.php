@@ -95,7 +95,7 @@
             echo "</select>"
             
             ?>
-                <div id="keuzes2">
+                <div id="beheerstudenten">
 
                 </div>
            </div>
@@ -124,13 +124,13 @@
             echo "</select>"
             
             ?>
-                <div id="keuzes3">
+                <div id="beheerdocenten">
 
                 </div>
            </div>
         </div>
         <div class="beheer_opleiding">
-            <h2 class="beheerding_opleiding">Opleiding</h2>
+            <h2 class="beheerding_opleiding">Opleidingen</h2>
             <div class ="verdwijn_opleiding">
             <?php
             
@@ -153,7 +153,7 @@
             echo "</select>"
             
             ?>
-                <div id="keuzes4">
+                <div id="beheeropleiding">
 
                 </div>
            </div>
@@ -182,10 +182,39 @@
             echo "</select>"
             
             ?>
-                <div id="keuzes5">
+                <div id="beheergebruikers">
 
                 </div>
            </div>
+        </div>
+        <div class="beheer_lesgroepen">
+            <h2 class="beheerding_lesgroepen">Lesgroepen</h2>
+            <div class ="verdwijn_lesgroepen">
+                <?php
+
+                $resultgetkeuze = $conn->prepare("SELECT naam FROM Lesgroep");
+
+                $resultgetkeuze->execute();
+
+                $rowkeuze = $resultgetkeuze->fetchall(PDO::FETCH_ASSOC);
+
+                $arraykeuzen = $rowkeuze;
+
+
+                echo "<select name='Keuzedelen' class='keuzedrop' id='sel_lesgroepen'>";
+                foreach ($arraykeuzen as $row) {
+                    print_r($row['naam']); ?>
+                    <option value="<?php echo $row['naam']; ?>"><?php echo $row['naam']; ?></option>
+                    <?php
+                }
+
+                echo "</select>"
+
+                ?>
+                <div id="beheerlesgroepen">
+
+                </div>
+            </div>
         </div>
         
         

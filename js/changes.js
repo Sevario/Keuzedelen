@@ -25,7 +25,7 @@ $(document).ready(function() {
             
             $(".namechange").click(function() {
                 var newval = prompt("Vul de nieuwe waarde in");
-                $.post('updatekeuzedelen.php', { updateColumn: "Name", newVal: newval, name: oldname}, function (response) {});
+                $.post('updatekeuzedelen.php', { updateColumn: "Name", newName: newval, name: oldname}, function (response) {});
             });
             
                 $(".minstuds").click(function() {
@@ -52,48 +52,109 @@ $(document).ready(function() {
                 var newval = prompt("Vul de nieuwe waarde in");
                 $.post('updatekeuzedelen.php', { updateColumn: "Code", newVal: newval, name: oldname}, function (response) {});
             });
-                $(".delete").click(function() {
-                if (confirm('Weet je zeker dat jet het keuzedeel' + 'wilt verwijderen?')) {
-                    var newval = "delcheck";
-                $.post('updatekeuzedelen.php', { updateColumn: "Code", newVal: newval, name: oldname}, function (response) {});
-                } else {
-                    // Do nothing!
-                }
-
-            });
             
         });
     });
     $("#sel_studenten").change(function () {
-        $.post('my_ajax_receiver.php', 'val=' + $(this).val(), function (response) {
+         var oldname = $(this).val();
+            
+        $.post('ajax_studenten.php', {val: oldname}, function (response) {
+            
             var json = JSON.parse(response);
+            
+            console.log(json.echo);
+            
+            $("#beheerstudenten").html(json.echo);
 
-            $("#keuzes2").text(json[0]);
-            $('#keuzes2').show();
+            $("#beheerstudenten").text(json[0]);
+            $('#beheerstudenten').show();
+            
+              
+                $(".email").click(function() {
+                var newval = prompt("Vul de nieuwe waarde in");
+                $.post('updatestudenten.php', { updateColumn: "email", newVal: newVal, name: oldname}, function (response) {});
+            });
+            
+                $(".studnumber").click(function() {
+                var newval = prompt("Vul de nieuwe waarde in");
+                $.post('updatestudenten.php', { updateColumn: "studentnumber", newVal: newval, name: oldname}, function (response) {});
+            });
+            
+                $(".opleiding").click(function() {
+                var newval = prompt("Vul de nieuwe waarde in");
+                $.post('updatestudenten.php', { updateColumn: "Opleiding_ID", newVal: newval, name: oldname}, function (response) {});
+            });
+            
         });
     });
     $("#sel_docenten").change(function () {
-        $.post('my_ajax_receiver.php', 'val=' + $(this).val(), function (response) {
+         var oldname = $(this).val();
+            
+        $.post('ajax_docenten.php', {val: oldname}, function (response) {
+            
             var json = JSON.parse(response);
+            
+            console.log(json.echo);
+            
+            $("#beheerdocenten").html(json.echo);
 
-            $("#keuzes3").text(json[0]);
-            $('#keuzes3').show();
+            $("#beheerdocenten").text(json[0]);
+            $('#beheerdocenten').show();
+            
+                $(".docemail").click(function() {
+                var newval = prompt("Vul de nieuwe waarde in");
+                $.post('updatedocenten.php', { updateColumn: "email", newVal: newval, name: oldname}, function (response) {});
+            });
+            
+                $(".abbreviation").click(function() {
+                var newval = prompt("Vul de nieuwe waarde in");
+                $.post('updatedocenten.php', { updateColumn: "abbreviation", newVal: newval, name: oldname}, function (response) {});
+            });
         });
     });
     $("#sel_opleiding").change(function () {
-        $.post('my_ajax_receiver.php', 'val=' + $(this).val(), function (response) {
+         var oldname = $(this).val();
+            
+        $.post('ajax_opleiding.php', {val: oldname}, function (response) {
+            
             var json = JSON.parse(response);
+            
+            console.log(json.echo);
+            
+            $("#beheeropleiding").html(json.echo);
 
-            $("#keuzes4").text(json[0]);
-            $('#keuzes4').show();
+            $("#beheeropleiding").text(json[0]);
+            $('#beheeropleiding').show();
         });
     });
     $("#sel_gebruikers").change(function () {
-        $.post('my_ajax_receiver.php', 'val=' + $(this).val(), function (response) {
+         var oldname = $(this).val();
+            
+        $.post('ajax_gebruikers.php', {val: oldname}, function (response) {
+            
             var json = JSON.parse(response);
+            
+            console.log(json.echo);
+            
+            $("#beheergebruikers").html(json.echo);
 
-            $("#keuzes5").text(json[0]);
-            $('#keuzes5').show();
+            $("#beheergebruikers").text(json[0]);
+            $('#beheergebruikers').show();
+        });
+    });
+    $("#sel_lesgroepen").change(function () {
+         var oldname = $(this).val();
+            
+        $.post('ajax_lesgroep.php', {val: oldname}, function (response) {
+            
+            var json = JSON.parse(response);
+            
+            console.log(json.echo);
+            
+            $("#beheerlesgroepen").html(json.echo);
+
+            $("#beheerlesgroepen").text(json[0]);
+            $('#beheerlesgroepen').show();
         });
     });
 
@@ -153,11 +214,12 @@ $(document).ready(function() {
             $('.verdwijn_docenten').hide();
             $('.verdwijn_opleiding').hide();
             $('.verdwijn_gebruikers').hide();
+            $('.verdwijn_lesgroepen').hide();
     $('.normal2').click(function () {
         if ($(this).hasClass('enlarged2')) {
             $('.beheer_keuzedelen').animate({
                 width:  '84%',
-                height: 50
+                height: 53
             });
             $(this).removeClass('enlarged2');
             $(this).addClass('normal2');
@@ -170,6 +232,7 @@ $(document).ready(function() {
             $('.beheer_docenten').show();
             $('.beheer_opleiding').show();
             $('.beheer_gebruikers').show();
+            $('.beheer_lesgroepen').show();
             $('#keuzes').hide();
         }
 
@@ -188,6 +251,7 @@ $(document).ready(function() {
             $('.beheer_docenten').hide();
             $('.beheer_opleiding').hide();
             $('.beheer_gebruikers').hide();
+            $('.beheer_lesgroepen').hide();
 
 
         }
@@ -201,11 +265,12 @@ $(document).ready(function() {
             $('.verdwijn_docenten').hide();
             $('.verdwijn_opleiding').hide();
             $('.verdwijn_gebruikers').hide();
+            $('.verdwijn_lesgroepen').hide();
     $('.normal3').click(function () {
         if ($(this).hasClass('enlarged2')) {
             $('.beheer_studenten').animate({
                 width:  '84%',
-                height: 50
+                height: 53
             });
             $(this).removeClass('enlarged2');
             $(this).addClass('normal3');
@@ -218,7 +283,8 @@ $(document).ready(function() {
             $('.beheer_docenten').show();
             $('.beheer_opleiding').show();
             $('.beheer_gebruikers').show();
-            $('#keuzes2').hide();
+            $('.beheer_lesgroepen').show();
+            $('#beheerstudenten').hide();
         }
 
         else {
@@ -236,6 +302,7 @@ $(document).ready(function() {
             $('.beheer_docenten').hide();
             $('.beheer_opleiding').hide();
             $('.beheer_gebruikers').hide();
+            $('.beheer_lesgroepen').hide();
 
         }
     });
@@ -248,11 +315,12 @@ $(document).ready(function() {
                 $('.verdwijn_studenten').hide();
                 $('.verdwijn_opleiding').hide();
                 $('.verdwijn_gebruikers').hide();
+                $('.verdwijn_lesgroepen').hide();
         $('.normal4').click(function () {
             if ($(this).hasClass('enlarged2')) {
                 $('.beheer_docenten').animate({
                     width:  '84%',
-                    height: 50
+                    height: 53
                 });
                 $(this).removeClass('enlarged2');
                 $(this).addClass('normal4');
@@ -265,7 +333,8 @@ $(document).ready(function() {
                 $('.beheer_studenten').show();
                 $('.beheer_opleiding').show();
                 $('.beheer_gebruikers').show();
-                $('#keuzes3').hide();
+                $('.beheer_lesgroepen').show();
+                $('#beheerdocenten').hide();
             }
 
             else {
@@ -283,6 +352,7 @@ $(document).ready(function() {
                 $('.beheer_studenten').hide();
                 $('.beheer_opleiding').hide();
                 $('.beheer_gebruikers').hide();
+                $('.beheer_lesgroepen').hide();
 
             }
         });
@@ -294,11 +364,12 @@ $(document).ready(function() {
                 $('.verdwijn_studenten').hide();
                 $('.verdwijn_docenten').hide();
                 $('.verdwijn_gebruikers').hide();
+                $('.verdwijn_lesgroepen').hide();
         $('.normal5').click(function () {
             if ($(this).hasClass('enlarged2')) {
                 $('.beheer_opleiding').animate({
                     width:  '84%',
-                    height: 50
+                    height: 53
                 });
                 $(this).removeClass('enlarged2');
                 $(this).addClass('normal5');
@@ -311,7 +382,8 @@ $(document).ready(function() {
                 $('.beheer_studenten').show();
                 $('.beheer_docenten').show();
                 $('.beheer_gebruikers').show();
-                $('#keuzes4').hide();
+                $('.beheer_lesgroepen').show();
+                $('#beheeropleiding').hide();
             }
 
             else {
@@ -329,6 +401,7 @@ $(document).ready(function() {
                 $('.beheer_studenten').hide();
                 $('.beheer_docenten').hide();
                 $('.beheer_gebruikers').hide();
+                $('.beheer_lesgroepen').hide();
 
             }
         });
@@ -340,11 +413,12 @@ $(document).ready(function() {
                 $('.verdwijn_studenten').hide();
                 $('.verdwijn_docenten').hide();
                 $('.verdwijn_opleiding').hide();
+                $('.verdwijn_lesgroepen').hide();
         $('.normal6').click(function () {
             if ($(this).hasClass('enlarged2')) {
                 $('.beheer_gebruikers').animate({
                     width:  '84%',
-                    height: 50
+                    height: 53
                 });
                 $(this).removeClass('enlarged2');
                 $(this).addClass('normal6');
@@ -357,7 +431,8 @@ $(document).ready(function() {
                 $('.beheer_studenten').show();
                 $('.beheer_docenten').show();
                 $('.beheer_opleiding').show();
-                $('#keuzes5').hide();
+                $('.beheer_lesgroepen').show();
+                $('#beheergebruikers').hide();
             }
 
             else {
@@ -375,9 +450,59 @@ $(document).ready(function() {
                 $('.beheer_studenten').hide();
                 $('.beheer_docenten').hide();
                 $('.beheer_opleiding').hide();
+                $('.beheer_lesgroepen').hide();
 
             }
         });
+    $.each($('.beheerding_lesgroepen'), function(key, value) {
+        $(value).addClass('normal7');
+    });
+    $('.verdwijn_gebruikers').hide();
+    $('.verdwijn_keuzedelen').hide();
+    $('.verdwijn_studenten').hide();
+    $('.verdwijn_docenten').hide();
+    $('.verdwijn_opleiding').hide();
+    $('.verdwijn_lesgroepen').hide();
+    $('.normal7').click(function () {
+        if ($(this).hasClass('enlarged2')) {
+            $('.beheer_lesgroepen').animate({
+                width:  '84%',
+                height: 53
+            });
+            $(this).removeClass('enlarged2');
+            $(this).addClass('normal7');
+            $('.normal7').show('fast');
+            $('.beheer_lesgroepen').css("border", '');
+            $('h2').css("opacity", '0.6');
+            $('beheerding_lesgroepen').css("opacity", '0.6');
+            $('.verdwijn_lesgroepen').hide();
+            $('.beheer_keuzedelen').show();
+            $('.beheer_studenten').show();
+            $('.beheer_docenten').show();
+            $('.beheer_opleiding').show();
+            $('.beheer_gebruikers').show();
+            $('#beheerlesgroepen').hide();
+        }
+
+        else {
+            $('.beheer_lesgroepen').animate({
+                height: '87vh'
+            });
+            $(this).removeClass('normal7');
+            $(this).addClass('enlarged2');
+            $('.normal7').hide('fast');
+            $('h2').css("opacity", '1');
+            $('.beheer_lesgroepen').css("border", 'solid','white', '1');
+            $('beheerding_lesgroepen').css("opacity", '1');
+            $('.verdwijn_lesgroepen').show();
+            $('.beheer_keuzedelen').hide();
+            $('.beheer_studenten').hide();
+            $('.beheer_docenten').hide();
+            $('.beheer_opleiding').hide();
+            $('.beheer_gebruikers').hide();
+
+        }
+    });
     });
 
 

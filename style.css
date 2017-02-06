@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+.loginerror {
+    color: white;
+}
 
 .keuzedrop {
 width: 400px;
@@ -40,7 +43,7 @@ width: 400px;
     width: 15%;
 }
 
-.beheerding_keuzedelen,.beheerding_studenten,.beheerding_docenten,.beheerding_opleiding,.beheerding_gebruikers{   
+.beheerding_keuzedelen,.beheerding_studenten,.beheerding_docenten,.beheerding_opleiding,.beheerding_gebruikers,.beheerding_lesgroepen{
     margin: 0;
     padding: 0;
     text-align: center;
@@ -71,7 +74,13 @@ body {
   margin: 2% auto 0 auto;
   margin-top: 15%;
   }
-
+.login2 {
+    padding: 15px;
+    width: 400px;
+    min-height: 400px;
+    margin: 2% auto 0 auto;
+    margin-top: 20%;
+}
 
     
       span {
@@ -97,12 +106,12 @@ body {
       font-size: 1em;
       font-weight: 300;
       padding: 5px 0;
-      width: 90%;
+      width: 100%;
       border-radius: 5px 5px 5px 5px;
       color: white;
-      margin: 2px;
 
     }
+
   
     .btnwidth {
         width: auto;
@@ -194,7 +203,7 @@ footer {
     /*height: 200px;*/
     /*width: 200px;*/
 /*}*/
-.beheer_keuzedelen, .beheer_studenten, .beheer_docenten, .beheer_opleiding, .beheer_gebruikers{
+.beheer_keuzedelen, .beheer_studenten, .beheer_docenten, .beheer_opleiding, .beheer_gebruikers, .beheer_lesgroepen{
     margin: 10px;
     width: 84%;
     height: auto;
@@ -239,5 +248,13 @@ td {
     background: rgba(0,0,0,0.6);
     color: white;
     opacity: 0.8;
+    text-align: center;
+}
+#inlog_titel {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: -10%;
     text-align: center;
 }

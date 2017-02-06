@@ -79,13 +79,11 @@ if ($user_permissions == "2") {
                 <tr>
                     <th class='text-left'>Student</th>
                     <th class='text-left'>Geslaagd</th>
-                    <th class='text-left'></th>
                 </tr>
             </thead>
              <tbody class='table-hover'>
             <tr>
                 <td></td>
-                <td style="background: red"></td>
                 <td></td>
             </tr>
 

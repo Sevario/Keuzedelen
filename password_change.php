@@ -28,7 +28,7 @@ if (isset($_POST['submit'])){
                     $newpass = $conn->prepare("UPDATE User SET password='$newpassword' WHERE ID = $user_id");
                     $newpass->execute();
                     echo "Je wachtwoord is succesvol veranderd. <br>";
-                    echo "Je wordt teruggezonden naar de vorige pagina."; header("refresh:4;url=account.php");
+                    echo "Log in met je nieuwe wachtwoord."; header("refresh:4;url=logout.php");
                     }
                     else {
                        echo "Je nieuwe wachtwoord en het herhaal wachtwoord zijn niet hetzelfde. Probeer opnieuw a.u.b. <br>";

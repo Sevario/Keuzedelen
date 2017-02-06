@@ -27,9 +27,16 @@ if(!isset($_SESSION['login_user'])){ //if login in session is not set
                 };
         ?>
         <?php
+        if ($user_permissions == 2) {
+
+
+        echo "<li><a href='dashboarddocent.php'>Lesgroepen</a></li>";
+        };
+        ?>
+        <?php
         if ($user_permissions == 3) {
 
-            echo "<li><a href='beheer.php'>Beheer(Admin only)</a></li>";
+            echo "<li><a href='beheer.php'>Beheer</a></li>";
         }
         ?>
 
@@ -93,19 +100,14 @@ if(!isset($_SESSION['login_user'])){ //if login in session is not set
             echo " <form action='verwijder.php' method='POST'> ";
             echo " <input type='hidden' name='keuzedeelID' value='". $row8["ID"] . "'>";
 
-            echo "<button class=\"button\">Verwijder</button>";
+            echo "<button class=\"button_verwijder\">Verwijder</button>";
             echo "</form>";
         }
 
     echo "</div>";
 
     }
-    if ($user_permissions == "2"){
-        echo "<div id='gekozen_delen'>
-            <text style='text-align: center'>Klassen</text><br>
 
-    </div>";
-    }
 
     ?>
 
