@@ -102,6 +102,7 @@ if ($user_permissions == "2") {
     echo "<tr><td>";
     print_r($row29['email']);
     echo "</td></tr>";}
+    echo "<tr</tr>";
     echo "</table>";
     ?>
 

@@ -31,6 +31,15 @@
                             header("location:index.php?login=false");
                         }
 
+//                        $password = $_POST['password'];
+//                        $b = password_verify($_POST['password'], HIER KOMT DE HASH );
+
+                          //  if($b == TRUE)
+                            //{
+
+                            //}
+
+
                 }
             catch (Exception $e) 
                 {
