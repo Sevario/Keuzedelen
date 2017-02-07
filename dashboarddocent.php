@@ -90,7 +90,13 @@ if ($user_permissions == "2") {
 
     $row27 = $getstudent->fetchAll(PDO::FETCH_ASSOC);
 
-    echo "<table>";
+    echo "<table class='table-fill'>";
+    echo "<thead>";
+    echo "  <tr>
+                <th>Student</th>
+                <th>Behaald</th>
+                <th>Bewerk</th>
+            </tr>";
     foreach ($row27 as $row) {
 
         $getemail = $conn->prepare("SELECT email FROM Student WHERE ID = $row[Student_ID]");
@@ -99,10 +105,14 @@ if ($user_permissions == "2") {
 
         $row29 = $getemail->fetch(PDO::FETCH_ASSOC);
 
+
     echo "<tr><td>";
     print_r($row29['email']);
+    echo "<td>Nee</td>";
+    echo "<td><button class='namechange'>Edit</button></td>";
     echo "</td></tr>";}
-    echo "<tr</tr>";
+    echo "<tr></tr>";
+    echo "</thead>";
     echo "</table>";
     ?>
 
