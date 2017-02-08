@@ -52,7 +52,7 @@ $html = "
             </tr>
             <tr>
                 <td>
-                    
+                    <button class='deldocenten'>Delete</button>
                 </td>
                 <td>
                     <button class='docemail'>Edit</button>

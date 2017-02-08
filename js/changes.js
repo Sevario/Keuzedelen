@@ -57,6 +57,11 @@ $(document).ready(function() {
             
         });
     });
+    
+    $(".addkeuze").click(function() {
+        $("#keuzes").load("toevoegen.php");
+    });
+    
     $("#sel_studenten").change(function () {
          var oldname = $(this).val();
             
@@ -120,6 +125,14 @@ $(document).ready(function() {
                 var newval = prompt("Vul de nieuwe waarde in");
                 $.post('updatedocenten.php', { updateColumn: "abbreviation", newVal: newval, name: oldname}, function (response) {});
             });
+            
+                $(".deldocenten").click(function() {
+                if (confirm("Weet je zeker dat je deze docent wilt verwijderen?")) {
+                $.post('deletebeheer.php', { name: oldname, table: "Docent", delcolumn: "abbreviation"}, function (response) {});
+                }
+                    else {
+                        
+                 }});
         });
     });
     $("#sel_opleiding").change(function () {
@@ -140,6 +153,14 @@ $(document).ready(function() {
                 var newval = prompt("Vul de nieuwe waarde in");
                 $.post('updateopleiding.php', { updateColumn: "Naam", newVal: newval, name: oldname}, function (response) {});
             });
+            
+                $(".delopleidingen").click(function() {
+                if (confirm("Weet je zeker dat je deze opleiding wilt verwijderen?")) {
+                $.post('deletebeheer.php', { name: oldname, table: "Opleiding", delcolumn: "Naam"}, function (response) {});
+                }
+                    else {
+                        
+                 }});
         });
     });
     $("#sel_gebruikers").change(function () {
@@ -164,6 +185,14 @@ $(document).ready(function() {
                 var newval = prompt("Vul de nieuwe waarde in");
                 $.post('updategebruikers.php', { updateColumn: "password", newVal: newval, name: oldname}, function (response) {});
             });
+            
+                $(".delgebruikers").click(function() {
+                if (confirm("Weet je zeker dat je deze gebruiker wilt verwijderen?")) {
+                $.post('deletebeheer.php', { name: oldname, table: "User", delcolumn: "username"}, function (response) {});
+                }
+                    else {
+                        
+                 }});
         });
     });
     $("#sel_lesgroepen").change(function () {
@@ -194,6 +223,14 @@ $(document).ready(function() {
                 var newval = prompt("Vul de nieuwe waarde in");
                 $.post('updatelesgroep.php', { updateColumn: "naam", newVal: newval, name: oldname}, function (response) {});
             });
+            
+                $(".dellesgroepen").click(function() {
+                if (confirm("Weet je zeker dat je deze lesgroep wilt verwijderen?")) {
+                $.post('deletebeheer.php', { name: oldname, table: "Lesgroep", delcolumn: "naam"}, function (response) {});
+                }
+                    else {
+                        
+                 }});
         });
     });
 

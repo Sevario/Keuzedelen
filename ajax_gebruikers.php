@@ -42,7 +42,7 @@ $html = "
             </tr>
             <tr>
                 <td>
-                    
+                    <button class='delgebruikers'>Delete</button>
                 </td>
                 <td>
                     <button class='usernameedit'>Edit</button>

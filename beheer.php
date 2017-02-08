@@ -59,11 +59,12 @@
             foreach ($arraykeuzen as $row) {
             print_r($row['Name']); ?>
             <option value="<?php echo $row['Name']; ?>"><?php echo $row['Name']; ?></option>
+            
             <?php
             }
             
-            echo "</select>"
-            
+            echo "</select> &nbsp; &nbsp;";
+            echo "<a class='addkeuze btn btn-lg btn-default btnwidth'>Toevoegen</a>";
             ?>
                <div id="keuzes">
 

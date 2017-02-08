@@ -59,7 +59,7 @@ $html = "
             </tr>
             <tr>
                 <td>
-                    
+                    <button class='dellesgroepen'>Delete</button>
                 </td>
                 <td>
                 </td>
