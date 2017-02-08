@@ -6,6 +6,7 @@
     
     <body>
         <h1 id="inlog_titel">Keuzedelen</h1>
+
         <div class="login">
 
                 <div class="heading">

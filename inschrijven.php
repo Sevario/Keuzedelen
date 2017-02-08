@@ -36,7 +36,7 @@ if (isset( $_GET["kd"]) && !empty($_GET["kd"]))
                                     margin-left: 35%;
                                     margin-right: 40%;
                                     margin-top: 10%;'><h5 style='color: white;'>Het is niet mogelijk om je meer dan één keer voor hetzelfde keuzedeel op te geven.
-                    Je wordt teruggezonden naar de hoofdpagina.</h5></div>"; header("refresh:4;url=dashboard.php");
+                    Je wordt teruggezonden naar de hoofdpagina.</h5></div>"; header("refresh:3;url=dashboard.php");
             }
             else {
             $insert1 = $conn->prepare("INSERT INTO Keuzedeel_Student (`Keuzedeel_ID`, `Student_ID`, `Ingeschreven`) VALUES ($IDkeuze, $student_info[ID], 'Y');");
@@ -51,7 +51,7 @@ if (isset( $_GET["kd"]) && !empty($_GET["kd"]))
                                     margin-left: 35%;
                                     margin-right: 40%;
                                     margin-top: 10%;'><h5 style='color: white;'>Je bent succesvol ingeschreven voor het keuzedeel . ";
-            echo "Je wordt teruggezonden naar de hoofdpagina.</h5></div>"; header("refresh:4;url=dashboard.php");
+            echo "Je wordt teruggezonden naar de hoofdpagina.</h5></div>"; header("refresh:3;url=dashboard.php");
 
         }
     } 
