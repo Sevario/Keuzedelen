@@ -74,22 +74,22 @@ $(document).ready(function() {
               
                 $(".email").click(function() {
                 var newval = prompt("Vul de nieuwe waarde in");
-                $.post('updatestudenten.php', { updateColumn: "email", newVal: newval, name: oldname}, function (response) {});
+                $.post('deletebeheer.php', { updateColumn: "email", newVal: newval, name: oldname}, function (response) {});
             });
             
                 $(".studnumber").click(function() {
                 var newval = prompt("Vul de nieuwe waarde in");
-                $.post('updatestudenten.php', { updateColumn: "studentnumber", newVal: newval, name: oldname}, function (response) {});
+                $.post('deletebeheer.php', { updateColumn: "studentnumber", newVal: newval, name: oldname}, function (response) {});
             });
             
                 $(".opleiding").click(function() {
                 var newval = prompt("Vul de nieuwe waarde in");
-                $.post('updatestudenten.php', { updateColumn: "Opleiding_ID", newVal: newval, name: oldname}, function (response) {});
+                $.post('deletebeheer.php', { updateColumn: "Opleiding_ID", newVal: newval, name: oldname}, function (response) {});
             });
             
                 $(".delstudenten").click(function() {
                 if (confirm("Weet je zeker dat je deze student wilt verwijderen?")) {
-                $.post('verwijder.php', { name: oldname, table: "Student", delcolumn: "email"}, function (response) {});
+                $.post('deletebeheer.php', { name: oldname, table: "Student", delcolumn: "email"}, function (response) {});
                 }
                     else {
                         
