@@ -9,14 +9,14 @@ if (!empty($_POST["email"]))
     //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
     $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = 'mail.ictkeuzedelen.nl';  // Specify main and backup SMTP servers
+    $mail->Host = 'smtp.live.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'kdelen';                 // SMTP username
-    $mail->Password = 'Ik2017!E';                           // SMTP password
-    $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-    $mail->Port = 465;                                    // TCP port to connect to
+    $mail->Username = 'peterphptester@hotmail.com';                 // SMTP username
+    $mail->Password = 'P1phptester';                           // SMTP password
+    $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+    $mail->Port = 587;                                    // TCP port to connect to
 
-    $mail->setFrom('kdelen@ictkeuzedelen.nl', 'Mailer');
+    $mail->setFrom('peterphptester@hotmail.com', 'Mailer');
     $mail->addAddress($adress);     // Add a recipient
     //$mail->addReplyTo('info@example.com', 'Information');
     //$mail->addCC('cc@example.com');
