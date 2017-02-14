@@ -1,4 +1,19 @@
 <?php
+
+function randomPassword() {
+    $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
+    $pass = array(); //remember to declare $pass as an array
+    $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
+    for ($i = 0; $i < 8; $i++) {
+        $n = rand(0, $alphaLength);
+        $pass[] = $alphabet[$n];
+    }
+    return implode($pass); //turn the array into a string
+}
+
+echo randomPassword();
+
+
 $adress = $_POST["email"];
 if (!empty($_POST["email"])) 
 {
@@ -27,7 +42,7 @@ if (!empty($_POST["email"]))
       $mail->isHTML(true);                                  // Set email format to HTML
 
     $mail->Subject = 'Keuzedelen Registratie ROCA12';
-    $mail->Body    = 'Hallo,<br><br> je wachtwoord is: <br><b>wachtwoord</b>';
+    $mail->Body    = 'Dit is uw wachtwoord:';
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     if(!$mail->send()) {
