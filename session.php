@@ -19,7 +19,15 @@
     $user_passwords = $row0['password'];
     $user_permissions = $row0['permission'];
 
-    
+    //deadline check
+
+    $deadlinecheck = $conn->prepare("SELECT Date FROM Datum WHERE ID = '1'");
+
+    $deadlinecheck->execute();
+
+    $deadline = $deadlinecheck->fetch(PDO::FETCH_ASSOC);
+
+
     if ($user_permissions == "1") {
     
     $result6 = $conn->prepare("SELECT * FROM Student WHERE `User_ID` = $user_id");

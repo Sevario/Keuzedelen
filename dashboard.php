@@ -53,10 +53,12 @@
 
 // SET DATUM VOOR INSCHRIJF DEADLINE!!!
 
-$date = new DateTime('2017-07-20');
-$now = new DateTime();
 
-if($date > $now) {
+$now = new DateTime();
+$newnow = $now->format('Y/m/d');
+$datedeadline = date("Y/m/d",strtotime($deadline['Date']));
+
+if($datedeadline > $newnow) {
 
     if ($user_permissions == "1") {
         foreach ($keuzedelen as $keuzedeel) {

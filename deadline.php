@@ -25,9 +25,9 @@
     </div>
     <div id="menu">
         <ul>
-            <li><a href='beheer.php' class='selected'>Beheer</a></li>
+            <li><a href="beheer.php">Beheer</a></li>
             <li><a href="account.php">Account</a></li>
-            <li><a href="deadline.php">Deadline</a></li>
+            <li><a href="deadline.php" class='selected'>Deadline</a></li>
             <li><a href="logout.php">Log Out</a></li>
             <br>
             <div id="myProgress">
@@ -35,6 +35,16 @@
                     <div id="label">1/3</div>
                 </div>
             </div>
+
         </ul>
 
     </div>
+    <div id='gekozen_delen'>
+        <text style='text-align: center'>Deadline</text><br>
+
+    </div>
+</body>
+<footer id="profile">
+    &copy; ROCA12 Ede
+</footer>
+</html>
