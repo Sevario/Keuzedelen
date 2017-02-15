@@ -37,7 +37,7 @@ $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
                 $getpass .= $pass[$i];
             }
 
-            $getuser = $conn->prepare("INSERT INTO User (username,password) VALUES ('$_POST[email]', '$getpass')");
+            $getuser = $conn->prepare("INSERT INTO User (username,password) VALUES ('$_POST[email]', PASSWORD('$getpass'))");
 
             $getuser->execute();
 
@@ -79,6 +79,7 @@ $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
                 $mail->isHTML(true);                                  // Set email format to HTML
 
                 $mail->Subject = 'Keuzedelen Registratie ROCA12';
+                    echo $getpass;
                 $mail->Body = 'Uw inlognaam: ' . $adress . '<br>' .
                     'Uw wachtwoord: ' . $getpass . "<br>U kunt uw wachtwoord wijzigen zodra u bent ingelogd.";
                 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';

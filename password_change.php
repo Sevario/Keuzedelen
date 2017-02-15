@@ -16,16 +16,13 @@ if (isset($_POST['submit'])){
 
                 
 
-		$resultpass = $conn->prepare("SELECT password FROM User WHERE ID = $user_id");
-                $resultpass->execute();
-		$rowpass = $resultpass->fetch(PDO::FETCH_ASSOC);
+                $checkpass = $conn->prepare("SELECT password FROM User WHERE password = PASSWORD('$oldpassword')");
+                $checkpass->execute();
+                $rowcheckpass = $checkpass->fetch(2);
                 
-                $oldpass = $rowpass['password'];
-
-                
-		if ($oldpassword == $oldpass) {
+		if (!empty($rowcheckpass)) {
                  if ($newpassword == $confirmnewpassword) {
-                    $newpass = $conn->prepare("UPDATE User SET password='$newpassword' WHERE ID = $user_id");
+                    $newpass = $conn->prepare("UPDATE User SET password=PASSWORD('$newpassword') WHERE ID = $user_id");
                     $newpass->execute();
                     echo "Je wachtwoord is succesvol veranderd. <br>";
                     echo "Log in met je nieuwe wachtwoord."; header("refresh:4;url=logout.php");

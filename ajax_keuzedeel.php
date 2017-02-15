@@ -5,29 +5,40 @@ $value = $_POST['val'];
 
 $result001 = $conn->prepare("SELECT * FROM Keuzedeel WHERE Name = '$value'");
 
-    $result001->execute();
+        $result001->execute();
 
-    $row001 = $result001->fetch(PDO::FETCH_ASSOC);
+        $row001 = $result001->fetch(PDO::FETCH_ASSOC);
 
-    $keuzeinfo = $row001;
+        $keuzeinfo = $row001;
 
     
     $result002 = $conn->prepare("SELECT abbreviation FROM Docent WHERE ID = $keuzeinfo[Docent_ID]");
 
-    $result002->execute();
+        $result002->execute();
 
-    $row002 = $result002->fetch(PDO::FETCH_ASSOC);
+        $row002 = $result002->fetch(PDO::FETCH_ASSOC);
 
-    $docent_naam = $row002;
+        $docent_naam = $row002;
 
     $resultgetkeuze3 = $conn->prepare('SELECT abbreviation FROM Docent');
     
-            $resultgetkeuze3->execute();
+        $resultgetkeuze3->execute();
 
-            $rowkeuze3 = $resultgetkeuze3->fetchall(PDO::FETCH_ASSOC);
+        $rowkeuze3 = $resultgetkeuze3->fetchall(PDO::FETCH_ASSOC);
 
-            $arraykeuzen3 = $rowkeuze3;
+        $docenten = $rowkeuze3;
     
+    function ReadyKeuzeDrop($docenten){
+        $str = "";
+        
+        $str .= "<select name='docenten' class='keuzedrop'><option>Kies de Docent</option>";
+        foreach ($docenten as $row) {
+            $str .= "<option value=\"" . $row['abbreviation'] . "\">" . $row['abbreviation'] . "</option>";
+        }
+            
+        $str .= "</select> &nbsp; &nbsp;";
+        return $str;
+    }
     
 $html = "
         <link rel='stylesheet' type='text/css' href='/keuzedelen/ajax.css' media='screen' />
@@ -85,8 +96,9 @@ $html = "
                 <td>
                     <button class='info'>Edit</button>
                 </td>
-                <td>
-                </td>
+                <td>" .
+                    ReadyKeuzeDrop($docenten)
+                . "</td>
                 <td> 
                 <button class='kcode'>Edit</button>
                 </td>

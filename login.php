@@ -15,10 +15,10 @@
                     $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
                     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-                    $sql = "SELECT * FROM User WHERE `username` = :email AND `password` = :password ";
+                    $sql = "SELECT * FROM User WHERE `username` = :email AND `password` = PASSWORD(:password) ";
 
                     $stmt = $conn->prepare($sql);   
-                    $stmt->execute(array(':email' => $_POST['email'], ':password'=> $_POST['password']));
+                    $stmt->execute(array('email' => $_POST['email'], 'password'=> $_POST['password']));
 
                     $num=$stmt->rowCount();
                     if($num > 0)

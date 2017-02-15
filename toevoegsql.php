@@ -50,7 +50,7 @@ include('session.php');
         }
         
         if ($_POST['checkding'] == 'gebruiker') {
-            $result = $conn->prepare("INSERT INTO User (username, password, permission) VALUES('$_POST[user]', '$_POST[password]', '$_POST[permissions]')");
+            $result = $conn->prepare("INSERT INTO User (username, password, permission) VALUES('$_POST[user]', PASSWORD('$_POST[password]'), '$_POST[permissions]')");
             print_r($result);
             $result->execute();
         }
