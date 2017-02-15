@@ -50,30 +50,38 @@
     </div>
     <div id="geheel">
         <?php
-        if ($user_permissions == "1") {
-            foreach ($keuzedelen as $keuzedeel){
-                        $result4 = $conn->prepare("SELECT * FROM Keuzedeel WHERE ID = :keuzedeel"); 
 
-                        $result4->execute(array(':keuzedeel' => $keuzedeel["Keuzedeel_ID"]));
+// SET DATUM VOOR INSCHRIJF DEADLINE!!!
 
-                        $row4 = $result4->fetch(PDO::FETCH_ASSOC);
+$date = new DateTime('2017-07-20');
+$now = new DateTime();
 
-                        $keuzedelen_info =$row4;
-                    
-                    $docent = $keuzedelen_info['Docent_ID'];
-                    
-                    $result5 = $conn->prepare("SELECT * FROM Docent WHERE ID = $docent"); 
-                                        
-                    $result5->execute(array(':keuzedeel' => $keuzedeel["Keuzedeel_ID"]));
+if($date > $now) {
 
-                    $row5 = $result5->fetch(PDO::FETCH_ASSOC);
-                    
-                    $docent_info = $row5;
-                    
-            
+    if ($user_permissions == "1") {
+        foreach ($keuzedelen as $keuzedeel) {
+            $result4 = $conn->prepare("SELECT * FROM Keuzedeel WHERE ID = :keuzedeel");
+
+            $result4->execute(array(':keuzedeel' => $keuzedeel["Keuzedeel_ID"]));
+
+            $row4 = $result4->fetch(PDO::FETCH_ASSOC);
+
+            $keuzedelen_info = $row4;
+
+            $docent = $keuzedelen_info['Docent_ID'];
+
+            $result5 = $conn->prepare("SELECT * FROM Docent WHERE ID = $docent");
+
+            $result5->execute(array(':keuzedeel' => $keuzedeel["Keuzedeel_ID"]));
+
+            $row5 = $result5->fetch(PDO::FETCH_ASSOC);
+
+            $docent_info = $row5;
+
+
 //                    $_SESSION ["keuzedelenid"] = $keuzedelen_info['ID'];
-                    
-                echo' <div class="keuzedeel" id="test">
+
+            echo ' <div class="keuzedeel" id="test">
                 <button>' . $keuzedelen_info['Name'] . '</button>
                 <h2 id="dashboardh2">Klik hier voor informatie</h2>
                 <h1>' . $keuzedelen_info['Name'] . '</h1>
@@ -84,10 +92,22 @@
                 <p>Informatie over docent:<br> Afkorting:' . $docent_info['abbreviation'] . '<br>E-mail:' . $docent_info['email'] . '</p>
                 <a href="inschrijven.php?kd=' . $keuzedelen_info['ID'] . '" class="btn btn-lg btn-default btnwidth inschrijven">Inschrijven</a>
                 </div>';
-            }
-
         }
-            
+
+    }
+}
+else {
+    Echo "<div id='inschrijffout 'style='
+                                    background-color: black;
+                                    width: auto;
+                                    height: auto;
+                                    padding: 10px;
+                                    border: 1px solid white;
+                                    border-radius: 2px 2px 2px 2px;
+                                    margin-left: 35%;
+                                    margin-right: 40%;
+                                    margin-top: 10%;'><h5 style='color: white;'>De inschrijfperiode is voorbij, u kunt u niet meer inschrijven voor de keuzedelen.</h5></div>";
+}
         ?>
        
 
