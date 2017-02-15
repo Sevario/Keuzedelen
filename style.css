@@ -11,10 +11,18 @@ input[type="text"], .blacktext{
     color: black;
 }
 
+form{
+    margin-top:50px;
+}
+
 form>p, form>select{
     display:inline-block;
     width:174px;
     height:24px;
+}
+
+.btntoe {
+    float: right;
 }
 
 .keuzedrop {

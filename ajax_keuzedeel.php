@@ -77,7 +77,10 @@ $html = "
                     <button class='info'>Edit</button>
                 </td>
                 <td>
-                    <button class='docent'>Edit</button>
+                    <select class='blacktext' name='docent'>
+                    <option>Edit</option>
+
+                    </select> 
                 </td>
                 <td>
                     <button class='kcode'>Edit</button>

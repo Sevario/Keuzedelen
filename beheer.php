@@ -24,12 +24,9 @@
     </div>
     <div id="menu">
         <ul>
+            <li><a href='beheer.php' class='selected'>Beheer</a></li>
             <li><a href="account.php">Account</a></li>
-            <?php
-            if ($user_permissions == 3) {
-            echo "<li><a href='beheer.php' class='selected'>Beheer</a></li>";
-            }
-            ?>
+            <li><a href="deadline.php">Deadline</a></li>
             <li><a href="logout.php">Log Out</a></li>
             <br>
             <div id="myProgress">
@@ -55,7 +52,7 @@
             $arraykeuzen = $rowkeuze;
 
             
-            echo "<select name='Keuzedelen' class='keuzedrop' id='sel_keuzedelen'>";
+            echo "<select name='Keuzedelen' class='keuzedrop' id='sel_keuzedelen'><option>Kies het Keuzedeel</option>";
             foreach ($arraykeuzen as $row) {
             print_r($row['Name']); ?>
             <option value="<?php echo $row['Name']; ?>"><?php echo $row['Name']; ?></option>
@@ -64,7 +61,7 @@
             }
             
             echo "</select> &nbsp; &nbsp;";
-            echo "<a class='addkeuze btn btn-lg btn-default btnwidth'>Toevoegen</a>";
+            echo "<a class='addkeuze btn btn-lg btn-default btnwidth btntoe'>Toevoegen</a>";
             ?>
                <div id="keuzes">
 
@@ -94,7 +91,7 @@
             }
             
             echo "</select> &nbsp; &nbsp;";
-            echo "<a class='addstudenten btn btn-lg btn-default btnwidth'>Toevoegen</a>";
+            echo "<a class='addstudenten btn btn-lg btn-default btnwidth btntoe'>Toevoegen</a>";
             
             ?>
                 <div id="beheerstudenten">
@@ -124,7 +121,7 @@
             }
             
             echo "</select> &nbsp; &nbsp;";
-            echo "<a class='adddocenten btn btn-lg btn-default btnwidth'>Toevoegen</a>";
+            echo "<a class='adddocenten btn btn-lg btn-default btnwidth btntoe'>Toevoegen</a>";
             
             ?>
                 <div id="beheerdocenten">
@@ -154,7 +151,7 @@
             }
             
             echo "</select> &nbsp; &nbsp;";
-            echo "<a class='addopleidingen btn btn-lg btn-default btnwidth'>Toevoegen</a>";
+            echo "<a class='addopleidingen btn btn-lg btn-default btnwidth btntoe'>Toevoegen</a>";
             
             ?>
                 <div id="beheeropleiding">
@@ -184,7 +181,7 @@
             }
             
             echo "</select> &nbsp; &nbsp;";
-            echo "<a class='addgebruikers btn btn-lg btn-default btnwidth'>Toevoegen</a>";
+            echo "<a class='addgebruikers btn btn-lg btn-default btnwidth btntoe'>Toevoegen</a>";
             
             ?>
                 <div id="beheergebruikers">
@@ -214,7 +211,7 @@
                 }
 
                 echo "</select> &nbsp; &nbsp;";
-            echo "<a class='addlesgroepen btn btn-lg btn-default btnwidth'>Toevoegen</a>";
+            echo "<a class='addlesgroepen btn btn-lg btn-default btnwidth btntoe'>Toevoegen</a>";
 
                 ?>
                 <div id="beheerlesgroepen">

@@ -41,6 +41,9 @@ if(!isset($_SESSION['login_user'])){ //if login in session is not set
         ?>
 
         <li><a href='account.php' class='selected'>Account</a></li>
+        <?php if ($user_permissions ==3) {
+           echo "<li><a href='deadline.php'>Deadline</a></li>";
+        } ?>
         <li><a href="logout.php">Log Out</a></li>
         <br>
         <div id="myProgress">
