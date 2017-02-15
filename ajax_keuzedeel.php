@@ -20,6 +20,15 @@ $result001 = $conn->prepare("SELECT * FROM Keuzedeel WHERE Name = '$value'");
 
     $docent_naam = $row002;
 
+    $resultgetkeuze3 = $conn->prepare('SELECT abbreviation FROM Docent');
+    
+            $resultgetkeuze3->execute();
+
+            $rowkeuze3 = $resultgetkeuze3->fetchall(PDO::FETCH_ASSOC);
+
+            $arraykeuzen3 = $rowkeuze3;
+    
+    
 $html = "
         <link rel='stylesheet' type='text/css' href='/keuzedelen/ajax.css' media='screen' />
  
@@ -77,13 +86,9 @@ $html = "
                     <button class='info'>Edit</button>
                 </td>
                 <td>
-                    <select class='blacktext' name='docent'>
-                    <option>Edit</option>
-
-                    </select> 
                 </td>
-                <td>
-                    <button class='kcode'>Edit</button>
+                <td> 
+                <button class='kcode'>Edit</button>
                 </td>
             </tr>
         </table>

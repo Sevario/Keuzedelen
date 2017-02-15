@@ -83,7 +83,7 @@
             $arraykeuzen2 = $rowkeuze2;
 
             
-            echo "<select name='Keuzedelen' class='keuzedrop' id='sel_studenten'>";
+            echo "<select name='Keuzedelen' class='keuzedrop' id='sel_studenten'><option>Kies de Student</option>";
             foreach ($arraykeuzen2 as $row) {
             print_r($row['email']); ?>
             <option value="<?php echo $row['email']; ?>"><?php echo $row['email']; ?></option>
@@ -113,7 +113,7 @@
             $arraykeuzen3 = $rowkeuze3;
 
             
-            echo "<select name='Keuzedelen' class='keuzedrop' id='sel_docenten'>";
+            echo "<select name='Keuzedelen' class='keuzedrop' id='sel_docenten'><option>Kies de Docent</option>";
             foreach ($arraykeuzen3 as $row) {
             print_r($row['abbreviation']); ?>
             <option value="<?php echo $row['abbreviation']; ?>"><?php echo $row['abbreviation']; ?></option>
@@ -143,7 +143,7 @@
             $arraykeuzen = $rowkeuze;
 
             
-            echo "<select name='Keuzedelen' class='keuzedrop' id='sel_opleiding'>";
+            echo "<select name='Keuzedelen' class='keuzedrop' id='sel_opleiding'><option>Kies de Opleiding</option>";
             foreach ($arraykeuzen as $row) {
             print_r($row['Naam']); ?>
             <option value="<?php echo $row['Naam']; ?>"><?php echo $row['Naam']; ?></option>
@@ -173,7 +173,7 @@
             $arraykeuzen = $rowkeuze;
 
             
-            echo "<select name='Keuzedelen' class='keuzedrop' id='sel_gebruikers'>";
+            echo "<select name='Keuzedelen' class='keuzedrop' id='sel_gebruikers'><option>Kies de Gebruiker</option>";
             foreach ($arraykeuzen as $row) {
             print_r($row['username']); ?>
             <option value="<?php echo $row['username']; ?>"><?php echo $row['username']; ?></option>
@@ -203,7 +203,7 @@
                 $arraykeuzen = $rowkeuze;
 
 
-                echo "<select name='Keuzedelen' class='keuzedrop' id='sel_lesgroepen'>";
+                echo "<select name='Keuzedelen' class='keuzedrop' id='sel_lesgroepen'><option>Kies de Lesgroep</option>";
                 foreach ($arraykeuzen as $row) {
                     print_r($row['naam']); ?>
                     <option value="<?php echo $row['naam']; ?>"><?php echo $row['naam']; ?></option>
