@@ -16,6 +16,9 @@
         <link rel="stylesheet" type="text/css" href="/keuzedelen/style.css" media="screen" />
         <script src="js/jquery.js"></script>
         <script src="js/changes.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <title>Dashboard</title>
 </head>
 <body>
@@ -39,9 +42,18 @@
         </ul>
 
     </div>
-    <div id='gekozen_delen'>
+    <div id='deadline_invoer'>
         <text style='text-align: center'>Deadline</text><br>
-
+          <script>
+          $( function() {
+            $( "#datepicker" ).datepicker();
+          } );
+          </script>
+          <form action="deadlinesql.php" method="post">
+              <?php echo "Deadline: "; print_r($deadline['Date']); ?> <br>
+              Deadline: <input name="datum" type="text" id="datepicker"><br>
+            <input type="submit" class="blacktext" value="Invoeren">
+          </form>
     </div>
 </body>
 <footer id="profile">
