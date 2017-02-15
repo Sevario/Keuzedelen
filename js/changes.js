@@ -59,7 +59,38 @@ $(document).ready(function() {
     });
     
     $(".addkeuze").click(function() {
-        $("#keuzes").load("toevoegen.php");
+        $("#keuzes").load("toevoegen.php?beheer=keuzes");
+        $('#keuzes').show();
+    });
+    
+    
+    $(".addstudenten").click(function() {
+        $("#beheerstudenten").load("toevoegen.php?beheer=student");
+        $('#beheerstudenten').show();
+    });
+    
+    
+    $(".adddocenten").click(function() {
+        $("#beheerdocenten").load("toevoegen.php?beheer=docent");
+        $('#beheerdocenten').show();
+    });
+    
+    
+    $(".addopleidingen").click(function() {
+        $("#beheeropleiding").load("toevoegen.php?beheer=opleiding");
+        $('#beheeropleiding').show();
+    });
+    
+    
+    $(".addgebruikers").click(function() {
+        $("#beheergebruikers").load("toevoegen.php?beheer=gebruiker");
+        $('#beheergebruikers').show();
+    });
+    
+    
+    $(".addlesgroepen").click(function() {
+        $("#beheerlesgroepen").load("toevoegen.php?beheer=lesgroep");
+        $('#beheerlesgroepen').show();
     });
     
     $("#sel_studenten").change(function () {

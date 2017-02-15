@@ -93,7 +93,8 @@
             <?php
             }
             
-            echo "</select>"
+            echo "</select> &nbsp; &nbsp;";
+            echo "<a class='addstudenten btn btn-lg btn-default btnwidth'>Toevoegen</a>";
             
             ?>
                 <div id="beheerstudenten">
@@ -122,7 +123,8 @@
             <?php
             }
             
-            echo "</select>"
+            echo "</select> &nbsp; &nbsp;";
+            echo "<a class='adddocenten btn btn-lg btn-default btnwidth'>Toevoegen</a>";
             
             ?>
                 <div id="beheerdocenten">
@@ -151,7 +153,8 @@
             <?php
             }
             
-            echo "</select>"
+            echo "</select> &nbsp; &nbsp;";
+            echo "<a class='addopleidingen btn btn-lg btn-default btnwidth'>Toevoegen</a>";
             
             ?>
                 <div id="beheeropleiding">
@@ -180,7 +183,8 @@
             <?php
             }
             
-            echo "</select>"
+            echo "</select> &nbsp; &nbsp;";
+            echo "<a class='addgebruikers btn btn-lg btn-default btnwidth'>Toevoegen</a>";
             
             ?>
                 <div id="beheergebruikers">
@@ -209,7 +213,8 @@
                     <?php
                 }
 
-                echo "</select>"
+                echo "</select> &nbsp; &nbsp;";
+            echo "<a class='addlesgroepen btn btn-lg btn-default btnwidth'>Toevoegen</a>";
 
                 ?>
                 <div id="beheerlesgroepen">

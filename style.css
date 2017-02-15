@@ -7,6 +7,16 @@
     color: white;
 }
 
+input[type="text"], .blacktext{
+    color: black;
+}
+
+form>p, form>select{
+    display:inline-block;
+    width:174px;
+    height:24px;
+}
+
 .keuzedrop {
 width: 400px;
   height: 30px;
