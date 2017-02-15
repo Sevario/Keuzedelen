@@ -20,7 +20,26 @@ $result001 = $conn->prepare("SELECT * FROM Docent WHERE abbreviation = '$value'"
 
     $userinfo = $row002;
 
+    $resultgetkeuze = $conn->prepare("SELECT username FROM User");
 
+    $resultgetkeuze->execute();
+
+    $rowkeuze = $resultgetkeuze->fetchall(PDO::FETCH_ASSOC);
+
+    $users = $rowkeuze;
+    
+    
+    function ReadyDocentDrop($users){
+        $str = "";
+        
+        $str .= "<select name='users' class='blacktext docentdropdown'><option>Kies de Gebruiker</option>";
+        foreach ($users as $row) {
+            $str .= "<option value=\"" . $row['username'] . "\">" . $row['username'] . "</option>";
+        }
+            
+        $str .= "</select> &nbsp; &nbsp;";
+        return $str;
+    }
 
 $html = "
         <link rel='stylesheet' type='text/css' href='/keuzedelen/ajax.css' media='screen' />
@@ -60,8 +79,9 @@ $html = "
                 <td>
                     <button class='abbreviation'>Edit</button>
                 </td>
-                <td>
-                </td>
+                <td>". 
+                ReadyDocentDrop($users)
+            . " </td>
             </tr>
         </table>
         

@@ -31,7 +31,7 @@ $result001 = $conn->prepare("SELECT * FROM Keuzedeel WHERE Name = '$value'");
     function ReadyKeuzeDrop($docenten){
         $str = "";
         
-        $str .= "<select name='docenten' class='keuzedrop'><option>Kies de Docent</option>";
+        $str .= "<select name='docenten' class='blacktext keuzedropdown'><option>Kies de Docent</option>";
         foreach ($docenten as $row) {
             $str .= "<option value=\"" . $row['abbreviation'] . "\">" . $row['abbreviation'] . "</option>";
         }

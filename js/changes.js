@@ -1,6 +1,44 @@
 
 $(document).ready(function() {
     
+    
+    $(".addkeuze").click(function() {
+        $("#keuzes").load("toevoegen.php?beheer=keuzes");
+        $('#keuzes').show();
+    });
+    
+    
+    $(".addstudenten").click(function() {
+        $("#beheerstudenten").load("toevoegen.php?beheer=student");
+        $('#beheerstudenten').show();
+    });
+    
+    
+    $(".adddocenten").click(function() {
+        $("#beheerdocenten").load("toevoegen.php?beheer=docent");
+        $('#beheerdocenten').show();
+    });
+    
+    
+    $(".addopleidingen").click(function() {
+        $("#beheeropleiding").load("toevoegen.php?beheer=opleiding");
+        $('#beheeropleiding').show();
+    });
+    
+    
+    $(".addgebruikers").click(function() {
+        $("#beheergebruikers").load("toevoegen.php?beheer=gebruiker");
+        $('#beheergebruikers').show();
+    });
+    
+    
+    $(".addlesgroepen").click(function() {
+        $("#beheerlesgroepen").load("toevoegen.php?beheer=lesgroep");
+        $('#beheerlesgroepen').show();
+    });
+    
+    
+    
     //Keuzedelen Beheer.
     $("#sel_keuzedelen").change(function () {
         var oldname = $(this).val();
@@ -15,6 +53,11 @@ $(document).ready(function() {
 
             $("#keuzes").text(json[0]);
             $('#keuzes').show();
+            
+            $(".keuzedropdown").on('click', function(){
+                var docentpick = $(this).val();
+                $.post('updatekeuzedelen.php', { updateColumn: "Docent_ID", newVal: docentpick, name: oldname, dropdownkeuze: '1'}, function (response) {});
+            });
             
             
             $(".namechange").click(function() {
@@ -57,42 +100,6 @@ $(document).ready(function() {
             
         });
     });
-    
-    $(".addkeuze").click(function() {
-        $("#keuzes").load("toevoegen.php?beheer=keuzes");
-        $('#keuzes').show();
-    });
-    
-    
-    $(".addstudenten").click(function() {
-        $("#beheerstudenten").load("toevoegen.php?beheer=student");
-        $('#beheerstudenten').show();
-    });
-    
-    
-    $(".adddocenten").click(function() {
-        $("#beheerdocenten").load("toevoegen.php?beheer=docent");
-        $('#beheerdocenten').show();
-    });
-    
-    
-    $(".addopleidingen").click(function() {
-        $("#beheeropleiding").load("toevoegen.php?beheer=opleiding");
-        $('#beheeropleiding').show();
-    });
-    
-    
-    $(".addgebruikers").click(function() {
-        $("#beheergebruikers").load("toevoegen.php?beheer=gebruiker");
-        $('#beheergebruikers').show();
-    });
-    
-    
-    $(".addlesgroepen").click(function() {
-        $("#beheerlesgroepen").load("toevoegen.php?beheer=lesgroep");
-        $('#beheerlesgroepen').show();
-    });
-    
     $("#sel_studenten").change(function () {
          var oldname = $(this).val();
             
@@ -107,6 +114,16 @@ $(document).ready(function() {
             $("#beheerstudenten").text(json[0]);
             $('#beheerstudenten').show();
             
+            
+            $(".studentdropdown").on('click', function(){
+                var gebruikerpick = $(this).val();
+                $.post('updatestudenten.php', { updateColumn: "User_ID", newVal: gebruikerpick, name: oldname, dropdownstudent: '1'}, function (response) {});
+            });
+            
+            $(".studentdropdown2").on('click', function(){
+                var opleidingpick = $(this).val();
+                $.post('updatestudenten.php', { updateColumn: "Opleiding_ID", newVal: opleidingpick, name: oldname, dropdownstudent2: '1'}, function (response) {});
+            });
               
                 $(".email").click(function() {
                 var newval = prompt("Vul de nieuwe waarde in");
@@ -146,6 +163,12 @@ $(document).ready(function() {
 
             $("#beheerdocenten").text(json[0]);
             $('#beheerdocenten').show();
+            
+            
+            $(".docentdropdown").on('click', function(){
+                var gebruikerpick = $(this).val();
+                $.post('updatedocenten.php', { updateColumn: "User_ID", newVal: gebruikerpick, name: oldname, dropdowndocent: '1'}, function (response) {});
+            });
             
                 $(".docemail").click(function() {
                 var newval = prompt("Vul de nieuwe waarde in");
@@ -208,6 +231,13 @@ $(document).ready(function() {
             $("#beheergebruikers").text(json[0]);
             $('#beheergebruikers').show();
             
+            
+            $(".gebruikersdropdown").on('click', function(){
+                var gebruikerpick = $(this).val();
+                $.post('updategebruikers.php', { updateColumn: "permission", newVal: gebruikerpick, name: oldname, dropdowngebruiker: '1'}, function (response) {});
+            });
+            
+            
             $(".usernameedit").click(function() {
                 var newval = prompt("Vul de nieuwe waarde in");
                 $.post('updategebruikers.php', { updateColumn: "username", newVal: newval, name: oldname}, function (response) {});
@@ -239,6 +269,18 @@ $(document).ready(function() {
 
             $("#beheerlesgroepen").text(json[0]);
             $('#beheerlesgroepen').show();
+            
+            
+            $(".lesgroepdropdown").on('click', function(){
+                var gebruikerpick = $(this).val();
+                $.post('updatelesgroep.php', { updateColumn: "Docent_ID", newVal: gebruikerpick, name: oldname, dropdownles: '1'}, function (response) {});
+            });
+            
+            
+            $(".lesgroepdropdown2").on('click', function(){
+                var gebruikerpick = $(this).val();
+                $.post('updatelesgroep.php', { updateColumn: "Keuzedeel_ID", newVal: gebruikerpick, name: oldname, dropdownles2: '1'}, function (response) {});
+            });
             
             $(".keuzedeeledit").click(function() {
                 var newval = prompt("Vul de nieuwe waarde in");

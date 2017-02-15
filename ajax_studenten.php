@@ -28,7 +28,49 @@ $result001 = $conn->prepare("SELECT * FROM Student WHERE email = '$value'");
 
     $opleidinginfo = $row003;
 
+    $resultgetkeuze = $conn->prepare("SELECT username FROM User");
 
+    $resultgetkeuze->execute();
+
+    $rowkeuze = $resultgetkeuze->fetchall(PDO::FETCH_ASSOC);
+
+    $users = $rowkeuze;
+    
+    $resultgetkeuze = $conn->prepare("SELECT Naam FROM Opleiding");
+
+    $resultgetkeuze->execute();
+
+    $rowkeuze = $resultgetkeuze->fetchall(PDO::FETCH_ASSOC);
+
+    $opleidingen = $rowkeuze;
+
+    
+    function ReadyStudentDrop($users){
+        $str = "";
+        
+        $str .= "<select name='users' class='blacktext studentdropdown'><option>Kies de Gebruiker</option>";
+        foreach ($users as $row) {
+            $str .= "<option value=\"" . $row['username'] . "\">" . $row['username'] . "</option>";
+        }
+            
+        $str .= "</select> &nbsp; &nbsp;";
+        return $str;
+    }
+    
+    
+    function ReadyStudentDrop2($opleidingen){
+        $str = "";
+        
+        $str .= "<select name='opleidingen' class='blacktext studentdropdown2'><option>Kies de Opleiding</option>";
+        foreach ($opleidingen as $row) {
+            $str .= "<option value=\"" . $row['Naam'] . "\">" . $row['Naam'] . "</option>";
+        }
+            
+        $str .= "</select> &nbsp; &nbsp;";
+        return $str;
+    }
+    
+    
 $html = "
         <link rel='stylesheet' type='text/css' href='/keuzedelen/ajax.css' media='screen' />
  
@@ -71,11 +113,12 @@ $html = "
                 <td>
                     <button class='studnumber'>Edit</button>
                 </td>
-                <td>
-                </td>
-                <td>
-                    <button class='opleiding'>Edit</button>
-                </td>
+               <td>" .
+                   ReadyStudentDrop($users)
+                . " </td>
+                <td>".
+                    ReadyStudentDrop2($opleidingen)
+                . "</td>
             </tr>
         </table>
         

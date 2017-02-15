@@ -11,6 +11,21 @@ $result001 = $conn->prepare("SELECT * FROM User WHERE username = '$value'");
 
     $gebruikersinfo = $row001;
 
+    $permissiongeb = "";
+    
+if ($gebruikersinfo['permission'] == '1'){
+    $permissiongeb = 'Student';
+}
+
+if ($gebruikersinfo['permission'] == '2'){
+    $permissiongeb = 'Docent';
+}
+
+if ($gebruikersinfo['permission'] == '3'){
+    $permissiongeb = 'Beheerder';
+}
+
+
 
 $html = "
         <link rel='stylesheet' type='text/css' href='/keuzedelen/ajax.css' media='screen' />
@@ -37,7 +52,7 @@ $html = "
                     
                 </td>
                 <td>
-                    $gebruikersinfo[permission]
+                    $permissiongeb
                 </td>
             </tr>
             <tr>
@@ -51,6 +66,10 @@ $html = "
                     <button class='passwordedit'>Edit</button>
                 </td>
                 <td>
+                <select name='gebruikers' class='blacktext gebruikersdropdown'>
+                <option>Kies de Permissies</option>
+                <option value='1'>Student</option>
+                <option value='2'>Docent</option>
                 </td>
             </tr>
         </table>
