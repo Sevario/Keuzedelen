@@ -5,7 +5,7 @@
     </head>
     
     <body>
-    <h1>Keuzedelen</h1>
+    <h1 id="inlog_titel">Keuzedelen</h1>
         <div class="login2">
                 <div class="heading">
                     <form method="post" role="form" class="register" action="createaccount.php" autocomplete="off">

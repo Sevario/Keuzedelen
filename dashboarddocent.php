@@ -135,7 +135,8 @@ if ($user_permissions == "2") {
     else {
         echo "<td>Nee</td>";
     }
-        echo "<td><button><a href=\keuzedelen\wijzig.php?kd=" . $getkeuzedeel['Keuzedeel_ID'] . "&sd=" . $row['Student_ID'] . ">asdasd</a></button></td>";
+
+        echo "<td><button><a href=\keuzedelen\wijzig.php?kd=" . $getkeuzedeel['Keuzedeel_ID'] . "&sd=" . $row['Student_ID'] . "&sd2=" . $row31['Passed'] . " style='width: 100%;'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></button></td>";
     echo "</td></tr>";}
     echo "<tr></tr>";
     echo "</thead>

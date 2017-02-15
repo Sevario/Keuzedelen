@@ -90,14 +90,14 @@ if(!isset($_SESSION['login_user'])){ //if login in session is not set
             <text style='text-align: center'>Gekozen delen</text><br>";
         foreach ($keuzedeel_id as $naam_keuzedeel){
 
-            $result8 = $conn->prepare("SELECT ID,Name FROM Keuzedeel WHERE ID = :keuzedeel_id");
+            $result8 = $conn->prepare("SELECT * FROM Keuzedeel WHERE ID = :keuzedeel_id");
 
             $result8->execute(array(':keuzedeel_id' => $naam_keuzedeel["Keuzedeel_ID"]));
 
             $row8 = $result8->fetch(PDO::FETCH_ASSOC);
             //echo "<pre>";var_dump($row8);echo "</pre>";
             echo " - " . $row8["Name"];
-            echo " <form action='verwijder.php' method='POST'> ";
+            echo " <form action='verwijder.php?kd='" . $row8['ID'] . "'method='POST'> ";
             echo " <input type='hidden' name='keuzedeelID' value='". $row8["ID"] . "'>";
 
             echo "<button class=\"button_verwijder\">Verwijder</button>";

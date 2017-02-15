@@ -1,10 +1,17 @@
 <?php
 include('session.php');
 
-$wijzigst = $conn->prepare("UPDATE Keuzedeel_Student SET Passed='Y' WHERE Keuzedeel_ID = $_GET[kd] AND Student_ID = $_GET[sd]");
+if($_GET['sd2'] == 'N') {
+    $wijzigst = $conn->prepare("UPDATE Keuzedeel_Student SET Passed='Y' WHERE Keuzedeel_ID = $_GET[kd] AND Student_ID = $_GET[sd]");
 
-$wijzigst->execute();
+    $wijzigst->execute();
+}
+else {
 
+    $wijzigst2 = $conn->prepare("UPDATE Keuzedeel_Student SET Passed='N' WHERE Keuzedeel_ID = $_GET[kd] AND Student_ID = $_GET[sd]");
+
+    $wijzigst2->execute();
+}
 
 //$result24 = $conn->prepare("DELETE FROM `Keuzedeel_Student` WHERE Keuzedeel_id = :Keuzedeel_id AND Student_id = :Student_id");
 //
