@@ -11,9 +11,9 @@ input[type="text"], .blacktext{
     color: black;
 }
 
-form{
-    margin-top:50px;
-}
+/*form{*/
+    /*margin-top:50px;*/
+/*}*/
 
 form>p, form>select{
     display:inline-block;
@@ -66,7 +66,8 @@ width: 400px;
     margin: 10px;
     width: 350px;
     height: 300px;
-    background: rgba(0,0,0,0.6);
+    background: #83B0EC;
+    opacity: 0.8;
     /*border: 1px solid black;*/
     border-radius: 5px 5px 5px 5px;
     float: left;
@@ -166,7 +167,7 @@ ul {
 }
 
 #profile {
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(235, 10, 141, 0.8);
     width: 99%;
     display: block;
     color: white;
@@ -202,7 +203,7 @@ li a.selected:link, a.selected:visited{
 }
 #dashboardh2 {
     color: white;
-    opacity: 0.1;
+    opacity: 0.8;
     margin-top: 30%;
     text-align: center;
 }
@@ -213,13 +214,6 @@ li a.selected:link, a.selected:visited{
     background-color: grey;
     border-radius: 5px 5px 5px 5px;
     margin: auto;
-}
-#myBar {
-    position: absolute;
-    width: 33%;
-    height: 100%;
-    background-color: green;
-    border-radius: 5px 5px 5px 5px;
 }
 #label {
     text-align: center;

@@ -46,11 +46,7 @@ if(!isset($_SESSION['login_user'])){ //if login in session is not set
         } ?>
         <li><a href="logout.php">Log Out</a></li>
         <br>
-        <div id="myProgress">
-            <div id="myBar">
-                <div id="label">1/3</div>
-            </div>
-        </div>
+
     </ul>
 
 </div>
@@ -91,7 +87,7 @@ if(!isset($_SESSION['login_user'])){ //if login in session is not set
     if ($user_permissions == "1"){
     echo "<div id='gekozen_delen'>
             <text style='text-align: center'>Gekozen delen</text><br>";
-        foreach ($keuzedeel_id as $naam_keuzedeel){
+        foreach ($keuzedeel_id as $naam_keuzedeel) {
 
             $result8 = $conn->prepare("SELECT * FROM Keuzedeel WHERE ID = :keuzedeel_id");
 
@@ -101,11 +97,12 @@ if(!isset($_SESSION['login_user'])){ //if login in session is not set
             //echo "<pre>";var_dump($row8);echo "</pre>";
             echo " - " . $row8["Name"];
             echo " <form action='verwijder.php?kd='" . $row8['ID'] . "'method='POST'> ";
-            echo " <input type='hidden' name='keuzedeelID' value='". $row8["ID"] . "'>";
-
+            echo " <input type='hidden' name='keuzedeelID' value='" . $row8["ID"] . "'>";
             echo "<button class=\"button_verwijder\">Verwijder</button>";
             echo "</form>";
+
         }
+
 
     echo "</div>";
 

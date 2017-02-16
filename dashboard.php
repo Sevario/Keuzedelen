@@ -17,7 +17,14 @@
 </head>
 <body>
     <div id="profile">
-        <b id="welcome">Welcome : <i><?php echo $login_session?></i></b> <?php  if ($user_permissions == "1") {echo $opleiding_naam;} ?>
+        <b id="welcome">Welcome : <i><?php echo $login_session?></i></b> <?php  if ($user_permissions == "1") {
+
+        echo "Opleiding: ";
+        echo $opleiding_naam;
+        echo " Deadline voor inscrijving: "; print_r($deadline['Date']);
+
+        } ?>
+
     </div>
     <div id="menu">
         <ul>
@@ -39,11 +46,6 @@
 ?>
             <li><a href="logout.php">Log Out</a></li>
             <br>
-            <div id="myProgress">
-                <div id="myBar">
-                    <div id="label">1/3</div>
-                </div>
-            </div>
 
         </ul>
 
