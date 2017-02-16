@@ -208,6 +208,18 @@ $(document).ready(function() {
                 $.post('updateopleiding.php', { updateColumn: "Naam", newVal: newval, name: oldname}, function (response) {});
             });
             
+            
+            $(".keuzedeletedropdown").on('click', function(){
+                var gebruikerpick = $(this).val();
+                $.post('updatekeuzeopleiding.php', { newVal: gebruikerpick, name: oldname, dropdownkeuzeop: '1'}, function (response) {});
+            });
+            
+            
+            $(".keuzeadddropdown").on('click', function(){
+                var gebruikerpick = $(this).val();
+                $.post('updatekeuzeopleiding.php', { newVal: gebruikerpick, name: oldname, dropdownkeuzeop2: '2'}, function (response) {});
+            });
+            
                 $(".delopleidingen").click(function() {
                 if (confirm("Weet je zeker dat je deze opleiding wilt verwijderen?")) {
                 $.post('deletebeheer.php', { name: oldname, table: "Opleiding", delcolumn: "Naam"}, function (response) {});

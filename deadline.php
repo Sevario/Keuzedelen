@@ -50,7 +50,7 @@
           } );
           </script>
           <form action="deadlinesql.php" method="post">
-              <?php echo "Deadline: "; print_r($deadline['Date']); ?> <br>
+              <?php echo "<p>Deadline: </p>"; print_r($deadline['Date']); ?> <br>
               Deadline: <input name="datum" type="text" id="datepicker"><br>
             <input type="submit" class="blacktext" value="Invoeren">
           </form>
