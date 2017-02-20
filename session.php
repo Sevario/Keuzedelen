@@ -71,8 +71,25 @@
 
         $keuzedeel_id = $row7;
 
+    $now = new DateTime();
+    $newnow = $now->format('Y/m/d');
+    $datedeadline = date("Y/m/d",strtotime($deadline['Date']));
 
+        if($datedeadline > $newnow) {
+            
+            $result1 = $conn->prepare("SELECT * FROM Keuzedeel_Student WHERE `Ingeschreven` = 'Y'");
 
+            $result1->execute();
+
+            $row1 = $result1->fetchAll(PDO::FETCH_ASSOC);
+
+            $ingeschreven = $row1;
+            
+            echo "<pre>"; print_r($ingeschreven); echo "</pre>";
+            
+            
+        
+        }
     }
    
 
